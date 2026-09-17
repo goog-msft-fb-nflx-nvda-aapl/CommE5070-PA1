@@ -6,19 +6,22 @@ Code, experiment log, and TODO tracking live here. GPU experiments run on the la
 
 ## Layout
 
-- `Description.md` — assignment spec.
-- `SURVEY.md`, `RESEARCH_PROMPT.md`, `survey_response_1/` — SOTA survey (own + 4-way deep research) that informed method choices.
-- `PLAN.md` — reconciled implementation plan from that survey.
-- `WORKLOG.md` — full experiment log: every config tried, every bug found/fixed, all results, in the order they happened.
-- `TODO.md` — current status / queue, with a "Final overall-best configs" summary.
-- `TA_QUESTIONS_MATERIALS.md` — briefing material for drafting TA questions.
-- `src/` — all pipeline code (data loading, baselines, MERT probe/fine-tune, ALM eval, ensembling, etc.).
-- `results/embeddings_preview/` — a few representative t-SNE/UMAP plots.
-- `lecture02*.md` — course lecture notes (fundamentals reference).
+```
+docs/
+  spec/       Description.md, lecture02*.md          — assignment spec + course lecture notes
+  research/   SURVEY.md, RESEARCH_PROMPT.md, PLAN.md,
+              survey_response_1/                      — SOTA survey (own + 4-way deep research) + reconciled plan
+  progress/   WORKLOG.md, TODO.md                     — full experiment log + current status/queue
+  ta/         TA_QUESTIONS_MATERIALS.md                — briefing material for drafting TA questions
+src/          all pipeline code (data loading, baselines, MERT probe/fine-tune, ALM eval, ensembling, etc.)
+results/embeddings_preview/   a few representative t-SNE/UMAP plots
+```
+
+Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO.md` for current status — every other doc's path is listed above.
 
 **Not in this repo** (too large for git / lives on the GPU server): the dataset itself, cached embeddings, and model checkpoints. Checkpoints will be packaged separately for the assignment's required cloud-drive submission.
 
-## Current best results (validation set; see WORKLOG.md "Final overall-best configs" for full detail)
+## Current best results (validation set; see `docs/progress/WORKLOG.md` "Final overall-best configs" for full detail)
 
 | task | config | top1 | top3 |
 |---|---|---|---|
