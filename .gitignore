@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+dataset/
+dataset.zip
+cache/
+results/scnn_*/
+results/mert_finetune_*/
+*.pt
+*.pkl
+backups/
