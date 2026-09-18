@@ -65,8 +65,36 @@ def cache_is_complete(dataset_key, cache_dir):
     return n_cached >= total_expected
 
 
-def extract(dataset_key, device="cuda", out_dir=None, splits=("train", "validation", "test")):
-    out_dir = out_dir or os.path.join(CACHE_DIR, "muq_large_msd", dataset_key)
+def _run_one(muq, captured, wav_np, device):
+    wav = torch.from_numpy(wav_np).float().unsqueeze(0).to(device)
+    captured.clear()
+    with torch.no_grad():
+        try:
+            muq(wav, output_hidden_states=True)
+        except KeyError as e:
+            # MuQ's own wrapper crashes reading out["hidden_states"] from the
+            # conformer's return value (transformers-version drift, see module
+            # docstring) -- but that happens *after* the conformer's forward
+            # pass (and our hooks) already completed, so `captured` is valid;
+            # only re-raise if hooks genuinely didn't fire (a different bug).
+            if str(e) != "'hidden_states'" or len(captured) == 0:
+                raise
+    assert len(captured) == 12, f"expected 12 conformer layer outputs, got {len(captured)}"
+    return torch.stack([h.mean(dim=1).squeeze(0) for h in captured])  # (12, 1024)
+
+
+def extract(dataset_key, device="cuda", out_dir=None, splits=("train", "validation", "test"),
+            crop_seconds=None, n_crops=1):
+    """crop_seconds=None: full 30s clip (default, cached under muq_large_msd/{dataset}).
+    Otherwise: n_crops overlapping crop_seconds-long segments per clip (via multi_crop),
+    layer-means averaged across crops -- multi-excerpt TTA, mirroring
+    mert_features.py's identical crop_seconds/n_crops mechanism (never applied to MuQ
+    before now), cached under a length/crop-count-specific subdir."""
+    if out_dir is None:
+        if crop_seconds is None:
+            out_dir = os.path.join(CACHE_DIR, "muq_large_msd", dataset_key)
+        else:
+            out_dir = os.path.join(CACHE_DIR, f"muq_large_msd_seg{crop_seconds}s_{n_crops}crop", dataset_key)
     os.makedirs(out_dir, exist_ok=True)
 
     muq = load_muq(device)
@@ -75,33 +103,25 @@ def extract(dataset_key, device="cuda", out_dir=None, splits=("train", "validati
     spec = DATASETS[dataset_key]
     for split in splits:
         rows, _ = load_manifest(dataset_key, split)
-        for row in tqdm(rows, desc=f"{dataset_key}/{split}"):
+        for row in tqdm(rows, desc=f"{dataset_key}/{split}/{crop_seconds or 'full'}s"):
             sample_id = row["sample_id"]
             cache_path = os.path.join(out_dir, f"{sample_id}.npz")
             if os.path.exists(cache_path):
                 continue
             audio_path = os.path.join(spec["dir"], row["audio_path"])
             y = load_audio_normalized(audio_path)
-            wav = torch.from_numpy(y).float().unsqueeze(0).to(device)
-            captured.clear()
-            with torch.no_grad():
-                try:
-                    muq(wav, output_hidden_states=True)
-                except KeyError as e:
-                    # MuQ's own wrapper crashes reading out["hidden_states"] from the
-                    # conformer's return value (transformers-version drift, see module
-                    # docstring) -- but that happens *after* the conformer's forward
-                    # pass (and our hooks) already completed, so `captured` is valid;
-                    # only re-raise if hooks genuinely didn't fire (a different bug).
-                    if str(e) != "'hidden_states'" or len(captured) == 0:
-                        raise
-            assert len(captured) == 12, f"expected 12 conformer layer outputs, got {len(captured)}"
-            layer_means = torch.stack([h.mean(dim=1).squeeze(0) for h in captured])  # (12, 1024)
+            if crop_seconds is None:
+                layer_means = _run_one(muq, captured, y, device)
+            else:
+                from src.data import multi_crop
+                crops = multi_crop(y, crop_seconds, n_crops)
+                per_crop = torch.stack([_run_one(muq, captured, c, device) for c in crops])
+                layer_means = per_crop.mean(dim=0)
             np.savez(cache_path, embedding=layer_means.cpu().numpy().astype(np.float32),
                      label=row["label"], split=split, sample_id=sample_id)
     for h in handles:
         h.remove()
-    print(f"[{dataset_key}] MuQ features cached to {out_dir}")
+    print(f"[{dataset_key}] MuQ features ({crop_seconds or 'full'}s x{n_crops}) cached to {out_dir}")
     return out_dir
 
 
@@ -109,5 +129,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--dataset", choices=["A", "B"], required=True)
     p.add_argument("--device", default="cuda")
+    p.add_argument("--crop-seconds", type=float, default=None)
+    p.add_argument("--n-crops", type=int, default=1)
     args = p.parse_args()
-    extract(args.dataset, device=args.device)
+    extract(args.dataset, device=args.device, crop_seconds=args.crop_seconds, n_crops=args.n_crops)
