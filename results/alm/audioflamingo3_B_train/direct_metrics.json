@@ -1,0 +1,116 @@
+{
+  "top1": 0.5300751879699248,
+  "top3": 0.7255639097744361,
+  "confusion_matrix": [
+    [
+      114,
+      2,
+      4,
+      13,
+      0,
+      0
+    ],
+    [
+      95,
+      26,
+      2,
+      5,
+      0,
+      5
+    ],
+    [
+      7,
+      0,
+      119,
+      3,
+      0,
+      4
+    ],
+    [
+      39,
+      2,
+      4,
+      80,
+      0,
+      8
+    ],
+    [
+      82,
+      4,
+      6,
+      11,
+      23,
+      7
+    ],
+    [
+      54,
+      4,
+      9,
+      5,
+      0,
+      61
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.8571428571428571,
+      0.015037593984962405,
+      0.03007518796992481,
+      0.09774436090225563,
+      0.0,
+      0.0
+    ],
+    [
+      0.7142857142857143,
+      0.19548872180451127,
+      0.015037593984962405,
+      0.03759398496240601,
+      0.0,
+      0.03759398496240601
+    ],
+    [
+      0.05263157894736842,
+      0.0,
+      0.8947368421052632,
+      0.022556390977443608,
+      0.0,
+      0.03007518796992481
+    ],
+    [
+      0.2932330827067669,
+      0.015037593984962405,
+      0.03007518796992481,
+      0.6015037593984962,
+      0.0,
+      0.06015037593984962
+    ],
+    [
+      0.6165413533834586,
+      0.03007518796992481,
+      0.045112781954887216,
+      0.08270676691729323,
+      0.17293233082706766,
+      0.05263157894736842
+    ],
+    [
+      0.40601503759398494,
+      0.03007518796992481,
+      0.06766917293233082,
+      0.03759398496240601,
+      0.0,
+      0.45864661654135336
+    ]
+  ],
+  "labels": [
+    "US",
+    "UK",
+    "Brazil",
+    "Spain",
+    "Germany",
+    "Italy"
+  ],
+  "invalid_output_rate": 0.0,
+  "prompt": "Listen to this 30-second music excerpt. Which release market of this track is it most likely from: US, UK, Brazil, Spain, Germany, Italy? Answer with exactly one of those labels and nothing else -- no punctuation, no explanation.",
+  "n_samples": 798,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}

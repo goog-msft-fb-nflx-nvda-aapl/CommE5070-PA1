@@ -1,0 +1,120 @@
+{
+  "top1": 0.34307992202729043,
+  "top3": 0.7007797270955166,
+  "confusion_matrix": [
+    [
+      104,
+      67,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      28,
+      138,
+      4,
+      1,
+      0,
+      0
+    ],
+    [
+      20,
+      88,
+      49,
+      14,
+      0,
+      0
+    ],
+    [
+      22,
+      80,
+      24,
+      45,
+      0,
+      0
+    ],
+    [
+      10,
+      96,
+      16,
+      43,
+      6,
+      0
+    ],
+    [
+      11,
+      101,
+      11,
+      32,
+      6,
+      10
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.6081871345029239,
+      0.391812865497076,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.16374269005847952,
+      0.8070175438596491,
+      0.023391812865497075,
+      0.005847953216374269,
+      0.0,
+      0.0
+    ],
+    [
+      0.11695906432748537,
+      0.5146198830409356,
+      0.28654970760233917,
+      0.08187134502923976,
+      0.0,
+      0.0
+    ],
+    [
+      0.1286549707602339,
+      0.4678362573099415,
+      0.14035087719298245,
+      0.2631578947368421,
+      0.0,
+      0.0
+    ],
+    [
+      0.05847953216374269,
+      0.5614035087719298,
+      0.0935672514619883,
+      0.25146198830409355,
+      0.03508771929824561,
+      0.0
+    ],
+    [
+      0.06432748538011696,
+      0.5906432748538012,
+      0.06432748538011696,
+      0.1871345029239766,
+      0.03508771929824561,
+      0.05847953216374269
+    ]
+  ],
+  "labels": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s"
+  ],
+  "mean_abs_decade_error": 1.4210526315789473,
+  "acc_within_1_decade": 0.6101364522417154,
+  "adjacent_fraction_of_errors": 0.4065281899109792,
+  "quadratic_weighted_kappa": 0.27662590820485555,
+  "invalid_output_rate": 0.0,
+  "prompt": "Listen to this 30-second music excerpt. Briefly consider its production style, instrumentation, and mastering, then decide which decade this track was released in it is most likely from: 1960s, 1970s, 1980s, 1990s, 2000s, 2010s. End your response with a final line in exactly this format: 'Answer: <label>' using exactly one of the given labels.",
+  "n_samples": 1026,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}

@@ -1,0 +1,1328 @@
+[
+  {
+    "sample_id": "B_007c484b6818",
+    "raw_output": "Answer: Germany",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.226185083342595,
+      "UK": -4.7822435696452885,
+      "Brazil": -4.879754861149195,
+      "Spain": -4.454700628869735,
+      "Germany": -3.146338696234428,
+      "Italy": -4.114139477365218
+    }
+  },
+  {
+    "sample_id": "B_01a4fa3fe992",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.045128504316381,
+      "UK": -3.1029517227216274,
+      "Brazil": -5.1730146406892645,
+      "Spain": -4.975416819135717,
+      "Germany": -5.099917729576798,
+      "Italy": -5.055816332380346
+    }
+  },
+  {
+    "sample_id": "B_022c2f8dc19a",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.3037568330061426,
+      "UK": -4.302343527405658,
+      "Brazil": -3.74467293414394,
+      "Spain": -4.229838212260802,
+      "Germany": -3.9678295452686143,
+      "Italy": -4.048117796509662
+    }
+  },
+  {
+    "sample_id": "B_02d2444c09a3",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -2.98148267464785,
+      "UK": -3.601226687401019,
+      "Brazil": -4.347057223289691,
+      "Spain": -4.480784296959125,
+      "Germany": -4.410626610089821,
+      "Italy": -4.380472063987933
+    }
+  },
+  {
+    "sample_id": "B_033aece126da",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.154649545586532,
+      "UK": -3.876471360361999,
+      "Brazil": -4.042122999664571,
+      "Spain": -4.15052970234198,
+      "Germany": -4.111062526540384,
+      "Italy": -4.073824723399109
+    }
+  },
+  {
+    "sample_id": "B_0449c50279fd",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.621666709528047,
+      "UK": -5.099568168268282,
+      "Brazil": -5.0393731990910355,
+      "Spain": -3.2698473532454955,
+      "Germany": -4.972920536940971,
+      "Italy": -3.3709279298242714
+    }
+  },
+  {
+    "sample_id": "B_0606553d288f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1319284637350697,
+      "UK": -3.594816247580335,
+      "Brazil": -4.704051693238701,
+      "Spain": -4.467765847800062,
+      "Germany": -4.5464872121392546,
+      "Italy": -4.289304137188083
+    }
+  },
+  {
+    "sample_id": "B_0c623488dbf1",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -3.913870453789059,
+      "UK": -4.269767085665687,
+      "Brazil": -3.5278590519768236,
+      "Spain": -3.8867091734749315,
+      "Germany": -4.427892963046058,
+      "Italy": -3.2859544753573573
+    }
+  },
+  {
+    "sample_id": "B_0cf44d0e5aa7",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.3248763679239346,
+      "UK": -3.421367208041071,
+      "Brazil": -4.353277166562596,
+      "Spain": -4.149254997449437,
+      "Germany": -4.181474884229222,
+      "Italy": -4.156202514844456
+    }
+  },
+  {
+    "sample_id": "B_0d0ab9eed1ea",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.303860982131785,
+      "UK": -4.697392463556753,
+      "Brazil": -4.786396662266877,
+      "Spain": -2.9600605168658753,
+      "Germany": -4.697543779881623,
+      "Italy": -4.148643255106435
+    }
+  },
+  {
+    "sample_id": "B_0e8bf622b5b9",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.168217082760748,
+      "UK": -4.0162243047774,
+      "Brazil": -4.59617519372902,
+      "Spain": -4.571370442650732,
+      "Germany": -4.483120282433447,
+      "Italy": -4.448487917524592
+    }
+  },
+  {
+    "sample_id": "B_0f7563a35a96",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.36337864389922,
+      "UK": -4.9875413178494155,
+      "Brazil": -2.957738712339657,
+      "Spain": -4.817598144123015,
+      "Germany": -4.830509622801401,
+      "Italy": -4.503675897825815
+    }
+  },
+  {
+    "sample_id": "B_0fa5ccababcf",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.212044457478745,
+      "UK": -3.762504299365901,
+      "Brazil": -3.989405035856786,
+      "Spain": -3.9755322534674633,
+      "Germany": -4.234253922982437,
+      "Italy": -4.157315929614924
+    }
+  },
+  {
+    "sample_id": "B_13918a12adca",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.156902740360844,
+      "UK": -4.04178281621292,
+      "Brazil": -4.672363082529652,
+      "Spain": -4.640332976938832,
+      "Germany": -4.476958076120961,
+      "Italy": -4.434254447580922
+    }
+  },
+  {
+    "sample_id": "B_14c07e31cabd",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.16342453159632,
+      "UK": -4.8646199305627915,
+      "Brazil": -3.0441357915375797,
+      "Spain": -4.708535234110968,
+      "Germany": -4.952110330241339,
+      "Italy": -4.51773361362757
+    }
+  },
+  {
+    "sample_id": "B_1d029a46b04f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.169299572653472,
+      "UK": -4.038551131831507,
+      "Brazil": -4.4695404767462605,
+      "Spain": -4.503047188070316,
+      "Germany": -4.380773981359501,
+      "Italy": -4.374942262914677
+    }
+  },
+  {
+    "sample_id": "B_1d3fc0cfce49",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1103171109140626,
+      "UK": -3.5313102800628258,
+      "Brazil": -4.168574213880372,
+      "Spain": -4.182170112826498,
+      "Germany": -4.33227884759314,
+      "Italy": -4.293284058469605
+    }
+  },
+  {
+    "sample_id": "B_20c23d10897b",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1747680305337176,
+      "UK": -3.3823088406419024,
+      "Brazil": -4.495620687692887,
+      "Spain": -4.299154559661474,
+      "Germany": -4.38282422213706,
+      "Italy": -4.262604673593766
+    }
+  },
+  {
+    "sample_id": "B_21b8b9504576",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.362817486074467,
+      "UK": -4.932807644155521,
+      "Brazil": -5.087333400991459,
+      "Spain": -4.163710951752364,
+      "Germany": -4.859063506073653,
+      "Italy": -3.179314330167472
+    }
+  },
+  {
+    "sample_id": "B_220ad0950ab6",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.243026177013235,
+      "UK": -4.830096959992564,
+      "Brazil": -5.0688385167959495,
+      "Spain": -4.192736387177622,
+      "Germany": -4.769865115408417,
+      "Italy": -3.1369518835587464
+    }
+  },
+  {
+    "sample_id": "B_235e59cedbb9",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.001944621295479,
+      "UK": -4.4646267095116245,
+      "Brazil": -5.155442317218331,
+      "Spain": -4.166130463173734,
+      "Germany": -4.461649656187244,
+      "Italy": -3.075892552624888
+    }
+  },
+  {
+    "sample_id": "B_23f6c68ce7a1",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.746219197880843,
+      "UK": -4.333657781254867,
+      "Brazil": -4.09036529061359,
+      "Spain": -2.9850503603335405,
+      "Germany": -4.399378021529931,
+      "Italy": -4.043830752344547
+    }
+  },
+  {
+    "sample_id": "B_29ba1bae7f9a",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.023500064964537,
+      "UK": -3.655821442559803,
+      "Brazil": -4.396980166390979,
+      "Spain": -4.393629908517444,
+      "Germany": -4.100820183709705,
+      "Italy": -4.2134503125701785
+    }
+  },
+  {
+    "sample_id": "B_2d1144798a47",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0551366606796364,
+      "UK": -3.351604421878316,
+      "Brazil": -4.38112326457546,
+      "Spain": -4.196396549487569,
+      "Germany": -4.214406688952901,
+      "Italy": -4.100022911970275
+    }
+  },
+  {
+    "sample_id": "B_41bc89f1f599",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1508941649396243,
+      "UK": -3.896901806096139,
+      "Brazil": -3.3765490848818445,
+      "Spain": -3.933914542098743,
+      "Germany": -3.897883136967721,
+      "Italy": -3.710394581059518
+    }
+  },
+  {
+    "sample_id": "B_450fb66e02c7",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0579228400686893,
+      "UK": -3.399044831544112,
+      "Brazil": -4.297881642927678,
+      "Spain": -4.334980845401636,
+      "Germany": -4.3280336458980555,
+      "Italy": -4.292677442183049
+    }
+  },
+  {
+    "sample_id": "B_47eb9eba0af4",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.704091985979782,
+      "UK": -4.421758929847783,
+      "Brazil": -3.979426344195114,
+      "Spain": -2.9857603311132457,
+      "Germany": -4.426968216855433,
+      "Italy": -4.215060512184209
+    }
+  },
+  {
+    "sample_id": "B_50102c3b7d22",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.14915380833069,
+      "UK": -3.5790050025534583,
+      "Brazil": -4.191665092682039,
+      "Spain": -4.006527979746655,
+      "Germany": -3.828654050405021,
+      "Italy": -4.08575542725642
+    }
+  },
+  {
+    "sample_id": "B_51c61db82099",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.67894907773128,
+      "UK": -3.172540694282361,
+      "Brazil": -4.63838454068294,
+      "Spain": -4.416626016106117,
+      "Germany": -4.160532673007158,
+      "Italy": -4.57798103472184
+    }
+  },
+  {
+    "sample_id": "B_53ab4248e799",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.562237143461364,
+      "UK": -5.068368633532979,
+      "Brazil": -3.0021636088137407,
+      "Spain": -4.930101116443136,
+      "Germany": -5.072028835559347,
+      "Italy": -4.76583294068223
+    }
+  },
+  {
+    "sample_id": "B_550c82a44dde",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.313355743797729,
+      "UK": -3.6368201572816665,
+      "Brazil": -4.581814765842864,
+      "Spain": -4.263129552118092,
+      "Germany": -3.9344304401796157,
+      "Italy": -4.187246958327402
+    }
+  },
+  {
+    "sample_id": "B_55bdcf43a277",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.42009480792088,
+      "UK": -5.0154482523381985,
+      "Brazil": -2.9175074696322554,
+      "Spain": -4.863933563210594,
+      "Germany": -4.827836672443179,
+      "Italy": -4.591719309467105
+    }
+  },
+  {
+    "sample_id": "B_58bbc8b17c59",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.366805632878216,
+      "UK": -5.039466142623496,
+      "Brazil": -2.9875914131292425,
+      "Spain": -4.891889810531211,
+      "Germany": -4.928528070418906,
+      "Italy": -4.571812232304485
+    }
+  },
+  {
+    "sample_id": "B_58cc41574fbe",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.388571778898647,
+      "UK": -5.063310344979375,
+      "Brazil": -3.072034257119109,
+      "Spain": -4.869694431588262,
+      "Germany": -5.1612530151657365,
+      "Italy": -4.570522665942917
+    }
+  },
+  {
+    "sample_id": "B_5ae0b896d915",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.150183498768456,
+      "UK": -3.6244788168951345,
+      "Brazil": -3.8870542843227063,
+      "Spain": -4.070772011983839,
+      "Germany": -4.148958047140089,
+      "Italy": -4.120810985474236
+    }
+  },
+  {
+    "sample_id": "B_5ced4de80cb2",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1593000788937693,
+      "UK": -3.803154547954667,
+      "Brazil": -4.236844619060624,
+      "Spain": -4.36054539675024,
+      "Germany": -4.276866515422928,
+      "Italy": -4.1443830330620886
+    }
+  },
+  {
+    "sample_id": "B_675ff44fc9a6",
+    "raw_output": "Answer: Germany",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.371015946010933,
+      "UK": -5.080673932969755,
+      "Brazil": -5.374707619289741,
+      "Spain": -4.984473625759468,
+      "Germany": -3.0858202948572093,
+      "Italy": -4.459579229295438
+    }
+  },
+  {
+    "sample_id": "B_69062b4d04a5",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1428343847110227,
+      "UK": -3.782952983649011,
+      "Brazil": -4.09352147526685,
+      "Spain": -4.078686435492273,
+      "Germany": -3.889618277024662,
+      "Italy": -3.915375112962162
+    }
+  },
+  {
+    "sample_id": "B_6f5b80a9f689",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0731836755276163,
+      "UK": -3.59160864345237,
+      "Brazil": -4.863370219787005,
+      "Spain": -4.718355139017149,
+      "Germany": -4.339734991312071,
+      "Italy": -4.491748769998594
+    }
+  },
+  {
+    "sample_id": "B_700a0812e908",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0617551405624304,
+      "UK": -3.617416024148042,
+      "Brazil": -4.707000692625418,
+      "Spain": -4.393119136432385,
+      "Germany": -4.098417560199475,
+      "Italy": -4.132527629474377
+    }
+  },
+  {
+    "sample_id": "B_71c8c7a07ba6",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.7409296830228413,
+      "UK": -4.484393835041071,
+      "Brazil": -3.9563481807441954,
+      "Spain": -3.0196950733394865,
+      "Germany": -4.299273252460504,
+      "Italy": -3.7430799007148985
+    }
+  },
+  {
+    "sample_id": "B_7d050a5269fb",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.266422768388414,
+      "UK": -3.9356500704628465,
+      "Brazil": -3.9651510317665575,
+      "Spain": -4.116505185717567,
+      "Germany": -4.045241236641232,
+      "Italy": -4.087491869880978
+    }
+  },
+  {
+    "sample_id": "B_7edf8cf51fa1",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.4621251819480676,
+      "UK": -3.1810744800119815,
+      "Brazil": -4.9574524956891155,
+      "Spain": -4.619179765179676,
+      "Germany": -4.211091398989083,
+      "Italy": -4.467962304547352
+    }
+  },
+  {
+    "sample_id": "B_8108811dadb2",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1470238955298555,
+      "UK": -3.526724576103637,
+      "Brazil": -4.171722172844359,
+      "Spain": -3.903444686678995,
+      "Germany": -3.7795039009530833,
+      "Italy": -4.0105400871713455
+    }
+  },
+  {
+    "sample_id": "B_81251e0db31f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1206462283516885,
+      "UK": -3.822311162907378,
+      "Brazil": -4.5800771712844535,
+      "Spain": -4.438762346862252,
+      "Germany": -4.425955772358672,
+      "Italy": -4.394484202025827
+    }
+  },
+  {
+    "sample_id": "B_83aff42e7239",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -3.559098839512444,
+      "UK": -4.2369514701276785,
+      "Brazil": -3.2330888109912244,
+      "Spain": -3.6523809033145276,
+      "Germany": -3.9897654451439544,
+      "Italy": -3.716852466017978
+    }
+  },
+  {
+    "sample_id": "B_87149914b371",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.003105163503885,
+      "UK": -4.52429072055141,
+      "Brazil": -4.363707860240538,
+      "Spain": -2.8641710181327653,
+      "Germany": -4.477832158336241,
+      "Italy": -4.112735748220682
+    }
+  },
+  {
+    "sample_id": "B_885568afc061",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.440958897219389,
+      "UK": -5.052362680381823,
+      "Brazil": -2.9910095805389574,
+      "Spain": -4.9346719582342,
+      "Germany": -4.995993534670561,
+      "Italy": -4.7035489876531456
+    }
+  },
+  {
+    "sample_id": "B_889540221b89",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.063734302868397,
+      "UK": -3.7194982766607914,
+      "Brazil": -4.214309970488102,
+      "Spain": -4.30481231207644,
+      "Germany": -4.368490417748641,
+      "Italy": -4.193869868864567
+    }
+  },
+  {
+    "sample_id": "B_8b78937b44e1",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -3.7435062328107356,
+      "UK": -4.402108311566432,
+      "Brazil": -3.061722884488821,
+      "Spain": -3.943744142763535,
+      "Germany": -4.340435782981634,
+      "Italy": -3.9558351436383723
+    }
+  },
+  {
+    "sample_id": "B_8f4ab6bb7c02",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.182978471034706,
+      "UK": -3.616355419073443,
+      "Brazil": -4.463802575979571,
+      "Spain": -4.347084283743243,
+      "Germany": -4.087266762965858,
+      "Italy": -4.27927764248246
+    }
+  },
+  {
+    "sample_id": "B_99f65134c641",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.209311485213523,
+      "UK": -4.862436930261538,
+      "Brazil": -3.0364488263154876,
+      "Spain": -4.710165341618146,
+      "Germany": -4.69179534904409,
+      "Italy": -4.378959655684715
+    }
+  },
+  {
+    "sample_id": "B_9cdcc40848cc",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.2334804732757525,
+      "UK": -4.006477037981919,
+      "Brazil": -4.708215713417303,
+      "Spain": -4.4163160323259945,
+      "Germany": -3.828588167742661,
+      "Italy": -4.152131398435206
+    }
+  },
+  {
+    "sample_id": "B_a0af7a755f77",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.155820806727206,
+      "UK": -4.67312204828401,
+      "Brazil": -4.568293531641757,
+      "Spain": -2.9504139745289044,
+      "Germany": -4.654292066798007,
+      "Italy": -4.106027563319003
+    }
+  },
+  {
+    "sample_id": "B_a0ce59fbdb77",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.4254546959200525,
+      "UK": -3.2077496050793948,
+      "Brazil": -4.792288660903675,
+      "Spain": -4.499133944411976,
+      "Germany": -4.34165942658971,
+      "Italy": -4.4673378069201135
+    }
+  },
+  {
+    "sample_id": "B_a1c2276456aa",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.064587970540136,
+      "UK": -3.9686079422287244,
+      "Brazil": -4.578914682035854,
+      "Spain": -4.558237433398972,
+      "Germany": -4.373851180042038,
+      "Italy": -4.239052812223842
+    }
+  },
+  {
+    "sample_id": "B_a59d7ed218f8",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.545446395840069,
+      "UK": -4.331131617194235,
+      "Brazil": -3.900399843817771,
+      "Spain": -3.024211267596305,
+      "Germany": -4.364967981940329,
+      "Italy": -4.087562243109763
+    }
+  },
+  {
+    "sample_id": "B_aaafa76a5afb",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.347743569718053,
+      "UK": -3.9575756777388356,
+      "Brazil": -4.47206644108519,
+      "Spain": -4.373533764388412,
+      "Germany": -4.003794549809148,
+      "Italy": -4.090433636214584
+    }
+  },
+  {
+    "sample_id": "B_aaf96e732265",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.244184573422293,
+      "UK": -3.3667953013682563,
+      "Brazil": -4.252400199503124,
+      "Spain": -4.281233270893911,
+      "Germany": -4.206153035094758,
+      "Italy": -4.181276758442739
+    }
+  },
+  {
+    "sample_id": "B_ab933d1646c4",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.3291723926134487,
+      "UK": -3.73128346594846,
+      "Brazil": -4.067265152858454,
+      "Spain": -4.240755677150446,
+      "Germany": -3.9416296878722883,
+      "Italy": -4.108375827398656
+    }
+  },
+  {
+    "sample_id": "B_ac016c46e914",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.084299027820331,
+      "UK": -3.7457507053016648,
+      "Brazil": -4.345874349176786,
+      "Spain": -4.157615939676664,
+      "Germany": -4.229016582071684,
+      "Italy": -4.265476186970773
+    }
+  },
+  {
+    "sample_id": "B_b05d6ee46da0",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.118704001063937,
+      "UK": -3.858625252996717,
+      "Brazil": -4.168567498480115,
+      "Spain": -4.53751571968678,
+      "Germany": -4.580674886658623,
+      "Italy": -4.511349439576104
+    }
+  },
+  {
+    "sample_id": "B_b066d818b297",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -3.5765635966454283,
+      "UK": -4.293758392253949,
+      "Brazil": -3.0811072189802267,
+      "Spain": -4.484156608501507,
+      "Germany": -4.198678413946861,
+      "Italy": -3.9816230932071144
+    }
+  },
+  {
+    "sample_id": "B_b3422bcc415c",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.1113250652427573,
+      "UK": -3.61942338938267,
+      "Brazil": -4.279215335793803,
+      "Spain": -4.158500512388855,
+      "Germany": -4.141060352273295,
+      "Italy": -4.137128670958191
+    }
+  },
+  {
+    "sample_id": "B_b75081eeb64b",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.725415627059192,
+      "UK": -4.2068675358065475,
+      "Brazil": -4.378340721027901,
+      "Spain": -2.763321290311069,
+      "Germany": -4.321378389891834,
+      "Italy": -3.9291551112103966
+    }
+  },
+  {
+    "sample_id": "B_b8256aa710bc",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.291893800069981,
+      "UK": -5.0468983649910415,
+      "Brazil": -2.9700414637427457,
+      "Spain": -4.973716258972975,
+      "Germany": -5.099279244711094,
+      "Italy": -4.7419918377897075
+    }
+  },
+  {
+    "sample_id": "B_b9d4bd40dabf",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.035291373692113,
+      "UK": -3.6213038762034557,
+      "Brazil": -4.601719617806036,
+      "Spain": -4.911128123563685,
+      "Germany": -4.937217156054733,
+      "Italy": -4.504008690478561
+    }
+  },
+  {
+    "sample_id": "B_bd49b44fb472",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -2.9481920996725726,
+      "UK": -3.7037491797824864,
+      "Brazil": -4.380355993849055,
+      "Spain": -4.431580702406184,
+      "Germany": -4.260702927849707,
+      "Italy": -4.228943983656184
+    }
+  },
+  {
+    "sample_id": "B_beaa2bb0b89b",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.188551743535451,
+      "UK": -3.7864301996511736,
+      "Brazil": -3.9884451227468767,
+      "Spain": -4.006379921941213,
+      "Germany": -4.013576984115692,
+      "Italy": -3.952228704798472
+    }
+  },
+  {
+    "sample_id": "B_c7809dcd0640",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.325924396444559,
+      "UK": -4.8697543143522735,
+      "Brazil": -5.043664773234923,
+      "Spain": -2.8845463866285477,
+      "Germany": -4.634029865194559,
+      "Italy": -4.1790365377358585
+    }
+  },
+  {
+    "sample_id": "B_c7e70dd767df",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.217965443885987,
+      "UK": -4.0083128213451955,
+      "Brazil": -3.8655414183504035,
+      "Spain": -4.068564375198548,
+      "Germany": -4.108243266698385,
+      "Italy": -3.9777240355379035
+    }
+  },
+  {
+    "sample_id": "B_c954e68e5b33",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.174015601426921,
+      "UK": -4.113954146653971,
+      "Brazil": -3.9855778216824547,
+      "Spain": -3.267128864875,
+      "Germany": -4.233547528535685,
+      "Italy": -4.18646971379773
+    }
+  },
+  {
+    "sample_id": "B_ca75f4db02f5",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.260246356268908,
+      "UK": -4.060498317023303,
+      "Brazil": -4.11929710700133,
+      "Spain": -4.256259043952014,
+      "Germany": -4.019475062628771,
+      "Italy": -4.119999647081083
+    }
+  },
+  {
+    "sample_id": "B_cbd6d40a4231",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.112178504413047,
+      "UK": -3.3765179713027464,
+      "Brazil": -4.6498546202437865,
+      "Spain": -4.3190548816777055,
+      "Germany": -4.091174165353853,
+      "Italy": -4.183737476612805
+    }
+  },
+  {
+    "sample_id": "B_cc76a89f5dcc",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.550883293033015,
+      "UK": -3.1265341638330333,
+      "Brazil": -4.775743802269669,
+      "Spain": -4.49076493569252,
+      "Germany": -4.1336619058056385,
+      "Italy": -4.486230214318009
+    }
+  },
+  {
+    "sample_id": "B_ce67238ec511",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -2.969988425465999,
+      "UK": -3.7125898201193195,
+      "Brazil": -3.6790087221985837,
+      "Spain": -4.174877007695613,
+      "Germany": -3.728011369598486,
+      "Italy": -3.771295150014339
+    }
+  },
+  {
+    "sample_id": "B_cfa197f66fa2",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.041471004443641,
+      "UK": -3.458918094592567,
+      "Brazil": -4.046080112414832,
+      "Spain": -4.0157608985476445,
+      "Germany": -4.085898876147742,
+      "Italy": -4.015306313790158
+    }
+  },
+  {
+    "sample_id": "B_d397202f7eff",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.063157161016231,
+      "UK": -4.76700146986938,
+      "Brazil": -2.9278809725631922,
+      "Spain": -4.732845942118729,
+      "Germany": -4.701570828695064,
+      "Italy": -4.349780718424881
+    }
+  },
+  {
+    "sample_id": "B_d4d7691cfb36",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0938185055529175,
+      "UK": -3.677318731891622,
+      "Brazil": -4.685913562722514,
+      "Spain": -4.6462267239367065,
+      "Germany": -4.343694845783223,
+      "Italy": -4.391993681537618
+    }
+  },
+  {
+    "sample_id": "B_d5eeaab99e51",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.064061889993051,
+      "UK": -3.884696125931441,
+      "Brazil": -4.551886916107833,
+      "Spain": -4.471235314952234,
+      "Germany": -4.414294918325443,
+      "Italy": -4.215932011551558
+    }
+  },
+  {
+    "sample_id": "B_d738dbb99fa4",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.6082406837679932,
+      "UK": -3.139012584978142,
+      "Brazil": -4.56626792738219,
+      "Spain": -4.426801641676623,
+      "Germany": -4.196703235202828,
+      "Italy": -4.398447950575549
+    }
+  },
+  {
+    "sample_id": "B_da0e2ef5c2eb",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.241577982731542,
+      "UK": -3.390064755904556,
+      "Brazil": -4.1941730577030585,
+      "Spain": -4.043856819299738,
+      "Germany": -3.9498544134973295,
+      "Italy": -4.1763914821822254
+    }
+  },
+  {
+    "sample_id": "B_de366c3afcc0",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.339400966903971,
+      "UK": -5.084928552251465,
+      "Brazil": -3.038007455509311,
+      "Spain": -5.005960186264322,
+      "Germany": -5.0370747645113925,
+      "Italy": -4.680350979111002
+    }
+  },
+  {
+    "sample_id": "B_de7879ffd48f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.079753875671789,
+      "UK": -3.531014124491776,
+      "Brazil": -4.2444680531213335,
+      "Spain": -3.9469302494714307,
+      "Germany": -4.28669198348022,
+      "Italy": -4.068927764831945
+    }
+  },
+  {
+    "sample_id": "B_e6107a40e9d5",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.084353287932875,
+      "UK": -4.748599131820204,
+      "Brazil": -4.686805486597223,
+      "Spain": -3.971578438994887,
+      "Germany": -4.659237941024306,
+      "Italy": -3.1289865075723355
+    }
+  },
+  {
+    "sample_id": "B_e65a9bb9ea27",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.3699274459734925,
+      "UK": -4.713995655303734,
+      "Brazil": -4.896826465850609,
+      "Spain": -2.9279692743475607,
+      "Germany": -4.727325161224144,
+      "Italy": -4.051185885991193
+    }
+  },
+  {
+    "sample_id": "B_e887687df493",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -3.6207560299668935,
+      "UK": -3.085291733228587,
+      "Brazil": -4.670186877134863,
+      "Spain": -4.336672027789973,
+      "Germany": -4.42877217122259,
+      "Italy": -4.553438703103287
+    }
+  },
+  {
+    "sample_id": "B_ea54f022e8d4",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -3.665469447714713,
+      "UK": -4.337639768861361,
+      "Brazil": -4.159814794801302,
+      "Spain": -2.926882992131141,
+      "Germany": -4.2029723723159504,
+      "Italy": -3.6947256326105467
+    }
+  },
+  {
+    "sample_id": "B_ec326d639aad",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.231317837975439,
+      "UK": -4.778890927575048,
+      "Brazil": -4.511493364912288,
+      "Spain": -2.9779173433204655,
+      "Germany": -4.651320775292334,
+      "Italy": -3.534768104495621
+    }
+  },
+  {
+    "sample_id": "B_ec8878ce06b5",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.166415611856185,
+      "UK": -4.734517574263616,
+      "Brazil": -3.021300077391667,
+      "Spain": -4.736281553857528,
+      "Germany": -4.674203395796819,
+      "Italy": -4.4129195212851
+    }
+  },
+  {
+    "sample_id": "B_ef64273eee4e",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.188146034841338,
+      "UK": -4.8609054088240855,
+      "Brazil": -2.9583823630855477,
+      "Spain": -4.785347064300974,
+      "Germany": -5.019778966868519,
+      "Italy": -4.601502497955759
+    }
+  },
+  {
+    "sample_id": "B_efe2cf1ad3d8",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -2.965717563942841,
+      "UK": -3.679006179090114,
+      "Brazil": -4.042908271070094,
+      "Spain": -4.1069452761767025,
+      "Germany": -4.075368483777614,
+      "Italy": -4.174005826230617
+    }
+  },
+  {
+    "sample_id": "B_f3407cab7d7b",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.3187174796033405,
+      "UK": -4.623156706389636,
+      "Brazil": -4.9453864096570515,
+      "Spain": -2.88677969813034,
+      "Germany": -4.5809760092664265,
+      "Italy": -3.8591406344342736
+    }
+  },
+  {
+    "sample_id": "B_f34458365689",
+    "raw_output": "Answer: Italy",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.219766100187674,
+      "UK": -4.807810584644055,
+      "Brazil": -4.769017974475598,
+      "Spain": -3.9010052283004675,
+      "Germany": -4.613290270109549,
+      "Italy": -3.095858996053115
+    }
+  },
+  {
+    "sample_id": "B_f6d4bb0e62a0",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0455320474648033,
+      "UK": -3.5972189900421654,
+      "Brazil": -3.655038992280121,
+      "Spain": -3.8520757354441835,
+      "Germany": -3.6902413365387474,
+      "Italy": -3.7443887389842225
+    }
+  },
+  {
+    "sample_id": "B_f7fd3ba8af94",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.11966506628778,
+      "UK": -3.8695923088847244,
+      "Brazil": -3.736344933396443,
+      "Spain": -3.9442602394877517,
+      "Germany": -3.896005272751912,
+      "Italy": -3.8443313835917556
+    }
+  },
+  {
+    "sample_id": "B_f80110c84970",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.2134206493071056,
+      "UK": -3.4157191116980052,
+      "Brazil": -4.497657855289314,
+      "Spain": -4.283886671003832,
+      "Germany": -4.04618970546835,
+      "Italy": -4.238445679284268
+    }
+  },
+  {
+    "sample_id": "B_fa0e895ecfd0",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0670087535787993,
+      "UK": -3.578832705776828,
+      "Brazil": -4.598623116772312,
+      "Spain": -4.393400986950534,
+      "Germany": -4.05733720457647,
+      "Italy": -4.190167824388482
+    }
+  },
+  {
+    "sample_id": "B_fb1c266c084e",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.073262770907604,
+      "UK": -3.4728593030934767,
+      "Brazil": -4.555375695165519,
+      "Spain": -4.3323510089879465,
+      "Germany": -4.23417913907421,
+      "Italy": -4.25230658048046
+    }
+  },
+  {
+    "sample_id": "B_fbfcce1b9fa1",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.159391124949252,
+      "UK": -3.908273418650424,
+      "Brazil": -4.391312241460279,
+      "Spain": -4.2961473861390305,
+      "Germany": -4.07395589342256,
+      "Italy": -3.8103717564596686
+    }
+  },
+  {
+    "sample_id": "B_fc28ecaa8c0e",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.0134497085937255,
+      "UK": -3.504610101354956,
+      "Brazil": -4.764963587098161,
+      "Spain": -4.572361111613948,
+      "Germany": -4.072066028885881,
+      "Italy": -4.193911989502946
+    }
+  },
+  {
+    "sample_id": "B_fd25e478b03b",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.620027542050593,
+      "UK": -4.964195887184057,
+      "Brazil": -4.798500060971492,
+      "Spain": -2.9750849206605685,
+      "Germany": -5.045193036333633,
+      "Italy": -4.180784543291641
+    }
+  }
+]

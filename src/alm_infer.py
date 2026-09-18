@@ -172,7 +172,12 @@ def run(dataset_key, model_name="qwen2audio", split="validation", device="cuda",
         raise NotImplementedError(f"wire up {model_name} loader (verify current HF class name at run time)")
 
     rows, _ = load_manifest(dataset_key, split)
-    out_dir = out_dir or os.path.join(RESULTS_DIR, "alm", f"{model_name}_{dataset_key}")
+    # split-suffix only for non-validation splits, so existing validation-split
+    # result paths (results/alm/{model}_{dataset}/) stay exactly as they were --
+    # this was previously unsuffixed regardless of split, which meant a --split train
+    # run would silently overwrite the validation results at the same path.
+    dir_name = f"{model_name}_{dataset_key}" if split == "validation" else f"{model_name}_{dataset_key}_{split}"
+    out_dir = out_dir or os.path.join(RESULTS_DIR, "alm", dir_name)
     os.makedirs(out_dir, exist_ok=True)
 
     for prompt_name, prompt_spec in PROMPTS.items():

@@ -1,0 +1,116 @@
+{
+  "top1": 0.5401002506265664,
+  "top3": 0.7518796992481203,
+  "confusion_matrix": [
+    [
+      122,
+      4,
+      0,
+      7,
+      0,
+      0
+    ],
+    [
+      98,
+      33,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      13,
+      0,
+      119,
+      1,
+      0,
+      0
+    ],
+    [
+      47,
+      6,
+      1,
+      76,
+      0,
+      3
+    ],
+    [
+      100,
+      4,
+      2,
+      2,
+      23,
+      2
+    ],
+    [
+      69,
+      3,
+      1,
+      2,
+      0,
+      58
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.9172932330827067,
+      0.03007518796992481,
+      0.0,
+      0.05263157894736842,
+      0.0,
+      0.0
+    ],
+    [
+      0.7368421052631579,
+      0.24812030075187969,
+      0.007518796992481203,
+      0.007518796992481203,
+      0.0,
+      0.0
+    ],
+    [
+      0.09774436090225563,
+      0.0,
+      0.8947368421052632,
+      0.007518796992481203,
+      0.0,
+      0.0
+    ],
+    [
+      0.3533834586466165,
+      0.045112781954887216,
+      0.007518796992481203,
+      0.5714285714285714,
+      0.0,
+      0.022556390977443608
+    ],
+    [
+      0.7518796992481203,
+      0.03007518796992481,
+      0.015037593984962405,
+      0.015037593984962405,
+      0.17293233082706766,
+      0.015037593984962405
+    ],
+    [
+      0.518796992481203,
+      0.022556390977443608,
+      0.007518796992481203,
+      0.015037593984962405,
+      0.0,
+      0.43609022556390975
+    ]
+  ],
+  "labels": [
+    "US",
+    "UK",
+    "Brazil",
+    "Spain",
+    "Germany",
+    "Italy"
+  ],
+  "invalid_output_rate": 0.006265664160401002,
+  "prompt": "Listen to this 30-second music excerpt. Briefly consider its production style, instrumentation, and mastering, then decide which release market of this track it is most likely from: US, UK, Brazil, Spain, Germany, Italy. End your response with a final line in exactly this format: 'Answer: <label>' using exactly one of the given labels.",
+  "n_samples": 798,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}

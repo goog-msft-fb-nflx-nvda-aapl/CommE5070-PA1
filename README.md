@@ -10,13 +10,13 @@ Code, experiment log, and TODO tracking live here. GPU experiments run on the la
 docs/
   spec/       Description.md, lecture02*.md          — assignment spec + course lecture notes
   research/   SURVEY.md, RESEARCH_PROMPT.md, PLAN.md,
-              IMPROVEMENT_FINDINGS.md, IMPROVEMENT_RESEARCH_PROMPT.md,
-              survey_response_1/, survey_response_2/  — SOTA survey + improvement-round deep research (own + 4-way each) + reconciled plans
+              IMPROVEMENT_FINDINGS.md, IMPROVEMENT_FINDINGS_ROUND3.md, IMPROVEMENT_RESEARCH_PROMPT.md,
+              survey_response_1/, survey_response_2/, survey_response_3/  — SOTA survey + 2 rounds of improvement deep research (own + 4-way each) + reconciled plans
   progress/   WORKLOG.md, TODO.md                     — full experiment log + current status/queue
   ta/         TA_QUESTIONS_MATERIALS.md, TA_QUESTIONS_MATERIALS_2.md  — briefing material for drafting TA questions (2 rounds)
   REPRODUCE.md                                        — exact commands to reproduce every best-config number below
-src/          all pipeline code (data loading, baselines, MERT/MuQ probe/fine-tune, LoRA, ALM eval, ensembling, AF3 fusion, significance testing, etc.)
-results/       lightweight result summaries (json/csv) for every logged experiment; embeddings_preview/ has a few representative t-SNE/UMAP plots
+src/          all pipeline code (data loading, baselines, MERT/MuQ probe/fine-tune, LoRA, ALM eval, ensembling, AF3 fusion (validation-swept + OOF-refit), significance testing, etc.)
+results/       lightweight result summaries (json/csv) for every logged experiment, incl. results/alm/ (raw AF3 zero-shot predictions, validation + train splits); embeddings_preview/ has a few representative t-SNE/UMAP plots
 ```
 
 Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO.md` for current status — every other doc's path is listed above. **To reproduce any number below, see `docs/REPRODUCE.md`.**
@@ -25,11 +25,13 @@ Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO
 
 ## Current best results (validation set; see `docs/progress/WORKLOG.md` "CURRENT overall-best configs" for full detail + statistical-significance caveats)
 
+**Important, learned the hard way (2026-09-18/19)**: our first-pass fusion numbers were picked by sweeping the weight directly on the 102/132-sample validation set — the same set used to report the result. A leakage-free out-of-fold (OOF) refit on the training set showed Task 2's fusion number was substantially inflated by this (0.657 did not reproduce, landing at ≈0.588 instead); Task 1's held up much better (0.553 → 0.538, a small drop). **Always prefer the OOF-refit numbers below over the original validation-swept ones.**
+
 | task | config | top1 | top3 | notes |
 |---|---|---|---|---|
-| Task 1 (decade) | MuQ(layer1,SVM) probe + Audio Flamingo 3 (`direct` prompt) label-probability fusion, w_af3=0.5 | 0.553 | 0.849 | best point estimate; **not** statistically distinguishable from the row below at n=132 (bootstrap/McNemar) |
-| Task 1 (decade), statistically defensible | 3-way ensemble: fine-tuned MERT-v1-330M (0.2) + Short-Chunk CNN (0.4) + frozen MERT-v1-330M+SVM (0.4) | 0.523 | 0.856 | confirmed-best if a single conservative number is needed |
-| Task 2 (market) | MuQ(layer2,logreg) probe + Audio Flamingo 3 (`cot_then_answer` prompt) label-probability fusion, w_af3=0.4 | 0.657 | 0.882 | significantly beats every single-model config (p<0.01); not confirmed to beat AF3 alone (p=0.21) at n=102 |
+| Task 1 (decade) | MuQ(layer1,SVM) probe + Audio Flamingo 3 (`direct` prompt), OOF-refit fusion weight (fit on 1026 training-set out-of-fold predictions, not validation) | 0.538 | 0.864 | significantly beats AF3-alone (p=0.0055); not significantly different from the probe alone (p=0.29) or the row below |
+| Task 1 (decade), statistically defensible alternative | 3-way ensemble: fine-tuned MERT-v1-330M (0.2) + Short-Chunk CNN (0.4) + frozen MERT-v1-330M+SVM (0.4) | 0.523 | 0.856 | confirmed-best if the simplest, most conservative single number is needed |
+| Task 2 (market) | Audio Flamingo 3 zero-shot alone (`direct` prompt) — OOF-refit fusion converges to essentially the same place | ≈0.588 | 0.765-0.872 | the earlier 0.657 (validation-swept fusion) did **not** reproduce under OOF refit; fusion is confirmed to beat our own trained probes (p<0.01) but not confirmed to beat AF3 alone |
 
 ## Workflow
 

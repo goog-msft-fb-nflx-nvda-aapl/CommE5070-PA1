@@ -1,0 +1,120 @@
+{
+  "top1": 0.3333333333333333,
+  "top3": 0.6515151515151515,
+  "confusion_matrix": [
+    [
+      10,
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      14,
+      3,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      13,
+      4,
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      13,
+      1,
+      0,
+      0,
+      8
+    ],
+    [
+      0,
+      9,
+      0,
+      0,
+      0,
+      13
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.45454545454545453,
+      0.5454545454545454,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.18181818181818182,
+      0.8181818181818182,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.09090909090909091,
+      0.6363636363636364,
+      0.13636363636363635,
+      0.0,
+      0.0,
+      0.13636363636363635
+    ],
+    [
+      0.0,
+      0.5909090909090909,
+      0.18181818181818182,
+      0.0,
+      0.045454545454545456,
+      0.18181818181818182
+    ],
+    [
+      0.0,
+      0.5909090909090909,
+      0.045454545454545456,
+      0.0,
+      0.0,
+      0.36363636363636365
+    ],
+    [
+      0.0,
+      0.4090909090909091,
+      0.0,
+      0.0,
+      0.0,
+      0.5909090909090909
+    ]
+  ],
+  "labels": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s"
+  ],
+  "mean_abs_decade_error": 1.2651515151515151,
+  "acc_within_1_decade": 0.6590909090909091,
+  "adjacent_fraction_of_errors": 0.48863636363636365,
+  "quadratic_weighted_kappa": 0.51187648456057,
+  "invalid_output_rate": 0.007575757575757576,
+  "prompt": "Listen to this 30-second music excerpt. Briefly consider its production style, instrumentation, and mastering, then decide which decade this track was released in it is most likely from: 1960s, 1970s, 1980s, 1990s, 2000s, 2010s. End your response with a final line in exactly this format: 'Answer: <label>' using exactly one of the given labels.",
+  "n_samples": 132,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}

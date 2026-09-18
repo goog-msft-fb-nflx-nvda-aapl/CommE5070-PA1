@@ -1,0 +1,116 @@
+{
+  "top1": 0.5588235294117647,
+  "top3": 0.7745098039215687,
+  "confusion_matrix": [
+    [
+      17,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      12,
+      0,
+      0
+    ],
+    [
+      12,
+      1,
+      1,
+      1,
+      2,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      2,
+      0,
+      6
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.7058823529411765,
+      0.29411764705882354,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.11764705882352941,
+      0.0,
+      0.8823529411764706,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.23529411764705882,
+      0.058823529411764705,
+      0.0,
+      0.7058823529411765,
+      0.0,
+      0.0
+    ],
+    [
+      0.7058823529411765,
+      0.058823529411764705,
+      0.058823529411764705,
+      0.058823529411764705,
+      0.11764705882352941,
+      0.0
+    ],
+    [
+      0.5294117647058824,
+      0.0,
+      0.0,
+      0.11764705882352941,
+      0.0,
+      0.35294117647058826
+    ]
+  ],
+  "labels": [
+    "US",
+    "UK",
+    "Brazil",
+    "Spain",
+    "Germany",
+    "Italy"
+  ],
+  "invalid_output_rate": 0.0,
+  "prompt": "Listen to this 30-second music excerpt. Briefly consider its production style, instrumentation, and mastering, then decide which release market of this track it is most likely from: US, UK, Brazil, Spain, Germany, Italy. End your response with a final line in exactly this format: 'Answer: <label>' using exactly one of the given labels.",
+  "n_samples": 102,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}
