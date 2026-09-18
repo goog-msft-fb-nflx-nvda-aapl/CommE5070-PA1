@@ -55,6 +55,48 @@ def paired_bootstrap_diff(probs_a, probs_b, y_true, n_boot=10000, alpha=0.05):
             "excludes_zero": bool(lo > 0 or hi < 0), "frac_a_not_better": p_a_not_better}
 
 
+def brier_score_per_sample(probs, y_true, n_class):
+    """Multiclass Brier score per sample (sum of squared errors against the one-hot
+    target) -- a continuous scoring rule using the full probability vector, unlike
+    binarized top1 accuracy. Lower is better."""
+    onehot = np.eye(n_class)[y_true]
+    return ((probs - onehot) ** 2).sum(axis=1)
+
+
+def paired_wilcoxon_brier(probs_a, probs_b, y_true, n_class):
+    """Paired Wilcoxon signed-rank test on per-sample Brier scores -- substantially
+    more statistical power than McNemar at small n, since it uses the full probability
+    vector's quality per sample rather than collapsing each prediction to right/wrong.
+    Round-3 recommendation (2 of 4 sources, Gemini + Qwen)."""
+    from scipy.stats import wilcoxon
+    brier_a = brier_score_per_sample(probs_a, y_true, n_class)
+    brier_b = brier_score_per_sample(probs_b, y_true, n_class)
+    diff = brier_a - brier_b
+    if np.all(diff == 0):
+        return {"mean_brier_a": float(brier_a.mean()), "mean_brier_b": float(brier_b.mean()),
+                "wilcoxon_stat": None, "wilcoxon_p": 1.0}
+    stat, p = wilcoxon(brier_a, brier_b)
+    return {"mean_brier_a": float(brier_a.mean()), "mean_brier_b": float(brier_b.mean()),
+            "wilcoxon_stat": float(stat), "wilcoxon_p": float(p)}
+
+
+def mcnemar_one_sided(probs_a, probs_b, y_true):
+    """One-sided exact McNemar (binomial on discordant pairs) testing the specific
+    directional hypothesis 'a is at least as good as b' -- more appropriate than the
+    two-sided test when the hypothesis being checked is directional (as ours is: does
+    fusion beat AF3-alone, not merely differ from it). Round-3 recommendation (Qwen)."""
+    from scipy.stats import binomtest
+    preds_a, preds_b = probs_a.argmax(axis=1), probs_b.argmax(axis=1)
+    correct_a, correct_b = preds_a == y_true, preds_b == y_true
+    n01 = int(np.sum(correct_a & ~correct_b))  # a right, b wrong
+    n10 = int(np.sum(~correct_a & correct_b))  # a wrong, b right
+    n_discordant = n01 + n10
+    if n_discordant == 0:
+        return {"n01": n01, "n10": n10, "p_one_sided": 1.0}
+    result = binomtest(n01, n_discordant, 0.5, alternative="greater")
+    return {"n01": n01, "n10": n10, "p_one_sided": float(result.pvalue)}
+
+
 def mcnemar_exact(probs_a, probs_b, y_true):
     """Exact two-sided McNemar test (binomial on the discordant pairs) -- the standard
     paired test for two classifiers' predictions on the same sample set."""

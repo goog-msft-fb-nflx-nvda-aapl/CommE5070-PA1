@@ -1,0 +1,74 @@
+{
+  "oof_fused_nll_vs_af3_alone": {
+    "wilcoxon_brier": {
+      "mean_brier_a": 0.5706500888045387,
+      "mean_brier_b": 0.5821528778227757,
+      "wilcoxon_stat": 2543.0,
+      "wilcoxon_p": 0.7804457561293331
+    },
+    "mcnemar_one_sided": {
+      "n01": 1,
+      "n10": 0,
+      "p_one_sided": 0.5
+    },
+    "mcnemar_two_sided": {
+      "n01": 1,
+      "n10": 0,
+      "p_value": 1.0
+    }
+  },
+  "oof_fused_nll_vs_probe_alone": {
+    "wilcoxon_brier": {
+      "mean_brier_a": 0.5706500888045387,
+      "mean_brier_b": 0.6636956058023108,
+      "wilcoxon_stat": 1863.0,
+      "wilcoxon_p": 0.01081246962677917
+    },
+    "mcnemar_one_sided": {
+      "n01": 27,
+      "n10": 20,
+      "p_one_sided": 0.19084669883160638
+    },
+    "mcnemar_two_sided": {
+      "n01": 27,
+      "n10": 20,
+      "p_value": 0.38169339766321275
+    }
+  },
+  "oof_fused_acc_vs_af3_alone": {
+    "wilcoxon_brier": {
+      "mean_brier_a": 0.5849195850071894,
+      "mean_brier_b": 0.5821528778227757,
+      "wilcoxon_stat": 2476.0,
+      "wilcoxon_p": 0.6153887326035843
+    },
+    "mcnemar_one_sided": {
+      "n01": 6,
+      "n10": 3,
+      "p_one_sided": 0.25390625
+    },
+    "mcnemar_two_sided": {
+      "n01": 6,
+      "n10": 3,
+      "p_value": 0.5078125
+    }
+  },
+  "oof_fused_acc_vs_probe_alone": {
+    "wilcoxon_brier": {
+      "mean_brier_a": 0.5849195850071894,
+      "mean_brier_b": 0.6636956058023108,
+      "wilcoxon_stat": 1646.0,
+      "wilcoxon_p": 0.001063796122770204
+    },
+    "mcnemar_one_sided": {
+      "n01": 24,
+      "n10": 15,
+      "p_one_sided": 0.09979543345980349
+    },
+    "mcnemar_two_sided": {
+      "n01": 24,
+      "n10": 15,
+      "p_value": 0.19959086691960698
+    }
+  }
+}
