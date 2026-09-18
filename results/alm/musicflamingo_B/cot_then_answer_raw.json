@@ -1,0 +1,1328 @@
+[
+  {
+    "sample_id": "B_007c484b6818",
+    "raw_output": "The track\u2019s production style is raw and energetic, typical of early punk recordings, with a straightforward mix that emphasizes the guitars and drums. The instrumentation is classic punk rock: distorted electric guitars, a driving bass line, and a fast, punchy drum beat. The overall sound is unpolished and immediate, reflecting the",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.818466919357888,
+      "UK": -5.094724116420063,
+      "Brazil": -6.622007943883848,
+      "Spain": -5.086290456548643,
+      "Germany": -4.651949661667459,
+      "Italy": -5.243661659653299
+    }
+  },
+  {
+    "sample_id": "B_01a4fa3fe992",
+    "raw_output": "The track\u2019s raw, energetic production, fast tempo, and aggressive guitar work are characteristic of the UK punk scene of the late 1970s. The straightforward, high-energy instrumentation and rebellious attitude align it with the UK punk movement, making it most likely from the UK market.",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.6340651722469675,
+      "UK": -3.753605068894103,
+      "Brazil": -6.434730153453226,
+      "Spain": -5.645585319570576,
+      "Germany": -5.6077730865993844,
+      "Italy": -5.634304623973246
+    }
+  },
+  {
+    "sample_id": "B_022c2f8dc19a",
+    "raw_output": "The track features a polished, high-fidelity production typical of 1990s European power metal, with soaring, operatic male vocals, fast double-kick drumming, intricate guitar work, and a melodic, anthemic feel. The overall sound and style strongly suggest it is from Germany.  \nAnswer",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.745395637621793,
+      "UK": -5.761570192446622,
+      "Brazil": -5.077150242597175,
+      "Spain": -5.150174674461596,
+      "Germany": -4.679704643359098,
+      "Italy": -4.747478780220263
+    }
+  },
+  {
+    "sample_id": "B_02d2444c09a3",
+    "raw_output": "Answer: Chess",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.336542928474955,
+      "UK": -4.317649050809753,
+      "Brazil": -5.821466291206889,
+      "Spain": -5.3128898980794474,
+      "Germany": -4.833817009387228,
+      "Italy": -5.0341734928467
+    }
+  },
+  {
+    "sample_id": "B_033aece126da",
+    "raw_output": "The track features a polished, high-fidelity production style typical of modern rock releases, with a clear, punchy mix that emphasizes the guitars and drums. The instrumentation includes distorted electric guitars, a driving bass line, and energetic drumming, all of which are characteristic of contemporary rock music. The overall sound and production quality",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.4222558797337115,
+      "UK": -4.964088485731433,
+      "Brazil": -6.019616411222766,
+      "Spain": -5.393563554777454,
+      "Germany": -5.241599049263944,
+      "Italy": -5.314750955595325
+    }
+  },
+  {
+    "sample_id": "B_0449c50279fd",
+    "raw_output": "Answer: It's most likely from the Spanish market.",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -5.313027051083433,
+      "UK": -5.7554702629568055,
+      "Brazil": -6.111265964301613,
+      "Spain": -4.580914802344826,
+      "Germany": -5.495922075700946,
+      "Italy": -4.622867253414976
+    }
+  },
+  {
+    "sample_id": "B_0606553d288f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.024832634488121,
+      "UK": -4.246465909838055,
+      "Brazil": -5.605179298281048,
+      "Spain": -5.096437919496869,
+      "Germany": -4.752085833111778,
+      "Italy": -4.799797841270144
+    }
+  },
+  {
+    "sample_id": "B_0c623488dbf1",
+    "raw_output": "Answer: Italo disco",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.153789825038984,
+      "UK": -5.36511070211418,
+      "Brazil": -5.646516786810632,
+      "Spain": -5.001203523871179,
+      "Germany": -5.286315586961185,
+      "Italy": -4.547965592937544
+    }
+  },
+  {
+    "sample_id": "B_0cf44d0e5aa7",
+    "raw_output": "The track\u2019s raw, high-energy punk sound, fast tempo, and aggressive guitar work are characteristic of the early 1980s American hardcore punk scene. The production is deliberately unpolished, emphasizing a live, in-your-face feel that aligns with the DIY ethos of the genre. The instrumentation\u2014dist",
+    "parsed": null,
+    "label_scores": {
+      "US": -3.9685288463175916,
+      "UK": -4.423508742863002,
+      "Brazil": -5.5229277008911595,
+      "Spain": -4.742539822473191,
+      "Germany": -5.057887176090541,
+      "Italy": -4.755637903426153
+    }
+  },
+  {
+    "sample_id": "B_0d0ab9eed1ea",
+    "raw_output": "Answer: EMI",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.025173248897772,
+      "UK": -5.403757156978827,
+      "Brazil": -5.816248955379706,
+      "Spain": -4.203270655920885,
+      "Germany": -5.217344027808092,
+      "Italy": -4.688064636837225
+    }
+  },
+  {
+    "sample_id": "B_0e8bf622b5b9",
+    "raw_output": "Answer: 1980s pop",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.151031979165661,
+      "UK": -4.960384536030081,
+      "Brazil": -5.585036762796032,
+      "Spain": -5.426463612161267,
+      "Germany": -5.324541259052542,
+      "Italy": -5.067005960387178
+    }
+  },
+  {
+    "sample_id": "B_0f7563a35a96",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.770447560974087,
+      "UK": -5.9284189431152,
+      "Brazil": -3.8444977887750915,
+      "Spain": -5.099367925353969,
+      "Germany": -5.643462328938767,
+      "Italy": -4.996299573608364
+    }
+  },
+  {
+    "sample_id": "B_0fa5ccababcf",
+    "raw_output": "The track\u2019s production style is polished and high-fidelity, with a clean mix that emphasizes the electronic elements and the vocal line. The instrumentation is dominated by synthesizers, electronic drums, and a prominent bassline, typical of contemporary pop and dance music. The vocal delivery is melodic and expressive, fitting the pop genre",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.371322940123112,
+      "UK": -4.746433248452377,
+      "Brazil": -5.748825619947941,
+      "Spain": -5.018052965732447,
+      "Germany": -5.132517725559107,
+      "Italy": -5.28758612308108
+    }
+  },
+  {
+    "sample_id": "B_13918a12adca",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.055653762460376,
+      "UK": -4.802193832040454,
+      "Brazil": -5.450647544503833,
+      "Spain": -5.3292006171153234,
+      "Germany": -4.935098520557706,
+      "Italy": -4.862412007292733
+    }
+  },
+  {
+    "sample_id": "B_14c07e31cabd",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.9726303514714045,
+      "UK": -5.845434675303598,
+      "Brazil": -3.8637799518182874,
+      "Spain": -5.234574486501515,
+      "Germany": -5.379576215830942,
+      "Italy": -4.974832703359425
+    }
+  },
+  {
+    "sample_id": "B_1d029a46b04f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.003397309124314,
+      "UK": -5.085563424567226,
+      "Brazil": -5.361721439500495,
+      "Spain": -5.258267167548183,
+      "Germany": -5.08302283618832,
+      "Italy": -5.075678272386237
+    }
+  },
+  {
+    "sample_id": "B_1d3fc0cfce49",
+    "raw_output": "The track\u2019s raw, high-energy production, straightforward rock instrumentation, and unapologetically rebellious attitude are hallmarks of the early punk movement that emerged in the United States. The aggressive, fast-paced guitar work, driving drum patterns, and the overall DIY aesthetic align closely with the ethos of American punk bands of",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.006249386681399,
+      "UK": -4.5259401784472475,
+      "Brazil": -5.765842039002261,
+      "Spain": -5.46974205833006,
+      "Germany": -5.635576485209943,
+      "Italy": -5.393324135356427
+    }
+  },
+  {
+    "sample_id": "B_20c23d10897b",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.086480277163598,
+      "UK": -4.339157876752627,
+      "Brazil": -5.4498553846109035,
+      "Spain": -5.015539703153384,
+      "Germany": -5.2313190076577785,
+      "Italy": -5.130483525378319
+    }
+  },
+  {
+    "sample_id": "B_21b8b9504576",
+    "raw_output": "Answer: Italian",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -5.281075361184776,
+      "UK": -5.635708056700726,
+      "Brazil": -5.73484409134835,
+      "Spain": -4.820945623330772,
+      "Germany": -5.15731895249337,
+      "Italy": -4.088237010252972
+    }
+  },
+  {
+    "sample_id": "B_220ad0950ab6",
+    "raw_output": "Answer: Italian",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -5.497042720516522,
+      "UK": -5.721523031592369,
+      "Brazil": -6.247656727830569,
+      "Spain": -5.3889434188604355,
+      "Germany": -5.756006305416425,
+      "Italy": -4.439883296688397
+    }
+  },
+  {
+    "sample_id": "B_235e59cedbb9",
+    "raw_output": "Answer: Italian",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -5.309280675874713,
+      "UK": -5.5944257996743545,
+      "Brazil": -6.149157168692909,
+      "Spain": -5.304968160615924,
+      "Germany": -5.609075826631549,
+      "Italy": -4.083176893220904
+    }
+  },
+  {
+    "sample_id": "B_23f6c68ce7a1",
+    "raw_output": "Answer: Spanish rock",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.886070173136734,
+      "UK": -5.38159203643833,
+      "Brazil": -5.427244425964697,
+      "Spain": -4.191373110962256,
+      "Germany": -5.275936366272314,
+      "Italy": -5.097315074158057
+    }
+  },
+  {
+    "sample_id": "B_29ba1bae7f9a",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.027746030789179,
+      "UK": -4.772817759813431,
+      "Brazil": -5.122731039028925,
+      "Spain": -5.234911113084915,
+      "Germany": -5.0896620642161,
+      "Italy": -5.022410858771764
+    }
+  },
+  {
+    "sample_id": "B_2d1144798a47",
+    "raw_output": "Answer: Stax",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.407817322101134,
+      "UK": -4.5029342552879825,
+      "Brazil": -5.570208031024474,
+      "Spain": -5.382225153928933,
+      "Germany": -4.887615321165261,
+      "Italy": -4.9690448026716085
+    }
+  },
+  {
+    "sample_id": "B_41bc89f1f599",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.520428135680656,
+      "UK": -5.052111024347444,
+      "Brazil": -5.087930077997346,
+      "Spain": -5.003377630996208,
+      "Germany": -4.858446553039054,
+      "Italy": -4.973119770176709
+    }
+  },
+  {
+    "sample_id": "B_450fb66e02c7",
+    "raw_output": "The track\u2019s raw, energetic production, straightforward guitar-driven sound, and unpolished feel are characteristic of the early 1970s punk rock movement, which was most prominent in the United States. The aggressive, fast-paced rhythm, simple chord progressions, and rebellious attitude align with the DIY ethos of",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.148879200414133,
+      "UK": -4.416910320714426,
+      "Brazil": -5.4332888028972475,
+      "Spain": -5.274314473266713,
+      "Germany": -5.265380770162058,
+      "Italy": -5.170001576538198
+    }
+  },
+  {
+    "sample_id": "B_47eb9eba0af4",
+    "raw_output": "Answer: Sony",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.2485987121472135,
+      "UK": -6.016326881906328,
+      "Brazil": -5.896272636911211,
+      "Spain": -4.66442678119832,
+      "Germany": -5.3322121078381315,
+      "Italy": -5.363160746754147
+    }
+  },
+  {
+    "sample_id": "B_50102c3b7d22",
+    "raw_output": "This track is a high\u2011energy, experimental electronic piece that blends elements of electro\u2011industrial, noise, and avant\u2011garde sound design. Its production is raw and aggressive, featuring heavily distorted synth textures, glitchy percussive elements, and a dense, compressed mix that emphasizes harsh, metallic timbres",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.64089242896686,
+      "UK": -4.870560728323956,
+      "Brazil": -6.4078574208542705,
+      "Spain": -5.51186959228168,
+      "Germany": -5.030955714794497,
+      "Italy": -5.300808750403424
+    }
+  },
+  {
+    "sample_id": "B_51c61db82099",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.405933443437486,
+      "UK": -3.9167531964485534,
+      "Brazil": -6.345983568559556,
+      "Spain": -5.263780975074042,
+      "Germany": -5.175725046525865,
+      "Italy": -5.2370374041105
+    }
+  },
+  {
+    "sample_id": "B_53ab4248e799",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.917311319111225,
+      "UK": -5.706854788858133,
+      "Brazil": -3.7756531719351187,
+      "Spain": -5.1405035340770455,
+      "Germany": -5.387319215534565,
+      "Italy": -4.98795696933909
+    }
+  },
+  {
+    "sample_id": "B_550c82a44dde",
+    "raw_output": "Answer: German",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.488156079120624,
+      "UK": -4.815892615782407,
+      "Brazil": -6.2017563172848895,
+      "Spain": -5.351575373477924,
+      "Germany": -4.851265667743671,
+      "Italy": -5.253891784814186
+    }
+  },
+  {
+    "sample_id": "B_55bdcf43a277",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.9468220338458195,
+      "UK": -5.764048443757929,
+      "Brazil": -3.80587306273325,
+      "Spain": -5.28397228968485,
+      "Germany": -5.267824040376581,
+      "Italy": -4.9369356100990744
+    }
+  },
+  {
+    "sample_id": "B_58bbc8b17c59",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.644145389514354,
+      "UK": -5.538803160306998,
+      "Brazil": -3.790979166942028,
+      "Spain": -4.674460788684276,
+      "Germany": -5.230869670825389,
+      "Italy": -4.622904519356477
+    }
+  },
+  {
+    "sample_id": "B_58cc41574fbe",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.915256049949676,
+      "UK": -5.751727925458302,
+      "Brazil": -3.8407918877589204,
+      "Spain": -5.279392427920054,
+      "Germany": -5.4372773435898125,
+      "Italy": -4.961678372540821
+    }
+  },
+  {
+    "sample_id": "B_5ae0b896d915",
+    "raw_output": "Answer: German",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.395181391582203,
+      "UK": -4.82279719307553,
+      "Brazil": -5.0061652401539805,
+      "Spain": -4.919050906047535,
+      "Germany": -4.995529228394541,
+      "Italy": -4.952622467225107
+    }
+  },
+  {
+    "sample_id": "B_5ced4de80cb2",
+    "raw_output": "Answer: Motown",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.333580772140219,
+      "UK": -4.689495921193156,
+      "Brazil": -5.368554314035767,
+      "Spain": -5.15517985826591,
+      "Germany": -5.03958721961438,
+      "Italy": -4.892867287058228
+    }
+  },
+  {
+    "sample_id": "B_675ff44fc9a6",
+    "raw_output": "The track\u2019s production style is clean and polished, with a focus on vocal clarity and a balanced mix of acoustic and electric elements. The instrumentation includes acoustic guitar, electric guitar, bass, drums, and piano, all supporting a male vocal performance. The overall sound is characteristic of German pop music, which often blends traditional pop",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.920556989653657,
+      "UK": -5.434277502043794,
+      "Brazil": -6.247475432697684,
+      "Spain": -5.133649475717296,
+      "Germany": -4.491879112863292,
+      "Italy": -4.943482366545747
+    }
+  },
+  {
+    "sample_id": "B_69062b4d04a5",
+    "raw_output": "This track is a polished, high-fidelity electronic dance music piece that blends elements of house, techno, and progressive EDM. Its production style is clean and modern, with a focus on crisp, punchy drums, a deep, resonant bassline, and layered synth textures that create a wide, immersive stereo field.",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.932130909175612,
+      "UK": -5.298115507971185,
+      "Brazil": -6.866776403000888,
+      "Spain": -6.075299994360345,
+      "Germany": -4.994484361222324,
+      "Italy": -5.554207579504388
+    }
+  },
+  {
+    "sample_id": "B_6f5b80a9f689",
+    "raw_output": "Answer: Chess",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.2783677213592455,
+      "UK": -4.507137977401726,
+      "Brazil": -6.142752531489047,
+      "Spain": -5.7825988564097015,
+      "Germany": -5.02245398692321,
+      "Italy": -5.222696029464714
+    }
+  },
+  {
+    "sample_id": "B_700a0812e908",
+    "raw_output": "Answer: Chess",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.590769427479245,
+      "UK": -4.760468460580644,
+      "Brazil": -5.92450298613403,
+      "Spain": -5.533315954070228,
+      "Germany": -5.090658801258542,
+      "Italy": -5.211569445789792
+    }
+  },
+  {
+    "sample_id": "B_71c8c7a07ba6",
+    "raw_output": "Answer: Spanish Folk",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.919553041923791,
+      "UK": -5.493978421359013,
+      "Brazil": -5.447340886263798,
+      "Spain": -4.332447926669071,
+      "Germany": -5.1563961510546505,
+      "Italy": -4.9198849205859005
+    }
+  },
+  {
+    "sample_id": "B_7d050a5269fb",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.317247029277496,
+      "UK": -4.8667109371551005,
+      "Brazil": -5.6125103196827695,
+      "Spain": -5.182515100770009,
+      "Germany": -4.886495546631825,
+      "Italy": -5.191277142497711
+    }
+  },
+  {
+    "sample_id": "B_7edf8cf51fa1",
+    "raw_output": "The track\u2019s production style is polished and high-fidelity, featuring a clean, bright mix with a wide stereo image that places the synth layers and guitars distinctly across the field. The instrumentation is dominated by shimmering, chorus\u2011treated electric guitars, a driving bass line, and a steady, punchy drum groove that",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.620654296634409,
+      "UK": -4.091976674157195,
+      "Brazil": -6.290712864953093,
+      "Spain": -5.388923199730925,
+      "Germany": -5.092985025801075,
+      "Italy": -5.329489898441049
+    }
+  },
+  {
+    "sample_id": "B_8108811dadb2",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.169749127118848,
+      "UK": -4.344312852908236,
+      "Brazil": -6.0172026418537525,
+      "Spain": -5.049163765002352,
+      "Germany": -4.926928148954175,
+      "Italy": -5.196826245674553
+    }
+  },
+  {
+    "sample_id": "B_81251e0db31f",
+    "raw_output": "Answer: 1980s American rock",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.184470622315227,
+      "UK": -4.58984419561845,
+      "Brazil": -5.701053111328899,
+      "Spain": -5.510937500570435,
+      "Germany": -5.417439906372844,
+      "Italy": -5.31656309820634
+    }
+  },
+  {
+    "sample_id": "B_83aff42e7239",
+    "raw_output": "This track is a lively, danceable piece that blends jazz, big band/swing, and Latin American folk styles, creating a vibrant, cross-cultural sound. The production is polished and high-fidelity, with a wide stereo image that places the brass section and piano across the field while keeping the upright bass and percussion centered",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.004633468420555,
+      "UK": -5.372491163046409,
+      "Brazil": -4.975337547094871,
+      "Spain": -4.91743680043146,
+      "Germany": -5.246898851823062,
+      "Italy": -5.224906168412417
+    }
+  },
+  {
+    "sample_id": "B_87149914b371",
+    "raw_output": "The track\u2019s raw, high-energy punk rock style, fast tempo, and Spanish lyrics are characteristic of the Spanish punk scene of the late 1980s and early 1990s. The production is deliberately unpolished, emphasizing a live, garage-band feel with distorted electric guitars, driving bass",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.707947323448025,
+      "UK": -4.960232327110134,
+      "Brazil": -5.496270407961371,
+      "Spain": -3.9986864226326966,
+      "Germany": -5.09682741734044,
+      "Italy": -4.789233435915473
+    }
+  },
+  {
+    "sample_id": "B_885568afc061",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -5.00169152180509,
+      "UK": -5.8491487717644,
+      "Brazil": -3.9372908091560626,
+      "Spain": -5.362538041275305,
+      "Germany": -5.64956635395841,
+      "Italy": -5.116133711339596
+    }
+  },
+  {
+    "sample_id": "B_889540221b89",
+    "raw_output": "Answer: It\u2019s most likely from the US market.",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.248489455979628,
+      "UK": -4.744326429169935,
+      "Brazil": -5.363838669261895,
+      "Spain": -5.192679878673516,
+      "Germany": -5.127691424490574,
+      "Italy": -4.966653661530775
+    }
+  },
+  {
+    "sample_id": "B_8b78937b44e1",
+    "raw_output": "Answer: EMI",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.698645493442503,
+      "UK": -5.451657832716592,
+      "Brazil": -4.312337777072874,
+      "Spain": -4.6304514219906805,
+      "Germany": -5.274342756524372,
+      "Italy": -4.797366043979612
+    }
+  },
+  {
+    "sample_id": "B_8f4ab6bb7c02",
+    "raw_output": "The track\u2019s production style is polished and high-fidelity, with a clean, wide stereo image and a focus on crisp, punchy drums and bright, layered synths. The instrumentation is dominated by electronic elements\u2014drum machines, synth bass, and melodic synth leads\u2014typical of contemporary dance music. The",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.268743151585416,
+      "UK": -4.77198250508324,
+      "Brazil": -6.020725562334216,
+      "Spain": -5.496562316179431,
+      "Germany": -4.8689530632497435,
+      "Italy": -5.153370851437406
+    }
+  },
+  {
+    "sample_id": "B_99f65134c641",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.7389441545043764,
+      "UK": -5.664805513146955,
+      "Brazil": -3.763414245370465,
+      "Spain": -4.754440408471662,
+      "Germany": -5.47636995864256,
+      "Italy": -4.620498201771018
+    }
+  },
+  {
+    "sample_id": "B_9cdcc40848cc",
+    "raw_output": "This track is a classical piano piece, featuring a solo grand piano recorded with high-fidelity, natural acoustic ambience. The production emphasizes the instrument\u2019s rich resonance, wide dynamic range, and subtle room reflections, creating an intimate listening experience. The performance is expressive and nuanced, with fluid phrasing and dynamic contrast that highlight",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.6940570054963855,
+      "UK": -5.373949863365851,
+      "Brazil": -6.0831106681143865,
+      "Spain": -5.419294851870897,
+      "Germany": -4.873056906314257,
+      "Italy": -5.224548198631965
+    }
+  },
+  {
+    "sample_id": "B_a0af7a755f77",
+    "raw_output": "Answer: Spanish Pop",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -5.158263775791663,
+      "UK": -5.7398038835187135,
+      "Brazil": -5.876306785231766,
+      "Spain": -4.080626977568802,
+      "Germany": -5.172455403294104,
+      "Italy": -4.6618431539197145
+    }
+  },
+  {
+    "sample_id": "B_a0ce59fbdb77",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.4989252153318375,
+      "UK": -3.9170608583372086,
+      "Brazil": -6.132126258142914,
+      "Spain": -5.214043067224945,
+      "Germany": -5.080963220524912,
+      "Italy": -5.340150283106293
+    }
+  },
+  {
+    "sample_id": "B_a1c2276456aa",
+    "raw_output": "Answer: Classic Records",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.362147205354025,
+      "UK": -5.103381984711935,
+      "Brazil": -5.880212657929708,
+      "Spain": -6.117762121837586,
+      "Germany": -5.5520234438590705,
+      "Italy": -5.3362377815259
+    }
+  },
+  {
+    "sample_id": "B_a59d7ed218f8",
+    "raw_output": "Answer: Sony",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.274818383157253,
+      "UK": -5.875245374937852,
+      "Brazil": -5.71498612811168,
+      "Spain": -4.599658610920112,
+      "Germany": -5.396147372821967,
+      "Italy": -5.24064219246308
+    }
+  },
+  {
+    "sample_id": "B_aaafa76a5afb",
+    "raw_output": "This track is a high\u2011energy, experimental pop piece that blends avant\u2011garde electronic production with a bright, major\u2011key harmonic palette. The production is polished and high\u2011fidelity, featuring a wide stereo field, crisp electronic drums, and layered synth textures that create a dynamic, immersive soundscape. The arrangement",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.897407571940373,
+      "UK": -5.245181759664168,
+      "Brazil": -6.052516341675073,
+      "Spain": -5.595909158854435,
+      "Germany": -5.098894159464787,
+      "Italy": -5.420767506429304
+    }
+  },
+  {
+    "sample_id": "B_aaf96e732265",
+    "raw_output": "Answer: German",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.606276861954636,
+      "UK": -4.377996794510788,
+      "Brazil": -5.379384708532598,
+      "Spain": -5.342917156347539,
+      "Germany": -5.164473883439011,
+      "Italy": -5.199604384232468
+    }
+  },
+  {
+    "sample_id": "B_ab933d1646c4",
+    "raw_output": "This track is a high-energy thrash metal piece that blends aggressive, fast-paced riffing with a raw, gritty production aesthetic typical of the late 1980s metal scene. The instrumentation is dominated by heavily distorted electric guitars delivering rapid, palm-muted power chords and intricate lead passages, a driving bass guitar that",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.495633465839394,
+      "UK": -4.81585186997351,
+      "Brazil": -5.517176332864135,
+      "Spain": -5.426241897337604,
+      "Germany": -4.973489148212441,
+      "Italy": -5.00209397355017
+    }
+  },
+  {
+    "sample_id": "B_ac016c46e914",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.11967079488871,
+      "UK": -4.659228887641802,
+      "Brazil": -5.357141342246905,
+      "Spain": -5.026801274701332,
+      "Germany": -5.306087341392413,
+      "Italy": -5.081820335472003
+    }
+  },
+  {
+    "sample_id": "B_b05d6ee46da0",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -3.914969473068292,
+      "UK": -4.668166864896193,
+      "Brazil": -5.619357813382521,
+      "Spain": -5.0196638792598,
+      "Germany": -4.963672706469272,
+      "Italy": -4.9116472293778015
+    }
+  },
+  {
+    "sample_id": "B_b066d818b297",
+    "raw_output": "Answer: BGP",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.030252495470147,
+      "UK": -5.806308785142998,
+      "Brazil": -4.2281061401590705,
+      "Spain": -5.549361585639417,
+      "Germany": -5.084845263821383,
+      "Italy": -5.197926560106377
+    }
+  },
+  {
+    "sample_id": "B_b3422bcc415c",
+    "raw_output": "Answer: Classic Soul",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.280120019975584,
+      "UK": -4.593103532854002,
+      "Brazil": -5.19124607728251,
+      "Spain": -5.168113117280882,
+      "Germany": -4.8970191129677305,
+      "Italy": -4.935684566560667
+    }
+  },
+  {
+    "sample_id": "B_b75081eeb64b",
+    "raw_output": "The track\u2019s raw, lo-fi production, aggressive distorted guitars, and fast, driving rhythm are characteristic of the early 1980s Spanish punk scene. The vocal delivery is shouted and confrontational, matching the rebellious spirit of Spanish punk bands of that era. The overall sound and attitude place it firmly within",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.518875167472288,
+      "UK": -4.844370887381956,
+      "Brazil": -5.792880739473428,
+      "Spain": -4.012902027073626,
+      "Germany": -5.15685117811275,
+      "Italy": -4.91095388502193
+    }
+  },
+  {
+    "sample_id": "B_b8256aa710bc",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.81636991018119,
+      "UK": -5.573955117802446,
+      "Brazil": -3.8746215295201787,
+      "Spain": -5.255655188501502,
+      "Germany": -5.218846538802609,
+      "Italy": -5.0258009226527065
+    }
+  },
+  {
+    "sample_id": "B_b9d4bd40dabf",
+    "raw_output": "Answer: Motown",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.138343049872977,
+      "UK": -4.565141552477144,
+      "Brazil": -5.346731060533784,
+      "Spain": -5.2474662798534455,
+      "Germany": -4.928603682705822,
+      "Italy": -4.949093057502371
+    }
+  },
+  {
+    "sample_id": "B_bd49b44fb472",
+    "raw_output": "Answer: Capitol Records",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.480771361927812,
+      "UK": -4.767158725997433,
+      "Brazil": -5.6391234985397505,
+      "Spain": -5.292783954879269,
+      "Germany": -4.983467955530311,
+      "Italy": -5.257499912520871
+    }
+  },
+  {
+    "sample_id": "B_beaa2bb0b89b",
+    "raw_output": "This track is a polished, high-fidelity example of experimental rock that blends post-punk and new wave aesthetics. The production is clean and spacious, with a wide stereo image that places the drums and bass centrally while spreading the guitars and synth pads across the field. The instrumentation features a driving, melodic bassline,",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.781450951724158,
+      "UK": -5.095679327476925,
+      "Brazil": -6.38167536718538,
+      "Spain": -5.672555252541012,
+      "Germany": -5.265032494692908,
+      "Italy": -5.459904317685869
+    }
+  },
+  {
+    "sample_id": "B_c7809dcd0640",
+    "raw_output": "Answer: EMI",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.422518934782905,
+      "UK": -5.836719399667345,
+      "Brazil": -5.979727631784044,
+      "Spain": -4.1383500555918245,
+      "Germany": -5.224650587614936,
+      "Italy": -4.84511173365172
+    }
+  },
+  {
+    "sample_id": "B_c7e70dd767df",
+    "raw_output": "This track is a high-energy thrash metal piece that blends the raw aggression of classic US thrash with the technical precision of modern European metal. The production is polished and high-fidelity, featuring a wide stereo field that separates the razor-sharp, heavily distorted guitars, the thunderous double-kick drum patterns, and",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.291738162806723,
+      "UK": -5.180273702115907,
+      "Brazil": -5.399221112699403,
+      "Spain": -5.368949582548036,
+      "Germany": -4.994434049100771,
+      "Italy": -4.926405916980002
+    }
+  },
+  {
+    "sample_id": "B_c954e68e5b33",
+    "raw_output": "The track\u2019s production style is polished and high-fidelity, with a clean mix that emphasizes the rhythmic drive and melodic hooks typical of contemporary Latin pop. The instrumentation includes electronic drums, synth bass, and layered synth pads, alongside acoustic guitar and piano, creating a blend of modern electronic elements with traditional Latin textures.",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.91526769285944,
+      "UK": -5.756137199059594,
+      "Brazil": -5.842698719953963,
+      "Spain": -4.685465561206608,
+      "Germany": -5.350701954817244,
+      "Italy": -5.4675054419591715
+    }
+  },
+  {
+    "sample_id": "B_ca75f4db02f5",
+    "raw_output": "Answer: German",
+    "parsed": "Germany",
+    "label_scores": {
+      "US": -4.622233219444752,
+      "UK": -4.847992407778899,
+      "Brazil": -5.339709746340911,
+      "Spain": -5.194287446637948,
+      "Germany": -4.895898965497811,
+      "Italy": -4.994360116620858
+    }
+  },
+  {
+    "sample_id": "B_cbd6d40a4231",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.505471123013801,
+      "UK": -4.0556417035598615,
+      "Brazil": -6.05501593426258,
+      "Spain": -5.356651199612922,
+      "Germany": -5.132092051460252,
+      "Italy": -5.163774701708462
+    }
+  },
+  {
+    "sample_id": "B_cc76a89f5dcc",
+    "raw_output": "The track\u2019s raw, high-energy punk sound, straightforward power\u2011chord guitar work, driving bass, and aggressive, shouted vocals are characteristic of the UK punk scene of the late 1970s and early 1980s. The production is deliberately unpolished, emphasizing immediacy and a",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.437765925909237,
+      "UK": -4.104295938993649,
+      "Brazil": -5.620195875351783,
+      "Spain": -4.749953120733456,
+      "Germany": -4.7512828606219655,
+      "Italy": -4.897641668503638
+    }
+  },
+  {
+    "sample_id": "B_ce67238ec511",
+    "raw_output": "This track is a classic jazz piece with a smooth, polished production style that emphasizes warmth and clarity. The instrumentation features a prominent tenor saxophone delivering expressive, melodic improvisations, supported by a walking double bass, subtle brushwork on the drums, and a piano providing rich, extended harmonies. The overall sound",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.631166694879842,
+      "UK": -5.272767303705526,
+      "Brazil": -5.434717415094686,
+      "Spain": -5.545543907404256,
+      "Germany": -4.907735107660604,
+      "Italy": -5.164937891880982
+    }
+  },
+  {
+    "sample_id": "B_cfa197f66fa2",
+    "raw_output": "Answer: Italo disco",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.453468338353559,
+      "UK": -4.398204183283572,
+      "Brazil": -5.975687042577192,
+      "Spain": -5.187683121068403,
+      "Germany": -4.830557520889367,
+      "Italy": -5.004945134821658
+    }
+  },
+  {
+    "sample_id": "B_d397202f7eff",
+    "raw_output": "Answer: Brazil",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.966370445676148,
+      "UK": -5.768578392453492,
+      "Brazil": -3.8375876170272627,
+      "Spain": -5.013084274716675,
+      "Germany": -5.385260762957235,
+      "Italy": -4.871105057187378
+    }
+  },
+  {
+    "sample_id": "B_d4d7691cfb36",
+    "raw_output": "Answer: Stax",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.541565605672076,
+      "UK": -4.811084140014525,
+      "Brazil": -6.110453157297646,
+      "Spain": -6.016533880106484,
+      "Germany": -5.2423340764362365,
+      "Italy": -5.398353287251666
+    }
+  },
+  {
+    "sample_id": "B_d5eeaab99e51",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.21390547042635,
+      "UK": -5.21935063288159,
+      "Brazil": -5.57823226536857,
+      "Spain": -5.815579868212808,
+      "Germany": -5.605523245389729,
+      "Italy": -5.319907960152098
+    }
+  },
+  {
+    "sample_id": "B_d738dbb99fa4",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.302498213597573,
+      "UK": -3.9188248635812974,
+      "Brazil": -5.168181769200601,
+      "Spain": -4.5077324232940255,
+      "Germany": -4.651412995803791,
+      "Italy": -4.6277628264312325
+    }
+  },
+  {
+    "sample_id": "B_da0e2ef5c2eb",
+    "raw_output": "The track\u2019s raw, lo-fi production, straightforward guitar\u2011driven sound, and unpolished vocal delivery are characteristic of the early\u2011punk scene that emerged in the United States in the late 1970s. The aggressive, fast\u2011paced rhythm and simple, repetitive chord progressions further align it with",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.002769069047645,
+      "UK": -4.683947797787066,
+      "Brazil": -5.745202299129839,
+      "Spain": -5.230873342525835,
+      "Germany": -5.445347384782508,
+      "Italy": -5.2442870896775275
+    }
+  },
+  {
+    "sample_id": "B_de366c3afcc0",
+    "raw_output": "Answer: Brazilian",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -5.030576933446961,
+      "UK": -5.647270112259624,
+      "Brazil": -4.0385080466900645,
+      "Spain": -5.463191577815451,
+      "Germany": -5.638119607193706,
+      "Italy": -5.242050398412782
+    }
+  },
+  {
+    "sample_id": "B_de7879ffd48f",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.042041156052922,
+      "UK": -4.608934693892176,
+      "Brazil": -5.609140369653081,
+      "Spain": -5.167406691471115,
+      "Germany": -5.303098334232345,
+      "Italy": -5.131852441389735
+    }
+  },
+  {
+    "sample_id": "B_e6107a40e9d5",
+    "raw_output": "Answer: Italian",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -5.245614023491119,
+      "UK": -5.668889653170481,
+      "Brazil": -5.787745765332754,
+      "Spain": -5.1386604025804745,
+      "Germany": -5.537847808484609,
+      "Italy": -4.29997759211498
+    }
+  },
+  {
+    "sample_id": "B_e65a9bb9ea27",
+    "raw_output": "Answer: EMI",
+    "parsed": null,
+    "label_scores": {
+      "US": -5.32493575202534,
+      "UK": -5.886132397126251,
+      "Brazil": -6.001083848745718,
+      "Spain": -3.950828391185496,
+      "Germany": -5.381094453604116,
+      "Italy": -4.567489780854278
+    }
+  },
+  {
+    "sample_id": "B_e887687df493",
+    "raw_output": "Answer: UK",
+    "parsed": "UK",
+    "label_scores": {
+      "US": -4.4038819492755765,
+      "UK": -3.89801907746975,
+      "Brazil": -5.869444372345849,
+      "Spain": -4.9196359337268705,
+      "Germany": -5.035473030894839,
+      "Italy": -4.856705190827294
+    }
+  },
+  {
+    "sample_id": "B_ea54f022e8d4",
+    "raw_output": "Answer: Spanish Folk",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -5.10390753353325,
+      "UK": -5.415422070072964,
+      "Brazil": -5.050668346928433,
+      "Spain": -4.24662108028618,
+      "Germany": -5.114031104293342,
+      "Italy": -4.799797642277554
+    }
+  },
+  {
+    "sample_id": "B_ec326d639aad",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -4.939551401805754,
+      "UK": -5.542889643382902,
+      "Brazil": -5.274161387157316,
+      "Spain": -3.9610803213436157,
+      "Germany": -5.080016502412036,
+      "Italy": -4.696570444774504
+    }
+  },
+  {
+    "sample_id": "B_ec8878ce06b5",
+    "raw_output": "Answer: Brazilian",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.951991309334214,
+      "UK": -5.636119116951401,
+      "Brazil": -3.937324116239324,
+      "Spain": -5.081750779955958,
+      "Germany": -5.4379516339395195,
+      "Italy": -4.812532335131739
+    }
+  },
+  {
+    "sample_id": "B_ef64273eee4e",
+    "raw_output": "Answer: Brazilian",
+    "parsed": "Brazil",
+    "label_scores": {
+      "US": -4.9900365762490155,
+      "UK": -5.6550451211708905,
+      "Brazil": -3.998066593466016,
+      "Spain": -5.384457517919752,
+      "Germany": -5.583070684728834,
+      "Italy": -5.1485197636066005
+    }
+  },
+  {
+    "sample_id": "B_efe2cf1ad3d8",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.397058297763579,
+      "UK": -4.875155180265817,
+      "Brazil": -5.375961352954619,
+      "Spain": -4.942802160551461,
+      "Germany": -4.745634207696033,
+      "Italy": -4.811849404941313
+    }
+  },
+  {
+    "sample_id": "B_f3407cab7d7b",
+    "raw_output": "Answer: Spanish",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -5.394292738249836,
+      "UK": -5.464711413990396,
+      "Brazil": -5.791778153390624,
+      "Spain": -4.064321663191852,
+      "Germany": -5.338987575184244,
+      "Italy": -4.8551237446178375
+    }
+  },
+  {
+    "sample_id": "B_f34458365689",
+    "raw_output": "Answer: Italian",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -5.516782502798985,
+      "UK": -5.781505962678541,
+      "Brazil": -5.885516226757318,
+      "Spain": -5.350935360261549,
+      "Germany": -5.641818424531569,
+      "Italy": -4.444043855338047
+    }
+  },
+  {
+    "sample_id": "B_f6d4bb0e62a0",
+    "raw_output": "This track is a classic example of straight-ahead jazz, blending elements of bebop and cool jazz with a modern, high-fidelity production aesthetic. The instrumentation is centered around a warm, resonant upright bass, a crisp, articulate drum kit, a lyrical tenor saxophone, and a harmonically rich piano.",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.808712373177211,
+      "UK": -5.33100641767184,
+      "Brazil": -5.893779168526332,
+      "Spain": -5.782826155424118,
+      "Germany": -5.045479824145635,
+      "Italy": -5.513701488574346
+    }
+  },
+  {
+    "sample_id": "B_f7fd3ba8af94",
+    "raw_output": "The track\u2019s production style is polished and high-fidelity, with a clean, balanced mix that highlights the piano\u2019s natural resonance and the subtle, warm bass. The instrumentation is centered on a grand piano, supported by a gentle, understated rhythm section that provides a smooth, flowing groove. The overall sound is elegant and",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.567017847633299,
+      "UK": -5.208064371681151,
+      "Brazil": -5.241646105384764,
+      "Spain": -5.038210207557616,
+      "Germany": -4.598176930681802,
+      "Italy": -4.8742885334650055
+    }
+  },
+  {
+    "sample_id": "B_f80110c84970",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.227281259722076,
+      "UK": -4.414768226173085,
+      "Brazil": -5.537069884167674,
+      "Spain": -5.33903305453714,
+      "Germany": -5.025125113354686,
+      "Italy": -5.034144329256378
+    }
+  },
+  {
+    "sample_id": "B_fa0e895ecfd0",
+    "raw_output": "Answer: Chicago Blues",
+    "parsed": null,
+    "label_scores": {
+      "US": -4.473722622574617,
+      "UK": -4.661682293595125,
+      "Brazil": -5.8618515389971435,
+      "Spain": -5.5084748325559,
+      "Germany": -4.952344423315178,
+      "Italy": -5.071138546646883
+    }
+  },
+  {
+    "sample_id": "B_fb1c266c084e",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.32360132643953,
+      "UK": -4.593401194705318,
+      "Brazil": -5.727239609851192,
+      "Spain": -5.390363376432409,
+      "Germany": -5.048545202706009,
+      "Italy": -5.1461976380087435
+    }
+  },
+  {
+    "sample_id": "B_fbfcce1b9fa1",
+    "raw_output": "Answer: It's a Eurovision-style track, so it is most likely from Italy.",
+    "parsed": "Italy",
+    "label_scores": {
+      "US": -4.613386831091096,
+      "UK": -4.941840848730256,
+      "Brazil": -5.635757805313915,
+      "Spain": -5.114403447912385,
+      "Germany": -5.024539034968863,
+      "Italy": -4.693233531123648
+    }
+  },
+  {
+    "sample_id": "B_fc28ecaa8c0e",
+    "raw_output": "Answer: US",
+    "parsed": "US",
+    "label_scores": {
+      "US": -4.359886306027572,
+      "UK": -4.709196863075097,
+      "Brazil": -5.388554073870182,
+      "Spain": -5.048402604957421,
+      "Germany": -4.910682179033756,
+      "Italy": -4.933721996843815
+    }
+  },
+  {
+    "sample_id": "B_fd25e478b03b",
+    "raw_output": "Answer: Spain",
+    "parsed": "Spain",
+    "label_scores": {
+      "US": -5.292675381254715,
+      "UK": -5.705953007292313,
+      "Brazil": -5.8769944959397735,
+      "Spain": -3.8138368182893223,
+      "Germany": -5.201117878508133,
+      "Italy": -4.6098286761359
+    }
+  }
+]

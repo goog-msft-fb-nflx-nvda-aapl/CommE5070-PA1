@@ -1,0 +1,1718 @@
+[
+  {
+    "sample_id": "A_007e1d02fd77",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.4651199797226582,
+      "1970s": -1.4232406326373166,
+      "1980s": -1.809360088485846,
+      "1990s": -1.8878163981098623,
+      "2000s": -1.6983732139051426,
+      "2010s": -1.8792477112656343
+    }
+  },
+  {
+    "sample_id": "A_01321d0221ab",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5159306608366023,
+      "1970s": -1.370105614383192,
+      "1980s": -1.9502447635604767,
+      "1990s": -2.090934861022106,
+      "2000s": -1.7592718448249798,
+      "2010s": -1.9326756868140365
+    }
+  },
+  {
+    "sample_id": "A_046e6b7f8480",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7933203858046909,
+      "1970s": -1.396279770808178,
+      "1980s": -1.6775694852040033,
+      "1990s": -1.6022521200393385,
+      "2000s": -1.5895031592590385,
+      "2010s": -1.976332137870486
+    }
+  },
+  {
+    "sample_id": "A_04c4579f48fd",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.0297820529413,
+      "1970s": -1.6901527246482146,
+      "1980s": -1.545182991283582,
+      "1990s": -1.4574244438190362,
+      "2000s": -1.5197526595147792,
+      "2010s": -1.770517739787465
+    }
+  },
+  {
+    "sample_id": "A_06ca1db3bf92",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4326367964640667,
+      "1970s": -1.4981990590167698,
+      "1980s": -1.7278329208202194,
+      "1990s": -1.9045428847675794,
+      "2000s": -1.616314926170162,
+      "2010s": -1.8954110749109532
+    }
+  },
+  {
+    "sample_id": "A_0743cfcd6e5d",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 2000s. The use of clean, well-balanced guitar tones, a tight rhythm section, and a clear, spacious mix are characteristic of modern rock production from that era. The overall sonic aesthetic",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.7713129162038967,
+      "1970s": -1.5970583900821111,
+      "1980s": -1.949892942175211,
+      "1990s": -1.8160515259987733,
+      "2000s": -1.6726786388244363,
+      "2010s": -1.8815112244265038
+    }
+  },
+  {
+    "sample_id": "A_0892dbeacb0c",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.8656145579625445,
+      "1970s": -1.5846696900807729,
+      "1980s": -1.8351381347092683,
+      "1990s": -1.565208257194172,
+      "2000s": -1.4318356151561602,
+      "2010s": -1.635223207556919
+    }
+  },
+  {
+    "sample_id": "A_09b124c780e6",
+    "raw_output": "This track is a high\u2011energy electronic dance music piece that blends elements of house, techno, and progressive EDM. Production is polished and high\u2011fidelity, featuring a wide stereo field, crisp side\u2011chain\u2011compressed kick drums, and layered synth textures that create a driving, hypnotic groove. The instrumentation is dominated",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -2.1913825024112157,
+      "1970s": -2.035542185878512,
+      "1980s": -1.8324694830735098,
+      "1990s": -1.8182819918347377,
+      "2000s": -1.705753445316077,
+      "2010s": -1.9010740173343947
+    }
+  },
+  {
+    "sample_id": "A_0a5f2a9e57d1",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.734909225066076,
+      "1970s": -1.3761403315584175,
+      "1980s": -1.5107901282117382,
+      "1990s": -1.7066915554823936,
+      "2000s": -1.5123026595174451,
+      "2010s": -1.819903846597299
+    }
+  },
+  {
+    "sample_id": "A_0e8fb312a37a",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1990s. The use of a classic jazz ensemble with a prominent piano, upright bass, and drums, combined with a clean, well-balanced mix, aligns with the era\u2019s emphasis on",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.556506660179366,
+      "1970s": -1.5040642630137881,
+      "1980s": -1.7137323983133683,
+      "1990s": -1.6215418446972762,
+      "2000s": -1.542017490199214,
+      "2010s": -1.7740199779473187
+    }
+  },
+  {
+    "sample_id": "A_0f2c43738eeb",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.408109946822151,
+      "1970s": -1.8047235946705769,
+      "1980s": -1.3824708468132485,
+      "1990s": -1.7912475480934518,
+      "2000s": -1.6567174285519286,
+      "2010s": -1.8885831924926606
+    }
+  },
+  {
+    "sample_id": "A_17d8a9f0a58d",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1960s. The warm, analog feel, the use of classic electric piano and guitar tones, and the laid-back groove all point to this era. The vocal delivery and phrasing also align with the soulful, expressive style",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4656976838741684,
+      "1970s": -1.4933031061918882,
+      "1980s": -1.6530081962046097,
+      "1990s": -1.5987818007415626,
+      "2000s": -1.5675727905945678,
+      "2010s": -1.7563008514262037
+    }
+  },
+  {
+    "sample_id": "A_1a499c548c7c",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, radio-friendly sound typical of the 1990s. The use of clean electric guitars, a steady drum groove, and a clear, balanced mix align with the era\u2019s mainstream rock and pop production trends. The overall aesthetic\u2014bright, energetic",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9017973517420614,
+      "1970s": -1.5772940909737372,
+      "1980s": -1.827082699894163,
+      "1990s": -1.627665238015652,
+      "2000s": -1.533714418856107,
+      "2010s": -1.773203512570035
+    }
+  },
+  {
+    "sample_id": "A_1aa4c8dd4d26",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4155701273430168,
+      "1970s": -1.5251703056628685,
+      "1980s": -1.8091833887683606,
+      "1990s": -1.8723101141313236,
+      "2000s": -1.7152605896735622,
+      "2010s": -1.8680591628944967
+    }
+  },
+  {
+    "sample_id": "A_1bc927b444cf",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8209316616303113,
+      "1970s": -1.4097453177446368,
+      "1980s": -1.6261487269839563,
+      "1990s": -1.618910426779621,
+      "2000s": -1.5536808879805903,
+      "2010s": -1.8912413517318782
+    }
+  },
+  {
+    "sample_id": "A_1c3ac960107d",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6231343223917065,
+      "1970s": -1.3936168457212261,
+      "1980s": -1.743631657853257,
+      "1990s": -1.8505716408690205,
+      "2000s": -1.652789727668278,
+      "2010s": -1.883886406190868
+    }
+  },
+  {
+    "sample_id": "A_1d2d76c43caa",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a modern, high-fidelity approach typical of the 2000s. The use of a clean, well-balanced mix, crisp drum sounds, and a polished overall sound align with production trends from the 2000s. The presence of",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.6868543941891403,
+      "1970s": -1.5758024021661186,
+      "1980s": -1.8056843101076083,
+      "1990s": -1.6442685501970118,
+      "2000s": -1.5727080957185535,
+      "2010s": -1.791508566493576
+    }
+  },
+  {
+    "sample_id": "A_1dffb4c76ef6",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.775890219156281,
+      "1970s": -1.50379748850537,
+      "1980s": -1.6129104253232072,
+      "1990s": -1.6358921852515778,
+      "2000s": -1.5202110593054385,
+      "2010s": -1.7810953551706916
+    }
+  },
+  {
+    "sample_id": "A_1eed023c0473",
+    "raw_output": "The track features a polished, high-fidelity production style with a clear, punchy mix that emphasizes the driving rhythm section and layered guitars. The overall sound is characteristic of late 1980s to early 1990s alternative rock, where a blend of raw energy and studio polish was common.",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.941030036927259,
+      "1970s": -1.8649760724838416,
+      "1980s": -1.7297910280794895,
+      "1990s": -1.4408280705647485,
+      "2000s": -1.5981325324300997,
+      "2010s": -1.8741481280667358
+    }
+  },
+  {
+    "sample_id": "A_2c9a93648af8",
+    "raw_output": "The track features a clean, natural production style with minimal processing, emphasizing the acoustic instruments. The instrumentation includes acoustic guitar, banjo, and upright bass, all recorded with a warm, organic tone. The mix is balanced and spacious, allowing each instrument to breathe without heavy compression or digital effects. The overall sound is reminiscent",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -1.9228161605224159,
+      "1970s": -1.7290186317413827,
+      "1980s": -2.102484792483665,
+      "1990s": -1.8256687604216495,
+      "2000s": -1.7546238613958849,
+      "2010s": -2.0146804305641126
+    }
+  },
+  {
+    "sample_id": "A_353f016ec7fd",
+    "raw_output": "The track\u2019s raw, lo-fi production, distorted electric guitars, and energetic, straightforward drumming are characteristic of the early punk rock movement that emerged in the late 1970s. The aggressive, rebellious vocal delivery and the overall gritty aesthetic further align it with the punk genre that peaked in the 1",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7939503569796216,
+      "1970s": -1.655891862406861,
+      "1980s": -1.5844459521467797,
+      "1990s": -1.556004748086707,
+      "2000s": -1.5562072436332528,
+      "2010s": -1.732557086914312
+    }
+  },
+  {
+    "sample_id": "A_359c68e06ddb",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1980s. The use of electronic drums, synth pads, and a clean, spacious mix aligns with the era\u2019s pop and rock productions. The overall aesthetic\u2014bright, melodic, and",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.6512730506874504,
+      "1970s": -1.49620330063226,
+      "1980s": -1.727136233694182,
+      "1990s": -1.7581286959393765,
+      "2000s": -1.6352932319459796,
+      "2010s": -1.8286694241105579
+    }
+  },
+  {
+    "sample_id": "A_372ef2c92bdf",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1970s. The warm, analog feel, the prominent use of electric piano and brass, and the rhythmic groove all align with the musical aesthetics of that era. The track\u2019s energy and arrangement also reflect the vibrant, dance",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8380909681691264,
+      "1970s": -1.4209115643752739,
+      "1980s": -1.7431999874424946,
+      "1990s": -1.786793964158278,
+      "2000s": -1.5596843075036304,
+      "2010s": -1.7769930927242967
+    }
+  },
+  {
+    "sample_id": "A_37dadd90c942",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.9004984814673662,
+      "1970s": -1.736298733154399,
+      "1980s": -1.6777702769613825,
+      "1990s": -1.5451093704541563,
+      "2000s": -1.3584056543404586,
+      "2010s": -1.5411105886851146
+    }
+  },
+  {
+    "sample_id": "A_397fcadeefd2",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.71905293337295,
+      "1970s": -1.449354939888508,
+      "1980s": -1.583844969065467,
+      "1990s": -1.5732009809507872,
+      "2000s": -1.5692003295298491,
+      "2010s": -1.8678981149932952
+    }
+  },
+  {
+    "sample_id": "A_3a594ed73d72",
+    "raw_output": "The track features a polished, high-fidelity production style with a wide stereo field, prominent electric guitars, and a driving rhythm section typical of late 1990s alternative rock. The overall sound and aesthetic align with the 1990s era.  \nAnswer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.0089401724799245,
+      "1970s": -1.803357572935056,
+      "1980s": -1.6934523953059397,
+      "1990s": -1.650318140030322,
+      "2000s": -1.6111779007333098,
+      "2010s": -1.8129012210083602
+    }
+  },
+  {
+    "sample_id": "A_3c410882c8a9",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.379538042504464,
+      "1970s": -1.5939417231893458,
+      "1980s": -1.8545051025866996,
+      "1990s": -1.7323083232986392,
+      "2000s": -1.600576804987213,
+      "2010s": -1.8089899042752222
+    }
+  },
+  {
+    "sample_id": "A_3c4faac0475c",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.719004710274021,
+      "1970s": -1.4858657050526745,
+      "1980s": -1.6443959464486397,
+      "1990s": -1.5144567235365685,
+      "2000s": -1.5452542675375298,
+      "2010s": -1.810395856420655
+    }
+  },
+  {
+    "sample_id": "A_3dd3d96b09a6",
+    "raw_output": "The track features a polished, high-fidelity production style with a clean, spacious mix that highlights the electronic textures and rhythmic elements. The use of synthesizers, electronic drums, and a steady, danceable groove is characteristic of the 1980s synth-pop and new wave era. The overall sound design",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.0041327261569677,
+      "1970s": -1.7095430255440078,
+      "1980s": -1.7568708580138264,
+      "1990s": -1.8442078799162118,
+      "2000s": -1.7372571077903558,
+      "2010s": -1.9755174590100069
+    }
+  },
+  {
+    "sample_id": "A_3fe4fe9ea21e",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9855237923657114,
+      "1970s": -1.8831017360571423,
+      "1980s": -1.8325514989883231,
+      "1990s": -1.4323331982304808,
+      "2000s": -1.5114153809627169,
+      "2010s": -1.9170656670903554
+    }
+  },
+  {
+    "sample_id": "A_42dd66358489",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8089250178454677,
+      "1970s": -1.4429097212050692,
+      "1980s": -1.532356788206016,
+      "1990s": -1.7172001228536828,
+      "2000s": -1.5431759275161312,
+      "2010s": -1.8819466636123252
+    }
+  },
+  {
+    "sample_id": "A_44d9e9c7cccc",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7599029484517814,
+      "1970s": -1.5076975917731943,
+      "1980s": -1.7971199095845805,
+      "1990s": -1.6195991738713928,
+      "2000s": -1.476300554075351,
+      "2010s": -1.686245170483744
+    }
+  },
+  {
+    "sample_id": "A_4b43851ea1b2",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8096264222749596,
+      "1970s": -1.5109365365688063,
+      "1980s": -1.7905956017148128,
+      "1990s": -1.549391331984225,
+      "2000s": -1.4976125480643532,
+      "2010s": -1.7609533385293616
+    }
+  },
+  {
+    "sample_id": "A_4c830260c090",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8513254675144708,
+      "1970s": -1.3964176476638386,
+      "1980s": -1.575771963043735,
+      "1990s": -1.6975973496737424,
+      "2000s": -1.5443849582698022,
+      "2010s": -1.8495674058285658
+    }
+  },
+  {
+    "sample_id": "A_4c94af6184fb",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5458430490780302,
+      "1970s": -1.4014823632842308,
+      "1980s": -1.7695296520560078,
+      "1990s": -1.8167387450612296,
+      "2000s": -1.6143915021748398,
+      "2010s": -1.8644329083836055
+    }
+  },
+  {
+    "sample_id": "A_4e5c5676d1d4",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.9277560457485379,
+      "1970s": -1.8375360335430742,
+      "1980s": -1.815995388882584,
+      "1990s": -1.6154212192050181,
+      "2000s": -1.4439440289424965,
+      "2010s": -1.6073839428363499
+    }
+  },
+  {
+    "sample_id": "A_4f4f8d4571d8",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.0080008470959,
+      "1970s": -1.6204846057644318,
+      "1980s": -1.3748628443636335,
+      "1990s": -1.9194563726541674,
+      "2000s": -1.6877013954217546,
+      "2010s": -1.9607160917003057
+    }
+  },
+  {
+    "sample_id": "A_508c4d85eac7",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8651128438250453,
+      "1970s": -1.5018573560319055,
+      "1980s": -1.5295339758158661,
+      "1990s": -1.5078062945976853,
+      "2000s": -1.4757059071853291,
+      "2010s": -1.7769132895919029
+    }
+  },
+  {
+    "sample_id": "A_50b22ccf9e8d",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1990s. The use of electronic drums, synth pads, and a clean, spacious mix aligns with the era\u2019s trend toward digital recording and studio techniques. The overall aesthetic\u2014combining elements",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.0484566659433767,
+      "1970s": -1.753983882463217,
+      "1980s": -1.8759815213670663,
+      "1990s": -1.6835327737899206,
+      "2000s": -1.6649919801675424,
+      "2010s": -1.9184323836943804
+    }
+  },
+  {
+    "sample_id": "A_5266ed0393ab",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1990s. The use of electronic elements alongside traditional instruments, combined with a clean mix and balanced stereo imaging, aligns with the era\u2019s trend of blending digital and analog techniques. The overall aesthetic",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.740024867856846,
+      "1970s": -1.6901094077111338,
+      "1980s": -1.8261401895251765,
+      "1990s": -1.7103818978412164,
+      "2000s": -1.6660598807684437,
+      "2010s": -1.8897950655973546
+    }
+  },
+  {
+    "sample_id": "A_54ba0dcd7ee7",
+    "raw_output": "The track features a classic rock sound with a straightforward, guitar-driven arrangement typical of the 1970s. The production style is raw and energetic, with a focus on live instrumentation and minimal studio effects, which aligns with the era\u2019s rock recordings. The overall vibe, combined with the chord progression and instrumentation",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6972022994541476,
+      "1970s": -1.6015856828471442,
+      "1980s": -1.9402186255083507,
+      "1990s": -2.0138791075351037,
+      "2000s": -1.8568109746847767,
+      "2010s": -2.0345032427139813
+    }
+  },
+  {
+    "sample_id": "A_57ae766385c1",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7881942181993509,
+      "1970s": -1.481497946611853,
+      "1980s": -1.4983453475097122,
+      "1990s": -1.6340140529755445,
+      "2000s": -1.5724480524440878,
+      "2010s": -1.8252768312704575
+    }
+  },
+  {
+    "sample_id": "A_5ae45c8d4da6",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.9150395759679668,
+      "1970s": -1.6126473555632401,
+      "1980s": -1.3939876990179982,
+      "1990s": -1.668099346159579,
+      "2000s": -1.5563855266736937,
+      "2010s": -1.754256668369635
+    }
+  },
+  {
+    "sample_id": "A_5bfc557e96e1",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 2000s. The use of clean, well-balanced guitar tones, subtle reverb, and a crisp, spacious mix align with production trends from that decade. The overall aesthetic\u2014melancholic",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.7431582840508781,
+      "1970s": -1.5135232980787805,
+      "1980s": -1.7670705138298217,
+      "1990s": -1.6393907513120212,
+      "2000s": -1.5468567227762833,
+      "2010s": -1.7435942654119572
+    }
+  },
+  {
+    "sample_id": "A_5e92779c4d48",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9286331816983875,
+      "1970s": -1.8244225427188212,
+      "1980s": -1.66293641289667,
+      "1990s": -1.4328958317119032,
+      "2000s": -1.5559350309704314,
+      "2010s": -1.8316476158506703
+    }
+  },
+  {
+    "sample_id": "A_5ee41d0d0e9b",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.4666606342270825,
+      "1970s": -1.3911710697225317,
+      "1980s": -1.9268866526945203,
+      "1990s": -2.0657249366304313,
+      "2000s": -1.7911584829926142,
+      "2010s": -1.9733653943112586
+    }
+  },
+  {
+    "sample_id": "A_5f0330a47082",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4128716062805324,
+      "1970s": -1.44059730769186,
+      "1980s": -1.999883121374296,
+      "1990s": -2.057748741186515,
+      "2000s": -1.6482516000032774,
+      "2010s": -1.8243211699591484
+    }
+  },
+  {
+    "sample_id": "A_5f507681a43a",
+    "raw_output": "The track features a polished, high-fidelity production style with a wide stereo field, prominent electric guitars, driving drums, and a clear, punchy mix that emphasizes both rhythm and melody. The overall sound is characteristic of late 1990s indie rock, with a blend of energetic guitar riffs, mel",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.1164330721985607,
+      "1970s": -2.0328817187037203,
+      "1980s": -1.729739912223522,
+      "1990s": -1.6646732614271968,
+      "2000s": -1.6472838291847438,
+      "2010s": -1.8191650407861744
+    }
+  },
+  {
+    "sample_id": "A_60ad56cdf260",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.8850022047699895,
+      "1970s": -1.834184087920221,
+      "1980s": -1.9218335116966045,
+      "1990s": -1.518205017913715,
+      "2000s": -1.4387937062256242,
+      "2010s": -1.7260768382002425
+    }
+  },
+  {
+    "sample_id": "A_61ff5afc36ea",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3532393923032942,
+      "1970s": -1.7696963214420975,
+      "1980s": -1.7780473664624878,
+      "1990s": -1.8723060039719712,
+      "2000s": -1.7485567527983221,
+      "2010s": -1.8795630388194695
+    }
+  },
+  {
+    "sample_id": "A_635e1abec034",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1970s. It features a classic rock band setup with electric guitars, bass, drums, and vocals, typical of that era\u2019s rock music. The guitar tones, drum sound, and vocal style all align with the 1",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5688286694639828,
+      "1970s": -1.4655103392337878,
+      "1980s": -1.8144073846997344,
+      "1990s": -1.9010442136859638,
+      "2000s": -1.7217286481463816,
+      "2010s": -1.9033247548068175
+    }
+  },
+  {
+    "sample_id": "A_66805d0af33a",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8527484024198202,
+      "1970s": -1.4611891545091567,
+      "1980s": -1.5833424711527186,
+      "1990s": -1.581261879394333,
+      "2000s": -1.5560178112209542,
+      "2010s": -1.8999455204611877
+    }
+  },
+  {
+    "sample_id": "A_683ef12891ca",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.658340570913424,
+      "1970s": -1.4686310956230955,
+      "1980s": -1.6594058496957587,
+      "1990s": -1.697712700086413,
+      "2000s": -1.5703464534162777,
+      "2010s": -1.8040819184461725
+    }
+  },
+  {
+    "sample_id": "A_6a82d38d4924",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7733669510362233,
+      "1970s": -1.3519573756780119,
+      "1980s": -1.9685058943487093,
+      "1990s": -2.0975880362475436,
+      "2000s": -1.7146338759303035,
+      "2010s": -1.9338934387997142
+    }
+  },
+  {
+    "sample_id": "A_6bab3ad1afd7",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, radio-friendly sound typical of the 1990s. The use of clean electric guitars, a steady drum groove, and a clear, upfront vocal mix align with the era\u2019s pop-rock aesthetic. The overall sonic character\u2014bright, well-bal",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.6522634377979557,
+      "1970s": -1.5478782411155407,
+      "1980s": -1.692922704602097,
+      "1990s": -1.6965948242886952,
+      "2000s": -1.636531182743056,
+      "2010s": -1.8599992130439205
+    }
+  },
+  {
+    "sample_id": "A_6f63042b1712",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.8648266316595254,
+      "1970s": -1.4669345991533191,
+      "1980s": -1.4443842862237943,
+      "1990s": -1.6823139924454154,
+      "2000s": -1.571046356599254,
+      "2010s": -1.8299381542674382
+    }
+  },
+  {
+    "sample_id": "A_704f0f6eb8ab",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.7273068071699527,
+      "1970s": -1.678278554312783,
+      "1980s": -1.6438732395072293,
+      "1990s": -1.5366154942166759,
+      "2000s": -1.4564087997569004,
+      "2010s": -1.6071685871611407
+    }
+  },
+  {
+    "sample_id": "A_71397dc7b0d9",
+    "raw_output": "This track is a contemporary classical piece that blends ambient electronic textures with a minimalist, introspective aesthetic. The production is clean and high-fidelity, emphasizing spaciousness and clarity. Instrumentation centers on a resonant grand piano delivering a melancholic, lyrical melody, supported by subtle, evolving synth pads that create an eth",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -2.1564038957294542,
+      "1970s": -1.874131595766812,
+      "1980s": -1.8962855636164022,
+      "1990s": -1.7822353659812507,
+      "2000s": -1.7236003416528547,
+      "2010s": -1.9199616108990085
+    }
+  },
+  {
+    "sample_id": "A_71473b29f500",
+    "raw_output": "This track features a polished, high-fidelity production style with a wide stereo image and clear separation between instruments. The use of electronic drum samples, synth pads, and a prominent bass line is characteristic of 1980s pop and new wave music. The overall sound design, including the use of reverb and",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.30745117427432,
+      "1970s": -1.9974487822473748,
+      "1980s": -1.74524331379871,
+      "1990s": -1.9328718011202,
+      "2000s": -1.7553729680421384,
+      "2010s": -1.945492413804459
+    }
+  },
+  {
+    "sample_id": "A_773b60ec9a4e",
+    "raw_output": "The track features a polished, high-fidelity production style with a wide stereo image and clear separation between instruments. The use of electronic drum samples, synth pads, and a prominent electric bass line suggests a modern approach, while the overall arrangement and harmonic language are reminiscent of late 1990s to early 2",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9272761072897993,
+      "1970s": -1.7575211854673398,
+      "1980s": -1.9169394386663043,
+      "1990s": -1.7957180379498823,
+      "2000s": -1.7623874352393614,
+      "2010s": -2.0203474679328792
+    }
+  },
+  {
+    "sample_id": "A_7a9ec05a0b21",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9253616499481723,
+      "1970s": -1.7710911060203216,
+      "1980s": -1.7397917504349607,
+      "1990s": -1.5139376456008904,
+      "2000s": -1.4905345138940902,
+      "2010s": -1.8092641643015668
+    }
+  },
+  {
+    "sample_id": "A_7ea97c194895",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8127495303924661,
+      "1970s": -1.349556941067931,
+      "1980s": -1.686340117816144,
+      "1990s": -1.9017886105648358,
+      "2000s": -1.6518514713316108,
+      "2010s": -1.9404592660648632
+    }
+  },
+  {
+    "sample_id": "A_824399dbec24",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering are consistent with the 1970s folk singer-songwriter aesthetic. The acoustic guitar is recorded with a natural, unprocessed tone, and the overall mix is warm and intimate, emphasizing the vocal performance and the subtle nuances of the guitar. The production choices\u2014",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.607769082140294,
+      "1970s": -1.4508478448660753,
+      "1980s": -1.7968463369434176,
+      "1990s": -1.7133279762801976,
+      "2000s": -1.5726965488556743,
+      "2010s": -1.7618426533917955
+    }
+  },
+  {
+    "sample_id": "A_836de81364b8",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4622723503598536,
+      "1970s": -1.520600808996278,
+      "1980s": -1.7782916980067967,
+      "1990s": -1.6687763863119471,
+      "2000s": -1.6150845387237496,
+      "2010s": -1.8627326110727154
+    }
+  },
+  {
+    "sample_id": "A_83e83ff3dbba",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.378623685308412,
+      "1970s": -1.771178874270845,
+      "1980s": -1.9154858810761652,
+      "1990s": -2.0014059520290175,
+      "2000s": -1.7686029778560624,
+      "2010s": -1.8763200597895775
+    }
+  },
+  {
+    "sample_id": "A_86de16c80740",
+    "raw_output": "The track features a raw, lo-fi production style with prominent electric guitars, a driving drum beat, and a straightforward, energetic arrangement typical of early punk rock. The overall sound and aesthetic align with the 1970s punk movement, which emphasized simplicity, aggression, and a DIY ethos. The production choices\u2014",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.9134879181565339,
+      "1970s": -1.8272981027375863,
+      "1980s": -1.9360255510346178,
+      "1990s": -1.7252790473867208,
+      "2000s": -1.7718616549755097,
+      "2010s": -2.0041263928287663
+    }
+  },
+  {
+    "sample_id": "A_870b58a1e10c",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8022023815647117,
+      "1970s": -1.5523351029714831,
+      "1980s": -1.6703076149569824,
+      "1990s": -1.5602040889607451,
+      "2000s": -1.4829346209917276,
+      "2010s": -1.7067664853202587
+    }
+  },
+  {
+    "sample_id": "A_87ca1992d635",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4590218265111616,
+      "1970s": -1.4678623141999196,
+      "1980s": -1.6207240362673474,
+      "1990s": -1.664915505101817,
+      "2000s": -1.5483022193366196,
+      "2010s": -1.766839370080561
+    }
+  },
+  {
+    "sample_id": "A_87f23c6b685a",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9557627592894278,
+      "1970s": -1.6555063523828721,
+      "1980s": -1.5549983429245913,
+      "1990s": -1.4338729443343254,
+      "2000s": -1.5848766196031647,
+      "2010s": -2.02034343410196
+    }
+  },
+  {
+    "sample_id": "A_88785033f85c",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1990s. The use of a full brass section, layered percussion, and a tight rhythm section aligns with the era\u2019s emphasis on rich arrangements and clean, well-balanced mixes. The overall",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.6744015271760873,
+      "1970s": -1.4230900611328252,
+      "1980s": -1.645638352361857,
+      "1990s": -1.6927320196919027,
+      "2000s": -1.5627236372747575,
+      "2010s": -1.8273442255958798
+    }
+  },
+  {
+    "sample_id": "A_8c5cef244542",
+    "raw_output": "The track\u2019s lo-fi production, simple drum patterns, and raw, unpolished sound are characteristic of the 1990s indie rock scene, especially the DIY aesthetic of bands like Pavement. The instrumentation is straightforward\u2014electric guitar, bass, and drums\u2014recorded with minimal processing, giving it a",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.699717543549923,
+      "1970s": -1.6398527725023087,
+      "1980s": -1.7648815364700567,
+      "1990s": -1.6139261460739363,
+      "2000s": -1.6561410595168127,
+      "2010s": -1.8488585285267618
+    }
+  },
+  {
+    "sample_id": "A_8d17e76fd9a9",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6212644450843072,
+      "1970s": -1.4065765959967393,
+      "1980s": -1.6351035118041182,
+      "1990s": -1.5849629583917704,
+      "2000s": -1.4765635949406715,
+      "2010s": -1.7701630921728793
+    }
+  },
+  {
+    "sample_id": "A_8e6b2141dfec",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.8450116407439054,
+      "1970s": -1.5269051393934205,
+      "1980s": -1.5844884158323111,
+      "1990s": -1.4590881403482854,
+      "2000s": -1.5877259060071083,
+      "2010s": -1.9694099842308788
+    }
+  },
+  {
+    "sample_id": "A_92bcde56c3a1",
+    "raw_output": "This track features a polished, high-fidelity production style with a wide stereo image, crisp electronic drums, and layered synth textures that are characteristic of modern pop and electronic music. The use of digital effects, precise rhythmic programming, and a clean, glossy mix places it firmly in the 2010s era",
+    "parsed": "2010s",
+    "label_scores": {
+      "1960s": -2.168729018736485,
+      "1970s": -2.093291117278568,
+      "1980s": -1.7806804064402968,
+      "1990s": -1.8206720155976654,
+      "2000s": -1.7428681114688516,
+      "2010s": -1.9492626989012933
+    }
+  },
+  {
+    "sample_id": "A_93841d4d8722",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a polished, high-fidelity sound typical of the 1990s. The use of a clean electric guitar tone, a tight rhythm section, and a balanced mix with clear separation of instruments are characteristic of recordings from that era. The overall aesthetic, including",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.663793248746515,
+      "1970s": -1.5570240554689008,
+      "1980s": -1.7685104513839178,
+      "1990s": -1.7130438367858005,
+      "2000s": -1.6178581884632877,
+      "2010s": -1.8455434496754606
+    }
+  },
+  {
+    "sample_id": "A_93a1057460ce",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1970s. It features a blend of rock and pop elements with a polished yet organic feel, typical of that era. The use of electric guitars, bass, drums, and keyboards, along with the song\u2019s structure and harmonic",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8747646501651616,
+      "1970s": -1.6083636023445251,
+      "1980s": -1.798565426368441,
+      "1990s": -1.7723609293570917,
+      "2000s": -1.6287269916465448,
+      "2010s": -1.812839967176842
+    }
+  },
+  {
+    "sample_id": "A_96560b343a84",
+    "raw_output": "The track features a raw, energetic production style with distorted electric guitars, a driving drum beat, and a prominent bass line, all hallmarks of classic rock from the 1970s. The overall sound is gritty and unpolished, typical of the era\u2019s rock recordings, and the instrumentation aligns with",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -2.015987112572475,
+      "1970s": -1.6589970826480567,
+      "1980s": -1.7632264820804266,
+      "1990s": -1.9360142463665397,
+      "2000s": -1.7845502952768584,
+      "2010s": -1.9914410039054928
+    }
+  },
+  {
+    "sample_id": "A_9cae8052a6f3",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.680736963662639,
+      "1970s": -1.3919878871861329,
+      "1980s": -1.8056264443439431,
+      "1990s": -1.7767493505925813,
+      "2000s": -1.5695724324068578,
+      "2010s": -1.8895551668174448
+    }
+  },
+  {
+    "sample_id": "A_9e58d9525ff0",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8787604255921906,
+      "1970s": -1.4840363648113453,
+      "1980s": -1.7899328629500815,
+      "1990s": -1.5333406652171107,
+      "2000s": -1.4847151272242627,
+      "2010s": -1.9105999210005393
+    }
+  },
+  {
+    "sample_id": "A_a0a517cebaad",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9569105127156945,
+      "1970s": -1.7390338147743023,
+      "1980s": -1.5051731517232838,
+      "1990s": -1.3915309800104296,
+      "2000s": -1.5779518822710088,
+      "2010s": -1.9586613874453178
+    }
+  },
+  {
+    "sample_id": "A_a144dd9be6d0",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3955244249864336,
+      "1970s": -1.4353974419273072,
+      "1980s": -1.9868889293629763,
+      "1990s": -2.0733638231158693,
+      "2000s": -1.7115292031085119,
+      "2010s": -1.8547758943896042
+    }
+  },
+  {
+    "sample_id": "A_a2470c1a94ce",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3201447371393442,
+      "1970s": -1.518331466777454,
+      "1980s": -1.8222146000989596,
+      "1990s": -1.9828958294456243,
+      "2000s": -1.6674758066073991,
+      "2010s": -1.853342493333912
+    }
+  },
+  {
+    "sample_id": "A_a2e57e325ae9",
+    "raw_output": "The track features a raw, organic production style with prominent acoustic guitar, steady drum kit, and a warm, slightly gritty vocal delivery. The instrumentation is straightforward and unembellished, typical of classic rock and folk recordings from the 1970s. The overall sound, including the mix and mastering approach,",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.789177030830615,
+      "1970s": -1.539817067598051,
+      "1980s": -1.7101877036220685,
+      "1990s": -1.5780832928830932,
+      "2000s": -1.5650911238953995,
+      "2010s": -1.8985278040236153
+    }
+  },
+  {
+    "sample_id": "A_a5b86e097ab5",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.1753014811329194,
+      "1970s": -2.0022065766970627,
+      "1980s": -1.341702142097347,
+      "1990s": -1.600873108523956,
+      "2000s": -1.701995048140816,
+      "2010s": -1.907230016491667
+    }
+  },
+  {
+    "sample_id": "A_a665d3e06680",
+    "raw_output": "The track\u2019s production style, instrumentation, and mastering suggest a modern, high-fidelity approach typical of the 2010s. The use of a clean, well-balanced mix, crisp drum sounds, and a polished overall sound align with contemporary production trends. The presence of a prominent saxophone solo, supported",
+    "parsed": "2010s",
+    "label_scores": {
+      "1960s": -1.485199896242193,
+      "1970s": -1.5162820237019332,
+      "1980s": -1.7485479851675336,
+      "1990s": -1.7320304851637047,
+      "2000s": -1.5980184364416345,
+      "2010s": -1.8033329064710415
+    }
+  },
+  {
+    "sample_id": "A_a6dcdc9c362d",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3354417913869838,
+      "1970s": -1.6908024559925252,
+      "1980s": -1.8821250650253205,
+      "1990s": -2.0727934891365294,
+      "2000s": -1.8340212426919607,
+      "2010s": -1.962770629026636
+    }
+  },
+  {
+    "sample_id": "A_a8c8053f8c50",
+    "raw_output": "The track features a polished, high-fidelity production style with a clear, balanced mix that highlights the electric guitars, bass, drums, and vocals. The instrumentation is typical of alternative rock and pop rock, with a focus on melodic guitar riffs, a driving rhythm section, and layered vocal harmonies. The overall",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -1.9334417705831584,
+      "1970s": -1.860651737999433,
+      "1980s": -1.9194937942520482,
+      "1990s": -1.4964833557924067,
+      "2000s": -1.5440048411383032,
+      "2010s": -1.8242003123941686
+    }
+  },
+  {
+    "sample_id": "A_a8e6ebaf5df5",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8819966171849956,
+      "1970s": -1.4400145526033157,
+      "1980s": -1.5791692601960676,
+      "1990s": -1.7856499119898217,
+      "2000s": -1.6079549186197255,
+      "2010s": -1.8771383838320617
+    }
+  },
+  {
+    "sample_id": "A_ae33228b5ee7",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1960s. It features a classic rock band setup with electric guitars, bass, drums, and prominent vocal harmonies, all recorded with a relatively raw and organic feel typical of that era. The moderate tempo, straightforward 4",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3947954682862473,
+      "1970s": -1.5358615957638904,
+      "1980s": -2.009164538249024,
+      "1990s": -1.9510289474928868,
+      "2000s": -1.7592994404185447,
+      "2010s": -1.8915024602320045
+    }
+  },
+  {
+    "sample_id": "A_ae81a8111d10",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8010787767489091,
+      "1970s": -1.5077215659912326,
+      "1980s": -1.6418252936491626,
+      "1990s": -1.6401789896808623,
+      "2000s": -1.5282815741811646,
+      "2010s": -1.7401477885105123
+    }
+  },
+  {
+    "sample_id": "A_ae9cba826610",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6639811728491622,
+      "1970s": -1.3950199004784736,
+      "1980s": -1.6981885145505657,
+      "1990s": -1.9307814788116957,
+      "2000s": -1.6167577044507198,
+      "2010s": -1.868181334939436
+    }
+  },
+  {
+    "sample_id": "A_b5247e6b7cf6",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.368206937884679,
+      "1970s": -1.6576821116286737,
+      "1980s": -1.7493177836913674,
+      "1990s": -1.8433278431439248,
+      "2000s": -1.6587924292034586,
+      "2010s": -1.8634858722361969
+    }
+  },
+  {
+    "sample_id": "A_b71d643f08a0",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.7651316933079215,
+      "1970s": -1.5733659851039192,
+      "1980s": -1.6932214115986426,
+      "1990s": -1.5042551239657769,
+      "2000s": -1.4373738838548888,
+      "2010s": -1.6812096099893097
+    }
+  },
+  {
+    "sample_id": "A_b72c9e6512e2",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.8180366446213156,
+      "1970s": -1.6128045471032237,
+      "1980s": -1.6510180603072513,
+      "1990s": -1.4511915018265427,
+      "2000s": -1.4110312130942475,
+      "2010s": -1.6716549406883132
+    }
+  },
+  {
+    "sample_id": "A_ba02ddf42932",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.8072337684134254,
+      "1970s": -1.6669542728432134,
+      "1980s": -1.8576295928360196,
+      "1990s": -1.5406741028600663,
+      "2000s": -1.4490677746434812,
+      "2010s": -1.5498806754112593
+    }
+  },
+  {
+    "sample_id": "A_ba5269306066",
+    "raw_output": "The track features a polished, high-fidelity production style with a wide stereo image, characteristic of 1990s pop and R&B. The use of electronic drums, synth pads, and a prominent bass line, combined with the smooth, melodic vocal delivery, aligns with the production aesthetics of the",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.1060984556243056,
+      "1970s": -1.6890091999157448,
+      "1980s": -1.667143632987063,
+      "1990s": -1.7320382315210736,
+      "2000s": -1.648770999032422,
+      "2010s": -1.9006399405807315
+    }
+  },
+  {
+    "sample_id": "A_bc2e839adccf",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6409750127822917,
+      "1970s": -1.50386095678914,
+      "1980s": -1.5410886267891328,
+      "1990s": -1.6966737408474728,
+      "2000s": -1.593330643594527,
+      "2010s": -1.7166718890148331
+    }
+  },
+  {
+    "sample_id": "A_bd23e156d90d",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.649721866906475,
+      "1970s": -1.4240523075859528,
+      "1980s": -1.569423869073944,
+      "1990s": -1.8044940849249542,
+      "2000s": -1.5574343894295453,
+      "2010s": -1.727807116934855
+    }
+  },
+  {
+    "sample_id": "A_bd35b978fce3",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.615153130802355,
+      "1970s": -1.5060323833777147,
+      "1980s": -1.7159701162054262,
+      "1990s": -1.6962170615443029,
+      "2000s": -1.5737310440672445,
+      "2010s": -1.8287995367682015
+    }
+  },
+  {
+    "sample_id": "A_beb0d58de197",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4817949761418276,
+      "1970s": -1.5287285407393938,
+      "1980s": -1.6708712118270341,
+      "1990s": -1.6697751410065393,
+      "2000s": -1.5623106384082348,
+      "2010s": -1.7501844188809628
+    }
+  },
+  {
+    "sample_id": "A_bfeca63d9306",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.9848062517339713,
+      "1970s": -1.8403016067895805,
+      "1980s": -1.9208609510023962,
+      "1990s": -1.5307949708421802,
+      "2000s": -1.3864804962213384,
+      "2010s": -1.662856391254536
+    }
+  },
+  {
+    "sample_id": "A_c379c73bad80",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.7866046503877442,
+      "1970s": -1.544937050806766,
+      "1980s": -1.5281419692000782,
+      "1990s": -1.5123739086857313,
+      "2000s": -1.5392578797873284,
+      "2010s": -1.829056899263378
+    }
+  },
+  {
+    "sample_id": "A_c3db6648ee1e",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.4574785697768675,
+      "1970s": -1.5427180243459588,
+      "1980s": -1.7226727620800375,
+      "1990s": -1.6499135721460334,
+      "2000s": -1.5610739806579659,
+      "2010s": -1.8335702759140986
+    }
+  },
+  {
+    "sample_id": "A_c3f517c3cbf9",
+    "raw_output": "The track features a raw, organic production style with a focus on acoustic instruments like guitar and piano, complemented by subtle percussion. The overall sound is warm and intimate, characteristic of folk and singer-songwriter music. The vocal delivery is earnest and unprocessed, emphasizing storytelling. The arrangement is straightforward, with clear melodic",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -1.9330188596104563,
+      "1970s": -1.691747472065117,
+      "1980s": -2.165878062834963,
+      "1990s": -1.7700806790726347,
+      "2000s": -1.702903385659738,
+      "2010s": -1.93081997117406
+    }
+  },
+  {
+    "sample_id": "A_c48d942cdb4b",
+    "raw_output": "The track features a classic rock sound with a prominent electric guitar, steady drum beat, and a raw, energetic production style that emphasizes a live band feel. The instrumentation includes electric guitars, bass, drums, and vocals, all mixed with a relatively dry, upfront sound typical of 1970s rock recordings.",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.9631377325003996,
+      "1970s": -1.6156903096621136,
+      "1980s": -1.7839662601236341,
+      "1990s": -1.743163992137852,
+      "2000s": -1.6525305515242508,
+      "2010s": -1.922078783467441
+    }
+  },
+  {
+    "sample_id": "A_c5262c01b68e",
+    "raw_output": "The track features a raw, organic production style with a focus on live instrumentation, including electric guitar, bass, drums, and piano. The mix is relatively dry, with minimal processing, and the overall sound is reminiscent of classic blues recordings from the 1960s and 1970s. The",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.8910884133947548,
+      "1970s": -1.6926057241053059,
+      "1980s": -2.0582914683946,
+      "1990s": -1.8229620259025978,
+      "2000s": -1.751671871268627,
+      "2010s": -2.0237495840119664
+    }
+  },
+  {
+    "sample_id": "A_c55228db6bdb",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1990s. The clean, well-balanced mix, the use of electric guitars with a bright, slightly overdriven tone, and the steady, mid-tempo drum groove are all hallmarks of 1990",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.8233158952189115,
+      "1970s": -1.5767429494981116,
+      "1980s": -1.7578385253818851,
+      "1990s": -1.5504909090723231,
+      "2000s": -1.516475807860843,
+      "2010s": -1.7579932666449167
+    }
+  },
+  {
+    "sample_id": "A_c6fbd114be85",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7254663706044084,
+      "1970s": -1.4092483925328452,
+      "1980s": -1.7112273938146245,
+      "1990s": -1.6421239177507232,
+      "2000s": -1.5059061404899694,
+      "2010s": -1.763263210938021
+    }
+  },
+  {
+    "sample_id": "A_c7f573e11161",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.016211755355471,
+      "1970s": -1.7765158663241891,
+      "1980s": -1.7998446379424422,
+      "1990s": -1.4311816800855013,
+      "2000s": -1.4256383323518094,
+      "2010s": -1.843078966056055
+    }
+  },
+  {
+    "sample_id": "A_cb842261f48c",
+    "raw_output": "The track\u2019s production style, instrumentation, and overall sound are characteristic of the 1970s. It features a classic rock band setup with electric guitars, bass, drums, and prominent vocals, all recorded with a warm, analog feel typical of that era. The mix emphasizes a balanced stereo image, with guitars",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.7265637962736946,
+      "1970s": -1.48819201355127,
+      "1980s": -1.7092654488606058,
+      "1990s": -1.7938262897368986,
+      "2000s": -1.627786025437672,
+      "2010s": -1.7938409667003725
+    }
+  },
+  {
+    "sample_id": "A_cc1fd9228b1e",
+    "raw_output": "Answer: 2000s",
+    "parsed": "2000s",
+    "label_scores": {
+      "1960s": -1.903475339506258,
+      "1970s": -1.6759912691195495,
+      "1980s": -1.7306038213755528,
+      "1990s": -1.471943545033355,
+      "2000s": -1.430793700294089,
+      "2010s": -1.7878382922099263
+    }
+  },
+  {
+    "sample_id": "A_ccf7cedc3f29",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.6561535327655292,
+      "1970s": -1.3400990413711042,
+      "1980s": -1.8445021006937168,
+      "1990s": -1.9077170802574983,
+      "2000s": -1.626406160685292,
+      "2010s": -1.8256578386281035
+    }
+  },
+  {
+    "sample_id": "A_d191aa4457ea",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.8154046021700196,
+      "1970s": -1.5871056849773595,
+      "1980s": -1.632166835028329,
+      "1990s": -1.4683146291827143,
+      "2000s": -1.464359230343689,
+      "2010s": -1.7547928128369676
+    }
+  },
+  {
+    "sample_id": "A_d8021b61f788",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.2188347830488055,
+      "1970s": -1.8960169039019092,
+      "1980s": -1.8800963828944077,
+      "1990s": -1.369380047384766,
+      "2000s": -1.426801366136715,
+      "2010s": -1.7859457651393313
+    }
+  },
+  {
+    "sample_id": "A_d9f0a72ee310",
+    "raw_output": "The track features a polished, high-fidelity production style with a wide stereo image, layered guitars, and a clear, punchy drum sound that is characteristic of modern indie rock. The use of atmospheric synth pads and the overall mix quality suggest a contemporary production approach, placing it firmly in the 2010s",
+    "parsed": "2010s",
+    "label_scores": {
+      "1960s": -1.9198425206959655,
+      "1970s": -1.682881529963197,
+      "1980s": -1.8935863075457746,
+      "1990s": -1.6987760924794202,
+      "2000s": -1.6334302866107464,
+      "2010s": -1.8180278712734435
+    }
+  },
+  {
+    "sample_id": "A_dc34d8a48c5d",
+    "raw_output": "The track features a raw, energetic production style with distorted electric guitars, punchy drums, and a driving bass line, all hallmarks of the punk rock genre. The overall sound is gritty and unpolished, reflecting the DIY ethos of the late 1970s punk scene. The tempo is fast,",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.90579888146749,
+      "1970s": -1.717452498860439,
+      "1980s": -1.7264327292541566,
+      "1990s": -1.5585340916786663,
+      "2000s": -1.5534558081726573,
+      "2010s": -1.720146014517013
+    }
+  },
+  {
+    "sample_id": "A_dd0240f4f1fd",
+    "raw_output": "This track is an instrumental electronic piece that blends ambient, downtempo, and subtle techno elements. The production is clean and spacious, with a focus on layered synth pads, a steady electronic drum groove, and a deep, resonant bassline that anchors the mix. The sound design emphasizes a wide stereo field and subtle re",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -2.201951276299951,
+      "1970s": -1.9885946470003546,
+      "1980s": -1.8085509526099486,
+      "1990s": -1.8104039654244843,
+      "2000s": -1.7096973698953661,
+      "2010s": -1.9342728112060286
+    }
+  },
+  {
+    "sample_id": "A_df0371fc9523",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.3542130256364544,
+      "1970s": -1.6673197161881035,
+      "1980s": -1.8675777904509232,
+      "1990s": -1.9978263141611023,
+      "2000s": -1.7159684947619098,
+      "2010s": -1.8478974647223367
+    }
+  },
+  {
+    "sample_id": "A_df811fcc417e",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.52831855331533,
+      "1970s": -1.5985416294388415,
+      "1980s": -1.753147532203002,
+      "1990s": -1.6700966919052007,
+      "2000s": -1.6314025108003989,
+      "2010s": -1.8295397570400382
+    }
+  },
+  {
+    "sample_id": "A_e17d753422c1",
+    "raw_output": "Answer: 1990s",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -1.9448157077858923,
+      "1970s": -1.6292038320452775,
+      "1980s": -1.6990721270558424,
+      "1990s": -1.5443534171554347,
+      "2000s": -1.5064277497622243,
+      "2010s": -1.8439638110758096
+    }
+  },
+  {
+    "sample_id": "A_e5e31d2e8942",
+    "raw_output": "Answer: 1980s",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -2.0889033878193004,
+      "1970s": -1.8421077247112407,
+      "1980s": -1.3195632845727232,
+      "1990s": -1.5387179997342173,
+      "2000s": -1.5667400616657687,
+      "2010s": -1.8664249326830031
+    }
+  },
+  {
+    "sample_id": "A_eb4294f4ba1b",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8914260616147658,
+      "1970s": -1.4363738217389255,
+      "1980s": -1.4870689433410007,
+      "1990s": -1.6653077413757273,
+      "2000s": -1.5354009747061355,
+      "2010s": -1.8114616589155048
+    }
+  },
+  {
+    "sample_id": "A_ed06433a8bf0",
+    "raw_output": "The track\u2019s raw, lo-fi production, prominent distorted electric guitars, and straightforward, driving rhythm section are characteristic of early punk rock, which emerged in the late 1970s. The aggressive, fast-paced energy and simple, repetitive chord progressions further align with the punk aesthetic of that era. While the",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5686938847247802,
+      "1970s": -1.4808654772350565,
+      "1980s": -1.6624794800136442,
+      "1990s": -1.7403459976449085,
+      "2000s": -1.6400388617585122,
+      "2010s": -1.8052589187427657
+    }
+  },
+  {
+    "sample_id": "A_f1da94667a53",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5594230345195683,
+      "1970s": -1.4812128643498,
+      "1980s": -1.7667242960305884,
+      "1990s": -1.7365880157485662,
+      "2000s": -1.5841412731533637,
+      "2010s": -1.802578904775146
+    }
+  },
+  {
+    "sample_id": "A_f1fd094e1365",
+    "raw_output": "The track\u2019s raw, lo-fi production, aggressive distorted guitars, and fast, driving rhythm are characteristic of the early 1980s punk scene, especially the hardcore punk movement that emerged in that decade. The overall sound and attitude align with the 1980s punk aesthetic, making it most likely",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.985943650623085,
+      "1970s": -1.7773836704727728,
+      "1980s": -1.6705817370911973,
+      "1990s": -1.4549884187663338,
+      "2000s": -1.5703000784160395,
+      "2010s": -1.7827940526731254
+    }
+  },
+  {
+    "sample_id": "A_f2f2c36d2a08",
+    "raw_output": "The track features a polished, high-fidelity production style with a clear, balanced mix. The instrumentation includes electric guitars, bass, drums, and keyboards, typical of 1980s pop-rock. The overall sound and aesthetic align with the 1980s.  \nAnswer: 198",
+    "parsed": "1980s",
+    "label_scores": {
+      "1960s": -1.9899355616653338,
+      "1970s": -1.7195430421888886,
+      "1980s": -1.8921480207409331,
+      "1990s": -1.8397409298122511,
+      "2000s": -1.7790746877435595,
+      "2010s": -2.0122673116675287
+    }
+  },
+  {
+    "sample_id": "A_f43516fe396b",
+    "raw_output": "The track features a raw, energetic production style with distorted electric guitars, driving drums, and a prominent bass line, all hallmarks of 1990s alternative rock. The overall sound is gritty and unpolished, typical of the era\u2019s grunge and post-grunge movements. The vocal delivery is aggressive",
+    "parsed": "1990s",
+    "label_scores": {
+      "1960s": -2.0002789806785586,
+      "1970s": -1.9021395912168373,
+      "1980s": -1.8408850020168757,
+      "1990s": -1.4607992769524571,
+      "2000s": -1.5114350243093213,
+      "2010s": -1.810779830251704
+    }
+  },
+  {
+    "sample_id": "A_f4954021ae33",
+    "raw_output": "The track features a polished, high-fidelity production style with a clear, balanced mix. The instrumentation includes electric guitars, bass, drums, and piano, all recorded with a clean, modern sound. The overall aesthetic and production quality are consistent with contemporary pop music, placing it firmly in the 2010s",
+    "parsed": "2010s",
+    "label_scores": {
+      "1960s": -2.064584198375087,
+      "1970s": -1.7221081393167879,
+      "1980s": -1.9180146776361653,
+      "1990s": -1.917104722793738,
+      "2000s": -1.7947798700297426,
+      "2010s": -2.0252558633765148
+    }
+  },
+  {
+    "sample_id": "A_f6e7122cd258",
+    "raw_output": "The track features a polished, high-fidelity production style with a strong emphasis on electronic instrumentation, including layered synthesizers, a driving electronic drum beat, and a prominent bassline. The overall sound is bright, punchy, and designed for maximum impact on the dance floor, with a wide stereo image and crisp mastering that",
+    "parsed": null,
+    "label_scores": {
+      "1960s": -2.154209964333859,
+      "1970s": -2.085265347319364,
+      "1980s": -1.6951105700354674,
+      "1990s": -1.7344927993326564,
+      "2000s": -1.6387648589879973,
+      "2010s": -1.8377416134335363
+    }
+  },
+  {
+    "sample_id": "A_f8afca9f00c9",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.8340572462257114,
+      "1970s": -1.50888985163283,
+      "1980s": -1.8035173053503968,
+      "1990s": -1.5540506100223865,
+      "2000s": -1.4841002114444564,
+      "2010s": -1.6867134049825836
+    }
+  },
+  {
+    "sample_id": "A_f9409477a617",
+    "raw_output": "Answer: 1970s",
+    "parsed": "1970s",
+    "label_scores": {
+      "1960s": -1.5252452112144965,
+      "1970s": -1.4657423756425487,
+      "1980s": -1.7448204446263844,
+      "1990s": -1.7208182005342678,
+      "2000s": -1.5651708696786955,
+      "2010s": -1.7682616692836746
+    }
+  },
+  {
+    "sample_id": "A_ff331864c62f",
+    "raw_output": "Answer: 1960s",
+    "parsed": "1960s",
+    "label_scores": {
+      "1960s": -1.397905864430868,
+      "1970s": -1.50449342691536,
+      "1980s": -1.7465740609968634,
+      "1990s": -1.9450924476313958,
+      "2000s": -1.7262406428708346,
+      "2010s": -1.9174180516274646
+    }
+  }
+]

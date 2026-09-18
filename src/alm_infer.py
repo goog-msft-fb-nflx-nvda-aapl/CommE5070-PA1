@@ -157,6 +157,23 @@ def load_audio_flamingo3(device="cuda"):
     return _build_generate_and_score(model, processor, device, target_sr=16000)
 
 
+def load_music_flamingo(device="cuda"):
+    """Music Flamingo (round-3 queue item 4, IMPROVEMENT_FINDINGS_ROUND3.md section 4) --
+    NVIDIA's music-specialized successor built on the Audio Flamingo 3 backbone,
+    arXiv:2511.10289. Structurally analogous to AudioFlamingo3ForConditionalGeneration
+    (same author/library pattern) -- verified the class + model id actually exist in
+    the installed transformers (5.16.1) before writing this, not assumed from the
+    research summary alone."""
+    from transformers import MusicFlamingoForConditionalGeneration, AutoProcessor
+    model_id = "nvidia/music-flamingo-2601-hf"
+    processor = AutoProcessor.from_pretrained(model_id)
+    # same float32 rationale as Audio Flamingo 3 above -- try float32 first given the
+    # identical dtype-mismatch bug hit there; verified via smoke test before full run.
+    model = MusicFlamingoForConditionalGeneration.from_pretrained(model_id, torch_dtype=torch.float32).to(device)
+    model.eval()
+    return _build_generate_and_score(model, processor, device, target_sr=16000)
+
+
 def run(dataset_key, model_name="qwen2audio", split="validation", device="cuda", out_dir=None):
     spec = DATASETS[dataset_key]
     labels = spec["labels"]
@@ -168,6 +185,8 @@ def run(dataset_key, model_name="qwen2audio", split="validation", device="cuda",
         generate_fn, score_fn = load_qwen2_audio(device)
     elif model_name == "audioflamingo3":
         generate_fn, score_fn = load_audio_flamingo3(device)
+    elif model_name == "musicflamingo":
+        generate_fn, score_fn = load_music_flamingo(device)
     else:
         raise NotImplementedError(f"wire up {model_name} loader (verify current HF class name at run time)")
 
