@@ -14,6 +14,13 @@ conda create -n pa1_env python=3.10 -y && conda activate pa1_env
 pip install -r requirements.txt
 pip install muq peft   # MuQ encoder (src/muq_features.py) + LoRA (src/finetune_lora.py)
 PY=/path/to/miniconda3/envs/pa1_env/bin/python3   # or just `python` once the env is active
+
+# MusicFM (src/musicfm_features.py) -- not pip-installable, clone the reference
+# implementation into the project root as `musicfm/` (must be named exactly this --
+# its own internal imports are `from musicfm.model...`) and download its MSD checkpoint:
+git clone https://github.com/minzwon/musicfm.git
+wget -q https://huggingface.co/minzwon/MusicFM/resolve/main/msd_stats.json -O musicfm/data/msd_stats.json
+wget -q https://huggingface.co/minzwon/MusicFM/resolve/main/pretrained_msd.pt -O musicfm/data/pretrained_msd.pt
 ```
 
 ## 1. Feature extraction (run once each, cached to `cache/` — gitignored, ~GBs)
@@ -23,6 +30,12 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mert_features --dataset A --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mert_features --dataset B --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.muq_features  --dataset A --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.muq_features  --dataset B --device cuda:1
+
+# Post-round-3 encoder checks (negative/neutral results, not part of any best config,
+# kept for completeness -- see WORKLOG.md's "CultureMERT" and "MusicFM" sections):
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.culturemert_features --dataset B --device cuda:1
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.musicfm_features --dataset A --device cuda:1
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.musicfm_features --dataset B --device cuda:1
 ```
 
 ## 2. Component models needed for the ensembles below
