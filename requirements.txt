@@ -12,3 +12,5 @@ pyloudnorm
 transformers
 umap-learn
 pandas
+muq
+peft

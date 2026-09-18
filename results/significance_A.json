@@ -1,0 +1,92 @@
+{
+  "individual_ci": {
+    "muq_alone": {
+      "top1": 0.5075757575757576,
+      "ci_lo": 0.42424242424242425,
+      "ci_hi": 0.5909090909090909,
+      "n": 132
+    },
+    "mert_finetuned_alone": {
+      "top1": 0.49242424242424243,
+      "ci_lo": 0.4090909090909091,
+      "ci_hi": 0.5757575757575758,
+      "n": 132
+    },
+    "old_best_3way_ensemble": {
+      "top1": 0.5227272727272727,
+      "ci_lo": 0.4393939393939394,
+      "ci_hi": 0.6060606060606061,
+      "n": 132
+    },
+    "af3_direct_alone": {
+      "top1": 0.3787878787878788,
+      "ci_lo": 0.29545454545454547,
+      "ci_hi": 0.4621212121212121,
+      "n": 132
+    },
+    "fused_best_muq_af3direct": {
+      "top1": 0.553030303030303,
+      "ci_lo": 0.4696969696969697,
+      "ci_hi": 0.6363636363636364,
+      "n": 132
+    }
+  },
+  "paired_comparisons": {
+    "fused_best_vs_muq_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.04541969696969697,
+        "ci_lo": 0.0,
+        "ci_hi": 0.09090909090909094,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.0355
+      },
+      "mcnemar": {
+        "n01": 8,
+        "n10": 2,
+        "p_value": 0.109375
+      }
+    },
+    "fused_best_vs_mert_finetuned_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.06013787878787879,
+        "ci_lo": -0.030303030303030276,
+        "ci_hi": 0.1515151515151515,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.1087
+      },
+      "mcnemar": {
+        "n01": 22,
+        "n10": 14,
+        "p_value": 0.24298495403490966
+      }
+    },
+    "fused_best_vs_old_best_3way_ensemble": {
+      "paired_bootstrap": {
+        "diff_mean": 0.029887878787878786,
+        "ci_lo": -0.05303030303030298,
+        "ci_hi": 0.11363636363636365,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.2696
+      },
+      "mcnemar": {
+        "n01": 18,
+        "n10": 14,
+        "p_value": 0.5966148958541453
+      }
+    },
+    "fused_best_vs_af3_direct_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.17416969696969697,
+        "ci_lo": 0.07575757575757575,
+        "ci_hi": 0.27272727272727276,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0002
+      },
+      "mcnemar": {
+        "n01": 37,
+        "n10": 14,
+        "p_value": 0.0017691971837869858
+      }
+    }
+  }
+}

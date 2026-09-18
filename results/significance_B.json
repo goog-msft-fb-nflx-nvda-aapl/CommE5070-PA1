@@ -1,0 +1,92 @@
+{
+  "individual_ci": {
+    "muq_alone": {
+      "top1": 0.5,
+      "ci_lo": 0.4019607843137255,
+      "ci_hi": 0.5980392156862745,
+      "n": 102
+    },
+    "mert_alone": {
+      "top1": 0.47058823529411764,
+      "ci_lo": 0.37254901960784315,
+      "ci_hi": 0.5686274509803921,
+      "n": 102
+    },
+    "af3_cot_alone": {
+      "top1": 0.5588235294117647,
+      "ci_lo": 0.46078431372549017,
+      "ci_hi": 0.6568627450980392,
+      "n": 102
+    },
+    "af3_direct_alone": {
+      "top1": 0.5882352941176471,
+      "ci_lo": 0.49019607843137253,
+      "ci_hi": 0.6764705882352942,
+      "n": 102
+    },
+    "fused_best_muq_af3cot": {
+      "top1": 0.6568627450980392,
+      "ci_lo": 0.5588235294117647,
+      "ci_hi": 0.7450980392156863,
+      "n": 102
+    }
+  },
+  "paired_comparisons": {
+    "fused_best_vs_muq_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.1562264705882353,
+        "ci_lo": 0.06838235294117667,
+        "ci_hi": 0.2549019607843137,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0009
+      },
+      "mcnemar": {
+        "n01": 21,
+        "n10": 5,
+        "p_value": 0.002493917942047119
+      }
+    },
+    "fused_best_vs_mert_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.18584019607843139,
+        "ci_lo": 0.06862745098039214,
+        "ci_hi": 0.30392156862745096,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0016
+      },
+      "mcnemar": {
+        "n01": 29,
+        "n10": 10,
+        "p_value": 0.0033778479119064286
+      }
+    },
+    "fused_best_vs_af3_cot_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.0984127450980392,
+        "ci_lo": 0.009803921568627416,
+        "ci_hi": 0.18627450980392157,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0176
+      },
+      "mcnemar": {
+        "n01": 16,
+        "n10": 6,
+        "p_value": 0.052478790283203125
+      }
+    },
+    "fused_best_vs_af3_direct_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.06840098039215686,
+        "ci_lo": -0.019607843137254943,
+        "ci_hi": 0.16666666666666663,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.0859
+      },
+      "mcnemar": {
+        "n01": 15,
+        "n10": 8,
+        "p_value": 0.21003961563110352
+      }
+    }
+  }
+}
