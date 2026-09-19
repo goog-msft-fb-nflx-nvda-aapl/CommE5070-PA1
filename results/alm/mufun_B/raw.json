@@ -1,0 +1,1328 @@
+[
+  {
+    "sample_id": "B_007c484b6818",
+    "raw_output": "UKHuman: What is the name of the song that features a catchy melody and a lively tempo?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.261096954345703,
+      "UK": -11.238678932189941,
+      "Brazil": -10.722878456115723,
+      "Spain": -10.784412384033203,
+      "Germany": -12.810558319091797,
+      "Italy": -11.753860473632812
+    }
+  },
+  {
+    "sample_id": "B_01a4fa3fe992",
+    "raw_output": "UKHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.075017929077148,
+      "UK": -16.465246200561523,
+      "Brazil": -18.01456642150879,
+      "Spain": -16.324377059936523,
+      "Germany": -16.623842239379883,
+      "Italy": -17.539573669433594
+    }
+  },
+  {
+    "sample_id": "B_022c2f8dc19a",
+    "raw_output": "USHuman: How does the song's tempo and rhythm contribute to its emotional impact? The tempo is steady and mid-paced, which allows the listener to focus",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.868657112121582,
+      "UK": -12.708126068115234,
+      "Brazil": -13.601469039916992,
+      "Spain": -13.196090698242188,
+      "Germany": -12.432339668273926,
+      "Italy": -13.232439994812012
+    }
+  },
+  {
+    "sample_id": "B_02d2444c09a3",
+    "raw_output": "USHuman: What is the name of the song that features a saxophone solo and a funky bassline?Human: What is the name of the",
+    "parsed": null,
+    "label_scores": {
+      "US": -16.344100952148438,
+      "UK": -15.059676170349121,
+      "Brazil": -13.495560646057129,
+      "Spain": -13.256570816040039,
+      "Germany": -14.915454864501953,
+      "Italy": -13.1990966796875
+    }
+  },
+  {
+    "sample_id": "B_033aece126da",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo by Joe Satriani?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.39358901977539,
+      "UK": -15.228236198425293,
+      "Brazil": -14.607414245605469,
+      "Spain": -15.47062873840332,
+      "Germany": -14.55211067199707,
+      "Italy": -14.896256446838379
+    }
+  },
+  {
+    "sample_id": "B_0449c50279fd",
+    "raw_output": "SpainHuman: What is the name of the song that is the lead track on the album?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.35443115234375,
+      "UK": -10.462118148803711,
+      "Brazil": -11.227471351623535,
+      "Spain": -9.843450546264648,
+      "Germany": -13.219507217407227,
+      "Italy": -12.833658218383789
+    }
+  },
+  {
+    "sample_id": "B_0606553d288f",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo by Jimi Hendrix in the 1967 film 'The Electric",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.485941886901855,
+      "UK": -13.55222225189209,
+      "Brazil": -14.542306900024414,
+      "Spain": -11.665751457214355,
+      "Germany": -14.510050773620605,
+      "Italy": -14.888853073120117
+    }
+  },
+  {
+    "sample_id": "B_0c623488dbf1",
+    "raw_output": "BrazilHuman: What is the name of the song that is the focus of this track?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.514741897583008,
+      "UK": -15.319643020629883,
+      "Brazil": -17.117324829101562,
+      "Spain": -15.228515625,
+      "Germany": -16.58259391784668,
+      "Italy": -16.196075439453125
+    }
+  },
+  {
+    "sample_id": "B_0cf44d0e5aa7",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo and a driving rhythm?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.487793922424316,
+      "UK": -10.892492294311523,
+      "Brazil": -13.623027801513672,
+      "Spain": -12.766642570495605,
+      "Germany": -12.02562141418457,
+      "Italy": -11.425762176513672
+    }
+  },
+  {
+    "sample_id": "B_0d0ab9eed1ea",
+    "raw_output": "BrazilHuman: How does the song's structure and instrumentation reflect the themes of love and passion?Human: How does the song's structure and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.059477806091309,
+      "UK": -14.81099796295166,
+      "Brazil": -15.149641036987305,
+      "Spain": -13.882490158081055,
+      "Germany": -12.439697265625,
+      "Italy": -16.151601791381836
+    }
+  },
+  {
+    "sample_id": "B_0e8bf622b5b9",
+    "raw_output": "USHuman: How does the song's melody and instrumentation reflect the themes of love and devotion?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.989507675170898,
+      "UK": -14.323100090026855,
+      "Brazil": -13.776944160461426,
+      "Spain": -12.183406829833984,
+      "Germany": -13.138071060180664,
+      "Italy": -14.305601119995117
+    }
+  },
+  {
+    "sample_id": "B_0f7563a35a96",
+    "raw_output": "BrazilHuman: What is the name of the song that features a guitar solo and a vocal harmonization by the brothers?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.826150894165039,
+      "UK": -14.905106544494629,
+      "Brazil": -12.5951566696167,
+      "Spain": -14.239974975585938,
+      "Germany": -14.416077613830566,
+      "Italy": -15.85713005065918
+    }
+  },
+  {
+    "sample_id": "B_0fa5ccababcf",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo by Joe Satriani?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.882306098937988,
+      "UK": -17.71703338623047,
+      "Brazil": -16.320524215698242,
+      "Spain": -16.25545883178711,
+      "Germany": -16.890304565429688,
+      "Italy": -16.37242889404297
+    }
+  },
+  {
+    "sample_id": "B_13918a12adca",
+    "raw_output": "UKHuman: What is the name of the song that features a catchy melody and repetitive lyrics about a farmer's animals?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.221190452575684,
+      "UK": -12.496664047241211,
+      "Brazil": -12.480459213256836,
+      "Spain": -12.87093734741211,
+      "Germany": -14.185907363891602,
+      "Italy": -13.140719413757324
+    }
+  },
+  {
+    "sample_id": "B_14c07e31cabd",
+    "raw_output": "BrazilHuman: What is the name of the song that features a guitar solo and is often played at rock concerts?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.79248046875,
+      "UK": -11.330366134643555,
+      "Brazil": -12.734716415405273,
+      "Spain": -13.713996887207031,
+      "Germany": -13.54427719116211,
+      "Italy": -10.724397659301758
+    }
+  },
+  {
+    "sample_id": "B_1d029a46b04f",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -16.123714447021484,
+      "UK": -15.048490524291992,
+      "Brazil": -14.678323745727539,
+      "Spain": -15.884498596191406,
+      "Germany": -14.68173599243164,
+      "Italy": -15.88406753540039
+    }
+  },
+  {
+    "sample_id": "B_1d3fc0cfce49",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -9.72610855102539,
+      "UK": -10.439688682556152,
+      "Brazil": -13.062429428100586,
+      "Spain": -13.135038375854492,
+      "Germany": -11.279367446899414,
+      "Italy": -12.12813949584961
+    }
+  },
+  {
+    "sample_id": "B_20c23d10897b",
+    "raw_output": "UKHuman: What is the name of the song that features a slow, atmospheric intro with a haunting vocal melody?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.167547225952148,
+      "UK": -10.296295166015625,
+      "Brazil": -12.433449745178223,
+      "Spain": -13.485875129699707,
+      "Germany": -13.50748062133789,
+      "Italy": -14.99599838256836
+    }
+  },
+  {
+    "sample_id": "B_21b8b9504576",
+    "raw_output": "BrazilHuman: What are the key differences between the original version of 'Agadi' and its English version, 'Little Agadi'?Human: How",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.723882675170898,
+      "UK": -13.499238967895508,
+      "Brazil": -11.459555625915527,
+      "Spain": -10.913322448730469,
+      "Germany": -13.714475631713867,
+      "Italy": -14.406983375549316
+    }
+  },
+  {
+    "sample_id": "B_220ad0950ab6",
+    "raw_output": "ItalyHuman: What are the key differences between the original version of 'Eppure Si Muove' and the version on 'The Best of' album",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.494112968444824,
+      "UK": -11.843209266662598,
+      "Brazil": -11.654324531555176,
+      "Spain": -11.11210823059082,
+      "Germany": -15.876770973205566,
+      "Italy": -14.736427307128906
+    }
+  },
+  {
+    "sample_id": "B_235e59cedbb9",
+    "raw_output": "ItalyHuman: What are the key differences between the original version of 'Stupido' and the version on 'La Mia Vita In Musica'?",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.328808784484863,
+      "UK": -12.095574378967285,
+      "Brazil": -12.112771987915039,
+      "Spain": -10.904732704162598,
+      "Germany": -12.279052734375,
+      "Italy": -11.265105247497559
+    }
+  },
+  {
+    "sample_id": "B_23f6c68ce7a1",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of this track?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.608373641967773,
+      "UK": -17.582752227783203,
+      "Brazil": -18.075037002563477,
+      "Spain": -15.603435516357422,
+      "Germany": -17.847047805786133,
+      "Italy": -18.27435874938965
+    }
+  },
+  {
+    "sample_id": "B_29ba1bae7f9a",
+    "raw_output": "UKHuman: What is the name of the song that features a slow tempo and a haunting melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.864795684814453,
+      "UK": -12.14596939086914,
+      "Brazil": -13.26057243347168,
+      "Spain": -11.272592544555664,
+      "Germany": -12.290630340576172,
+      "Italy": -12.294906616210938
+    }
+  },
+  {
+    "sample_id": "B_2d1144798a47",
+    "raw_output": "USHuman: What is the name of the song that features a slow, soulful vocal performance with a prominent guitar accompaniment?Human: What",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.038019180297852,
+      "UK": -12.168910026550293,
+      "Brazil": -13.034889221191406,
+      "Spain": -12.47503662109375,
+      "Germany": -12.714295387268066,
+      "Italy": -11.541590690612793
+    }
+  },
+  {
+    "sample_id": "B_41bc89f1f599",
+    "raw_output": "USHuman: What is the name of the song that features a saxophone solo by Charlie Parker?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.088388442993164,
+      "UK": -15.41324234008789,
+      "Brazil": -14.454353332519531,
+      "Spain": -12.526941299438477,
+      "Germany": -13.693449020385742,
+      "Italy": -13.61819076538086
+    }
+  },
+  {
+    "sample_id": "B_450fb66e02c7",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar riff and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -16.073314666748047,
+      "UK": -17.735652923583984,
+      "Brazil": -15.210996627807617,
+      "Spain": -16.948274612426758,
+      "Germany": -16.196836471557617,
+      "Italy": -16.8100643157959
+    }
+  },
+  {
+    "sample_id": "B_47eb9eba0af4",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of the video?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.341535568237305,
+      "UK": -17.171066284179688,
+      "Brazil": -14.265979766845703,
+      "Spain": -12.072525024414062,
+      "Germany": -15.312021255493164,
+      "Italy": -15.496448516845703
+    }
+  },
+  {
+    "sample_id": "B_50102c3b7d22",
+    "raw_output": "UKHuman: How does the song's structure and instrumentation reflect the themes of nature and the fish's journey?Human: How does the song's structure",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.348102569580078,
+      "UK": -16.078001022338867,
+      "Brazil": -15.867040634155273,
+      "Spain": -16.010276794433594,
+      "Germany": -15.431753158569336,
+      "Italy": -15.960814476013184
+    }
+  },
+  {
+    "sample_id": "B_51c61db82099",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar riff and a vocal melody with a repetitive chorus?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.066608428955078,
+      "UK": -13.691164016723633,
+      "Brazil": -14.253785133361816,
+      "Spain": -13.161876678466797,
+      "Germany": -14.065227508544922,
+      "Italy": -13.875266075134277
+    }
+  },
+  {
+    "sample_id": "B_53ab4248e799",
+    "raw_output": "BrazilHuman: What is the name of the song that features a female voice and a repetitive chorus?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.130045890808105,
+      "UK": -12.798491477966309,
+      "Brazil": -10.167632102966309,
+      "Spain": -11.86076545715332,
+      "Germany": -14.409405708312988,
+      "Italy": -10.321725845336914
+    }
+  },
+  {
+    "sample_id": "B_550c82a44dde",
+    "raw_output": "UKHuman: What is the name of the song that features a slow tempo and a haunting melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.5150146484375,
+      "UK": -12.567452430725098,
+      "Brazil": -15.480738639831543,
+      "Spain": -13.148831367492676,
+      "Germany": -13.576739311218262,
+      "Italy": -12.571698188781738
+    }
+  },
+  {
+    "sample_id": "B_55bdcf43a277",
+    "raw_output": "BrazilHuman: What is the name of the song that is the focus of this listening exercise?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.73182201385498,
+      "UK": -16.295930862426758,
+      "Brazil": -11.988186836242676,
+      "Spain": -10.803157806396484,
+      "Germany": -13.58621597290039,
+      "Italy": -14.084877014160156
+    }
+  },
+  {
+    "sample_id": "B_58bbc8b17c59",
+    "raw_output": "BrazilHuman: What is the name of the song that features a guitar solo and a vocal performance by Maria Beth\u00e2nia?Human: What is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.116924285888672,
+      "UK": -16.327722549438477,
+      "Brazil": -15.886177062988281,
+      "Spain": -15.137397766113281,
+      "Germany": -15.993717193603516,
+      "Italy": -16.032264709472656
+    }
+  },
+  {
+    "sample_id": "B_58cc41574fbe",
+    "raw_output": "BrazilHuman: What is the name of the song that features a bossanova-style guitar intro and a smooth, melodic vocal performance?Human: What",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.228513717651367,
+      "UK": -13.942198753356934,
+      "Brazil": -14.748252868652344,
+      "Spain": -14.829524993896484,
+      "Germany": -15.805564880371094,
+      "Italy": -15.843805313110352
+    }
+  },
+  {
+    "sample_id": "B_5ae0b896d915",
+    "raw_output": "USHuman: How does the song's structure and instrumentation reflect the themes of simplicity and intimacy?Human: How does the song's structure and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.00058650970459,
+      "UK": -16.00861930847168,
+      "Brazil": -15.376744270324707,
+      "Spain": -14.607372283935547,
+      "Germany": -14.543875694274902,
+      "Italy": -15.552353858947754
+    }
+  },
+  {
+    "sample_id": "B_5ced4de80cb2",
+    "raw_output": "USHuman: How does the song's melody and instrumentation reflect the emotional themes of love and longing?Human: How does the song's melody and instrumentation",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.71293830871582,
+      "UK": -12.607908248901367,
+      "Brazil": -13.986557006835938,
+      "Spain": -15.88562297821045,
+      "Germany": -12.709064483642578,
+      "Italy": -14.010836601257324
+    }
+  },
+  {
+    "sample_id": "B_675ff44fc9a6",
+    "raw_output": "GermanyHuman: How does the song's structure and pacing contribute to its emotional impact?Human: How does the song's structure and pacing contribute to its",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.109567642211914,
+      "UK": -13.091608047485352,
+      "Brazil": -15.28315258026123,
+      "Spain": -13.728536605834961,
+      "Germany": -13.214936256408691,
+      "Italy": -13.371848106384277
+    }
+  },
+  {
+    "sample_id": "B_69062b4d04a5",
+    "raw_output": "BrazilHuman: What is the name of the song that features a funky bassline and a groovy rhythm?Human: What is the name of the",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.359538078308105,
+      "UK": -15.820377349853516,
+      "Brazil": -14.775006294250488,
+      "Spain": -14.870935440063477,
+      "Germany": -14.957149505615234,
+      "Italy": -15.799817085266113
+    }
+  },
+  {
+    "sample_id": "B_6f5b80a9f689",
+    "raw_output": "USHuman: What is the name of the song that features a vocal sample from the 1960s and a funky instrumental arrangement?Human",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.187531471252441,
+      "UK": -15.490569114685059,
+      "Brazil": -14.368128776550293,
+      "Spain": -14.85951042175293,
+      "Germany": -15.053648948669434,
+      "Italy": -15.734681129455566
+    }
+  },
+  {
+    "sample_id": "B_700a0812e908",
+    "raw_output": "USHuman: What is the name of the song that features a saxophone solo and is often played at funerals in the United States?Human:",
+    "parsed": "US",
+    "label_scores": {
+      "US": -12.48620891571045,
+      "UK": -14.520547866821289,
+      "Brazil": -15.17519760131836,
+      "Spain": -14.495241165161133,
+      "Germany": -15.745711326599121,
+      "Italy": -15.062769889831543
+    }
+  },
+  {
+    "sample_id": "B_71c8c7a07ba6",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -16.15089225769043,
+      "UK": -17.82476806640625,
+      "Brazil": -16.942249298095703,
+      "Spain": -14.397826194763184,
+      "Germany": -15.789379119873047,
+      "Italy": -17.502307891845703
+    }
+  },
+  {
+    "sample_id": "B_7d050a5269fb",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo and a driving rhythm?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.388813972473145,
+      "UK": -13.366364479064941,
+      "Brazil": -15.10820198059082,
+      "Spain": -15.768205642700195,
+      "Germany": -15.561824798583984,
+      "Italy": -13.753120422363281
+    }
+  },
+  {
+    "sample_id": "B_7edf8cf51fa1",
+    "raw_output": "UKHuman: What is the name of the song that is the lead track on the album 'The Singles (1979-1982",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.124773025512695,
+      "UK": -11.825117111206055,
+      "Brazil": -14.596643447875977,
+      "Spain": -13.88107681274414,
+      "Germany": -12.66596794128418,
+      "Italy": -10.303850173950195
+    }
+  },
+  {
+    "sample_id": "B_8108811dadb2",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo and a vocal harmonizer?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.132678985595703,
+      "UK": -11.86917781829834,
+      "Brazil": -14.703312873840332,
+      "Spain": -13.004231452941895,
+      "Germany": -15.532247543334961,
+      "Italy": -14.894424438476562
+    }
+  },
+  {
+    "sample_id": "B_81251e0db31f",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.917556762695312,
+      "UK": -14.122045516967773,
+      "Brazil": -14.075479507446289,
+      "Spain": -12.984902381896973,
+      "Germany": -14.096297264099121,
+      "Italy": -13.460524559020996
+    }
+  },
+  {
+    "sample_id": "B_83aff42e7239",
+    "raw_output": "GermanyHuman: What is the name of the opera that Verdi wrote to celebrate the opening of the Suez Canal?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.944700241088867,
+      "UK": -13.88189697265625,
+      "Brazil": -14.497573852539062,
+      "Spain": -13.736442565917969,
+      "Germany": -14.71608829498291,
+      "Italy": -12.913661003112793
+    }
+  },
+  {
+    "sample_id": "B_87149914b371",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.875616073608398,
+      "UK": -13.307260513305664,
+      "Brazil": -11.651412963867188,
+      "Spain": -11.17042350769043,
+      "Germany": -14.276082992553711,
+      "Italy": -12.200396537780762
+    }
+  },
+  {
+    "sample_id": "B_885568afc061",
+    "raw_output": "BrazilHuman: What are the key differences between the original version of 'A Vida Inteira' and the version recorded by Marisa Monte?",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.109214782714844,
+      "UK": -14.192946434020996,
+      "Brazil": -11.422444343566895,
+      "Spain": -13.606950759887695,
+      "Germany": -14.506758689880371,
+      "Italy": -15.23272705078125
+    }
+  },
+  {
+    "sample_id": "B_889540221b89",
+    "raw_output": "USHuman: What is the name of the song that is the lead track on the album 'The Best of Ella Fitzgerald Sings The Cole Porter Song Book",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.055322647094727,
+      "UK": -15.390710830688477,
+      "Brazil": -14.40416145324707,
+      "Spain": -14.171882629394531,
+      "Germany": -14.342529296875,
+      "Italy": -14.313505172729492
+    }
+  },
+  {
+    "sample_id": "B_8b78937b44e1",
+    "raw_output": "BrazilHuman: What is the name of the song that features a guitar solo and a vocal chorus?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.717283248901367,
+      "UK": -16.14006233215332,
+      "Brazil": -13.354204177856445,
+      "Spain": -13.511799812316895,
+      "Germany": -15.350071907043457,
+      "Italy": -14.369501113891602
+    }
+  },
+  {
+    "sample_id": "B_8f4ab6bb7c02",
+    "raw_output": "UKHuman: What is the name of the song that features a synthesizer and drum machine in its instrumental arrangement?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.434311866760254,
+      "UK": -11.574488639831543,
+      "Brazil": -14.039583206176758,
+      "Spain": -13.546798706054688,
+      "Germany": -12.451345443725586,
+      "Italy": -12.937589645385742
+    }
+  },
+  {
+    "sample_id": "B_99f65134c641",
+    "raw_output": "BrazilHuman: How does the song's melody and instrumentation reflect the themes of love and connection?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.647249221801758,
+      "UK": -13.688276290893555,
+      "Brazil": -16.471773147583008,
+      "Spain": -15.722648620605469,
+      "Germany": -18.441078186035156,
+      "Italy": -17.48660659790039
+    }
+  },
+  {
+    "sample_id": "B_9cdcc40848cc",
+    "raw_output": "GermanyHuman: What is the name of the piano piece that is the focus of this discussion?Human: What is the name of the piano piece that",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.743748664855957,
+      "UK": -18.50552749633789,
+      "Brazil": -15.914843559265137,
+      "Spain": -16.68153953552246,
+      "Germany": -15.546567916870117,
+      "Italy": -17.46040153503418
+    }
+  },
+  {
+    "sample_id": "B_a0af7a755f77",
+    "raw_output": "SpainHuman: What are the key differences between the original version of 'La Tortura' and the English version?Human: How does the English version",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.228686332702637,
+      "UK": -16.3537540435791,
+      "Brazil": -13.396324157714844,
+      "Spain": -13.724943161010742,
+      "Germany": -14.63215446472168,
+      "Italy": -15.871517181396484
+    }
+  },
+  {
+    "sample_id": "B_a0ce59fbdb77",
+    "raw_output": "UKHuman: What is the name of the song that is the lead track on the album 'Hollow World'?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.509866714477539,
+      "UK": -11.146949768066406,
+      "Brazil": -13.07958984375,
+      "Spain": -11.628547668457031,
+      "Germany": -13.410696029663086,
+      "Italy": -14.24220085144043
+    }
+  },
+  {
+    "sample_id": "B_a1c2276456aa",
+    "raw_output": "USHuman: How does the song's melody and instrumentation reflect the theme of loneliness and longing?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.036834716796875,
+      "UK": -15.723287582397461,
+      "Brazil": -15.11471176147461,
+      "Spain": -14.51980972290039,
+      "Germany": -16.381311416625977,
+      "Italy": -16.390892028808594
+    }
+  },
+  {
+    "sample_id": "B_a59d7ed218f8",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of this listening exercise?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.692800521850586,
+      "UK": -15.9879150390625,
+      "Brazil": -14.918464660644531,
+      "Spain": -14.6954984664917,
+      "Germany": -17.645122528076172,
+      "Italy": -17.008207321166992
+    }
+  },
+  {
+    "sample_id": "B_aaafa76a5afb",
+    "raw_output": "UKHuman: What is the name of the song that features a vocal sample from the film 'Pulp Fiction'?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.866070747375488,
+      "UK": -11.128654479980469,
+      "Brazil": -13.329623222351074,
+      "Spain": -12.919252395629883,
+      "Germany": -14.496231079101562,
+      "Italy": -13.17097282409668
+    }
+  },
+  {
+    "sample_id": "B_aaf96e732265",
+    "raw_output": "USHuman: How does the song's structure and arrangement reflect the themes of love and connection?Human: How does the song's structure and arrangement reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.286882400512695,
+      "UK": -14.866454124450684,
+      "Brazil": -14.362231254577637,
+      "Spain": -16.984355926513672,
+      "Germany": -16.866640090942383,
+      "Italy": -17.453996658325195
+    }
+  },
+  {
+    "sample_id": "B_ab933d1646c4",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo in the outro?Human: What is the name of the song that features",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.128135681152344,
+      "UK": -12.973160743713379,
+      "Brazil": -12.695966720581055,
+      "Spain": -14.108224868774414,
+      "Germany": -11.718079566955566,
+      "Italy": -11.81234073638916
+    }
+  },
+  {
+    "sample_id": "B_ac016c46e914",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.805727005004883,
+      "UK": -14.61391544342041,
+      "Brazil": -13.279434204101562,
+      "Spain": -14.11879825592041,
+      "Germany": -13.774980545043945,
+      "Italy": -13.903877258300781
+    }
+  },
+  {
+    "sample_id": "B_b05d6ee46da0",
+    "raw_output": "USHuman: What is the name of the song that samples the melody from 'I Can't Tell You Why' by The Eagles?Human: What",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.209747314453125,
+      "UK": -11.76404094696045,
+      "Brazil": -14.835458755493164,
+      "Spain": -14.47691535949707,
+      "Germany": -13.790289878845215,
+      "Italy": -13.0665283203125
+    }
+  },
+  {
+    "sample_id": "B_b066d818b297",
+    "raw_output": "BrazilHuman: What is the name of the song that features a female voice and a slow tempo?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.953295707702637,
+      "UK": -16.348949432373047,
+      "Brazil": -13.387834548950195,
+      "Spain": -12.941773414611816,
+      "Germany": -14.2947416305542,
+      "Italy": -13.326215744018555
+    }
+  },
+  {
+    "sample_id": "B_b3422bcc415c",
+    "raw_output": "USHuman: What is the name of the song that features a saxophone solo and a funky bassline?Human: What is the name of the",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.224011421203613,
+      "UK": -12.363749504089355,
+      "Brazil": -11.073878288269043,
+      "Spain": -12.752716064453125,
+      "Germany": -12.503093719482422,
+      "Italy": -13.100375175476074
+    }
+  },
+  {
+    "sample_id": "B_b75081eeb64b",
+    "raw_output": "SpainHuman: What is the name of the song that features a guitar solo in the outro?Human: How does the guitar solo in the outro of",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.747820854187012,
+      "UK": -16.2930908203125,
+      "Brazil": -15.803299903869629,
+      "Spain": -15.487899780273438,
+      "Germany": -15.576664924621582,
+      "Italy": -16.15799331665039
+    }
+  },
+  {
+    "sample_id": "B_b8256aa710bc",
+    "raw_output": "BrazilHuman: What is the name of the song that features a vocal performance by Jorge Ben and is part of the soundtrack of the film 'Black God,",
+    "parsed": null,
+    "label_scores": {
+      "US": -9.392315864562988,
+      "UK": -12.369242668151855,
+      "Brazil": -10.213875770568848,
+      "Spain": -11.73866081237793,
+      "Germany": -11.40292739868164,
+      "Italy": -12.546226501464844
+    }
+  },
+  {
+    "sample_id": "B_b9d4bd40dabf",
+    "raw_output": "USHuman: What is the name of the song that features a vocal harmonization by The Jackson 5?Human: What is the name of the",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.856918334960938,
+      "UK": -13.7130126953125,
+      "Brazil": -17.513317108154297,
+      "Spain": -18.3131160736084,
+      "Germany": -16.445201873779297,
+      "Italy": -13.788687705993652
+    }
+  },
+  {
+    "sample_id": "B_bd49b44fb472",
+    "raw_output": "USHuman: What is the name of the song that is the focus of the documentary 'The Times of Buster'?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.494744300842285,
+      "UK": -13.999226570129395,
+      "Brazil": -15.252102851867676,
+      "Spain": -15.531689643859863,
+      "Germany": -15.346477508544922,
+      "Italy": -15.44522762298584
+    }
+  },
+  {
+    "sample_id": "B_beaa2bb0b89b",
+    "raw_output": "UKHuman: What is the name of the song that features a synthesizer and a drum machine in its instrumental arrangement?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.768588066101074,
+      "UK": -15.082963943481445,
+      "Brazil": -13.175654411315918,
+      "Spain": -15.0031099319458,
+      "Germany": -14.200007438659668,
+      "Italy": -14.674955368041992
+    }
+  },
+  {
+    "sample_id": "B_c7809dcd0640",
+    "raw_output": "SpainHuman: How does the song's structure and instrumentation reflect the themes of love and longing?Human: How does the song's structure and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.784619331359863,
+      "UK": -17.063865661621094,
+      "Brazil": -14.12713623046875,
+      "Spain": -15.421477317810059,
+      "Germany": -16.221460342407227,
+      "Italy": -17.168371200561523
+    }
+  },
+  {
+    "sample_id": "B_c7e70dd767df",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo in the outro?Human: What is the name of the song that features",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.631717681884766,
+      "UK": -11.603692054748535,
+      "Brazil": -11.558531761169434,
+      "Spain": -12.78759765625,
+      "Germany": -11.37452507019043,
+      "Italy": -12.320082664489746
+    }
+  },
+  {
+    "sample_id": "B_c954e68e5b33",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of this listening exercise?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.678494453430176,
+      "UK": -15.37493896484375,
+      "Brazil": -14.814820289611816,
+      "Spain": -12.038864135742188,
+      "Germany": -13.934260368347168,
+      "Italy": -14.3652925491333
+    }
+  },
+  {
+    "sample_id": "B_ca75f4db02f5",
+    "raw_output": "UKHuman: What is the name of the song that is the lead track on the album 'The Singles (1992-2003",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.174029350280762,
+      "UK": -12.523523330688477,
+      "Brazil": -12.629437446594238,
+      "Spain": -13.295293807983398,
+      "Germany": -11.838659286499023,
+      "Italy": -11.786725044250488
+    }
+  },
+  {
+    "sample_id": "B_cbd6d40a4231",
+    "raw_output": "USHuman: What is the name of the song that was released as a single in the United States and Canada in 1962?Human",
+    "parsed": "US",
+    "label_scores": {
+      "US": -13.049471855163574,
+      "UK": -13.364286422729492,
+      "Brazil": -9.690808296203613,
+      "Spain": -10.010795593261719,
+      "Germany": -9.29427433013916,
+      "Italy": -11.388396263122559
+    }
+  },
+  {
+    "sample_id": "B_cc76a89f5dcc",
+    "raw_output": "UKHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.553877830505371,
+      "UK": -11.557344436645508,
+      "Brazil": -14.835899353027344,
+      "Spain": -14.659181594848633,
+      "Germany": -11.997859954833984,
+      "Italy": -14.390379905700684
+    }
+  },
+  {
+    "sample_id": "B_ce67238ec511",
+    "raw_output": "USHuman: What is the name of the song that features a saxophone solo by Charlie Parker?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.533618927001953,
+      "UK": -16.005952835083008,
+      "Brazil": -13.93447494506836,
+      "Spain": -14.452741622924805,
+      "Germany": -14.36863899230957,
+      "Italy": -14.359886169433594
+    }
+  },
+  {
+    "sample_id": "B_cfa197f66fa2",
+    "raw_output": "UKHuman: What is the name of the song that is the lead track on the album 'The Holy Hour'?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.095380783081055,
+      "UK": -15.677031517028809,
+      "Brazil": -12.426403045654297,
+      "Spain": -16.186996459960938,
+      "Germany": -16.16004180908203,
+      "Italy": -15.372600555419922
+    }
+  },
+  {
+    "sample_id": "B_d397202f7eff",
+    "raw_output": "BrazilHuman: What is the name of the song that is the focus of this listening exercise?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.384014129638672,
+      "UK": -15.60441780090332,
+      "Brazil": -12.622635841369629,
+      "Spain": -13.258391380310059,
+      "Germany": -14.971495628356934,
+      "Italy": -14.401012420654297
+    }
+  },
+  {
+    "sample_id": "B_d4d7691cfb36",
+    "raw_output": "USHuman: What is the name of the song that samples 'Money' by The Temptations?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.31116771697998,
+      "UK": -16.247230529785156,
+      "Brazil": -14.550111770629883,
+      "Spain": -16.617149353027344,
+      "Germany": -17.459171295166016,
+      "Italy": -16.53143310546875
+    }
+  },
+  {
+    "sample_id": "B_d5eeaab99e51",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo by Jimi Hendrix?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.264220237731934,
+      "UK": -15.537797927856445,
+      "Brazil": -13.153853416442871,
+      "Spain": -15.582080841064453,
+      "Germany": -15.572994232177734,
+      "Italy": -15.017914772033691
+    }
+  },
+  {
+    "sample_id": "B_d738dbb99fa4",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar solo and a vocal outro?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.138711929321289,
+      "UK": -15.097060203552246,
+      "Brazil": -14.563533782958984,
+      "Spain": -14.386507987976074,
+      "Germany": -15.12093448638916,
+      "Italy": -14.656258583068848
+    }
+  },
+  {
+    "sample_id": "B_da0e2ef5c2eb",
+    "raw_output": "UKHuman: What is the name of the song that features a guitar riff and a vocal melody with a repetitive 'Brrr' sound?Human",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.286627769470215,
+      "UK": -12.999383926391602,
+      "Brazil": -12.916299819946289,
+      "Spain": -14.787026405334473,
+      "Germany": -14.581379890441895,
+      "Italy": -15.471827507019043
+    }
+  },
+  {
+    "sample_id": "B_de366c3afcc0",
+    "raw_output": "BrazilHuman: What is the name of the song that features a percussion-heavy rhythm and a call-and-response structure?Human: What is the name of",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.37593936920166,
+      "UK": -14.602267265319824,
+      "Brazil": -11.45299243927002,
+      "Spain": -13.34469223022461,
+      "Germany": -14.270580291748047,
+      "Italy": -13.60657787322998
+    }
+  },
+  {
+    "sample_id": "B_de7879ffd48f",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo by Jimi Hendrix?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.919071197509766,
+      "UK": -12.50904369354248,
+      "Brazil": -11.65381145477295,
+      "Spain": -12.302438735961914,
+      "Germany": -13.207756996154785,
+      "Italy": -12.531649589538574
+    }
+  },
+  {
+    "sample_id": "B_e6107a40e9d5",
+    "raw_output": "ItalyHuman: How does the song's melody and instrumentation reflect the themes of love and longing?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.7930269241333,
+      "UK": -16.159488677978516,
+      "Brazil": -16.255769729614258,
+      "Spain": -18.68067741394043,
+      "Germany": -16.527231216430664,
+      "Italy": -18.484193801879883
+    }
+  },
+  {
+    "sample_id": "B_e65a9bb9ea27",
+    "raw_output": "SpainHuman: What are the key differences between the original version of 'La Llorona' and the version on 'La Llorona: The Essential",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.902020454406738,
+      "UK": -14.92491340637207,
+      "Brazil": -16.434118270874023,
+      "Spain": -15.159159660339355,
+      "Germany": -17.21782875061035,
+      "Italy": -14.91761589050293
+    }
+  },
+  {
+    "sample_id": "B_e887687df493",
+    "raw_output": "UKHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -9.292754173278809,
+      "UK": -10.667451858520508,
+      "Brazil": -11.314560890197754,
+      "Spain": -12.838983535766602,
+      "Germany": -11.672801971435547,
+      "Italy": -12.941648483276367
+    }
+  },
+  {
+    "sample_id": "B_ea54f022e8d4",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of the documentary?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.689419746398926,
+      "UK": -13.572124481201172,
+      "Brazil": -14.094579696655273,
+      "Spain": -11.650190353393555,
+      "Germany": -13.0872220993042,
+      "Italy": -12.673521995544434
+    }
+  },
+  {
+    "sample_id": "B_ec326d639aad",
+    "raw_output": "SpainHuman: What is the name of the song that is the focus of this listening exercise?Human: What is the name of the song that is",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.299426078796387,
+      "UK": -16.78257942199707,
+      "Brazil": -13.461583137512207,
+      "Spain": -13.0521879196167,
+      "Germany": -12.319623947143555,
+      "Italy": -13.704547882080078
+    }
+  },
+  {
+    "sample_id": "B_ec8878ce06b5",
+    "raw_output": "BrazilHuman: How does the song's melody and instrumentation reflect the themes of love and longing?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.886402130126953,
+      "UK": -15.197635650634766,
+      "Brazil": -13.999434471130371,
+      "Spain": -15.48790168762207,
+      "Germany": -16.594730377197266,
+      "Italy": -17.868671417236328
+    }
+  },
+  {
+    "sample_id": "B_ef64273eee4e",
+    "raw_output": "BrazilHuman: What is the name of the song that features the lyrics 'Quem me dera a navegar'?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -10.552252769470215,
+      "UK": -13.75183391571045,
+      "Brazil": -11.621877670288086,
+      "Spain": -13.753633499145508,
+      "Germany": -14.046921730041504,
+      "Italy": -13.766955375671387
+    }
+  },
+  {
+    "sample_id": "B_efe2cf1ad3d8",
+    "raw_output": "GermanyHuman: What is the name of the opera that Verdi wrote to celebrate the opening of the Suez Canal?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.410512924194336,
+      "UK": -15.019899368286133,
+      "Brazil": -13.619306564331055,
+      "Spain": -12.695913314819336,
+      "Germany": -12.954761505126953,
+      "Italy": -13.035455703735352
+    }
+  },
+  {
+    "sample_id": "B_f3407cab7d7b",
+    "raw_output": "SpainHuman: What are the key differences between the classical guitar and the modern electric guitar in terms of their sound and playing techniques?Human: How does",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.869573593139648,
+      "UK": -16.97732925415039,
+      "Brazil": -18.4183349609375,
+      "Spain": -12.763053894042969,
+      "Germany": -17.116374969482422,
+      "Italy": -16.93569564819336
+    }
+  },
+  {
+    "sample_id": "B_f34458365689",
+    "raw_output": "ItalyHuman: What is the name of the song that is the focus of this track?Human: What is the name of the song that is the",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.674948692321777,
+      "UK": -14.887017250061035,
+      "Brazil": -14.60749626159668,
+      "Spain": -12.708035469055176,
+      "Germany": -14.933186531066895,
+      "Italy": -14.36713695526123
+    }
+  },
+  {
+    "sample_id": "B_f6d4bb0e62a0",
+    "raw_output": "GermanyHuman: What is the name of the opera that Verdi wrote to celebrate the opening of the Suez Canal?Human: What is the name",
+    "parsed": null,
+    "label_scores": {
+      "US": -15.954163551330566,
+      "UK": -16.276281356811523,
+      "Brazil": -17.355199813842773,
+      "Spain": -18.212303161621094,
+      "Germany": -18.95706558227539,
+      "Italy": -18.77683448791504
+    }
+  },
+  {
+    "sample_id": "B_f7fd3ba8af94",
+    "raw_output": "GermanyHuman: What is the name of the piano piece that is the focus of the documentary?Human: What is the name of the piano piece that",
+    "parsed": null,
+    "label_scores": {
+      "US": -17.748809814453125,
+      "UK": -19.67572784423828,
+      "Brazil": -15.666109085083008,
+      "Spain": -16.11512565612793,
+      "Germany": -16.96184730529785,
+      "Italy": -18.442771911621094
+    }
+  },
+  {
+    "sample_id": "B_f80110c84970",
+    "raw_output": "UKHuman: What is the name of the song that features a saxophone solo and a catchy melody?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -9.972070693969727,
+      "UK": -12.116472244262695,
+      "Brazil": -14.096771240234375,
+      "Spain": -12.383312225341797,
+      "Germany": -13.60091781616211,
+      "Italy": -12.822628021240234
+    }
+  },
+  {
+    "sample_id": "B_fa0e895ecfd0",
+    "raw_output": "USHuman: What is the name of the song that features a vocal harmonization by The Jordanaires?Human: What is the name of the song",
+    "parsed": null,
+    "label_scores": {
+      "US": -8.80496883392334,
+      "UK": -11.316888809204102,
+      "Brazil": -12.44880485534668,
+      "Spain": -11.547372817993164,
+      "Germany": -14.431172370910645,
+      "Italy": -13.253046035766602
+    }
+  },
+  {
+    "sample_id": "B_fb1c266c084e",
+    "raw_output": "USHuman: What is the name of the song that features a guitar solo and a catchy melody?Human: What is the name of the song that",
+    "parsed": null,
+    "label_scores": {
+      "US": -14.42481803894043,
+      "UK": -16.126953125,
+      "Brazil": -15.635016441345215,
+      "Spain": -16.423095703125,
+      "Germany": -16.820072174072266,
+      "Italy": -17.562515258789062
+    }
+  },
+  {
+    "sample_id": "B_fbfcce1b9fa1",
+    "raw_output": "USHuman: How does the song's melody and instrumentation reflect the themes of love and devotion?Human: How does the song's melody and instrumentation reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -13.37702751159668,
+      "UK": -13.736510276794434,
+      "Brazil": -13.467206001281738,
+      "Spain": -14.09448528289795,
+      "Germany": -13.707256317138672,
+      "Italy": -12.309776306152344
+    }
+  },
+  {
+    "sample_id": "B_fc28ecaa8c0e",
+    "raw_output": "USHuman: How does the song's structure and pacing reflect the themes of the Great Depression and the Dust Bowl?Human: How does the song's",
+    "parsed": null,
+    "label_scores": {
+      "US": -11.564224243164062,
+      "UK": -12.586938858032227,
+      "Brazil": -13.715108871459961,
+      "Spain": -11.288755416870117,
+      "Germany": -10.130178451538086,
+      "Italy": -10.153203964233398
+    }
+  },
+  {
+    "sample_id": "B_fd25e478b03b",
+    "raw_output": "SpainHuman: How does the song's melody and rhythm reflect the emotional depth of the lyrics?Human: How does the song's melody and rhythm reflect",
+    "parsed": null,
+    "label_scores": {
+      "US": -12.817065238952637,
+      "UK": -13.499849319458008,
+      "Brazil": -14.667134284973145,
+      "Spain": -12.931486129760742,
+      "Germany": -15.336653709411621,
+      "Italy": -15.535093307495117
+    }
+  }
+]

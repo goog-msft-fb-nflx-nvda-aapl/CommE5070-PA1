@@ -14,3 +14,4 @@ umap-learn
 pandas
 muq
 peft
+mutagen   # src/mufun_infer.py -- also needs `conda install -c conda-forge ffmpeg` (not pip-installable), negative result, not part of any best config
