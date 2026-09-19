@@ -32,7 +32,17 @@ from src.mert_features import MERT_MODEL_ID
 N_ENCODER_LAYERS = 24
 
 
-def build_lora_model(n_class, lora_rank=8, lora_alpha=16, top_n_layers=8, model_id=MERT_MODEL_ID):
+def build_lora_model(n_class, lora_rank=8, lora_alpha=16, top_n_layers=8, model_id=MERT_MODEL_ID,
+                      target_mlp=True):
+    """target_mlp=True (round-3 retry, IMPROVEMENT_FINDINGS_ROUND3.md section 3): also
+    target the feed-forward/MLP linear layers, not just attention projections --
+    3 of 4 round-3 research sources independently flagged attention-only LoRA as
+    "a qualitatively worse adaptation location" (citing Thinking Machines Lab's
+    "LoRA Without Regret", Sept 2025), distinct from and not fixed by the original
+    attempt's rank/layer-count choices. This is the single architectural change
+    being tested here, isolated from the (unresolved, cross-source-disagreeing)
+    learning-rate question -- kept at the original attempt's LR so this run tests
+    one variable at a time."""
     model = MERTClassifier(n_class, model_id=model_id)
     # freeze everything first -- LoRA adapters + the classification head are the
     # only trainable surface (head must stay fully trainable, it's randomly
@@ -41,8 +51,11 @@ def build_lora_model(n_class, lora_rank=8, lora_alpha=16, top_n_layers=8, model_
         p.requires_grad = False
 
     target_layers = range(N_ENCODER_LAYERS - top_n_layers, N_ENCODER_LAYERS)
-    target_modules = [f"encoder.layers.{i}.attention.{proj}"
-                       for i in target_layers for proj in ("q_proj", "k_proj", "v_proj", "out_proj")]
+    proj_names = ["q_proj", "k_proj", "v_proj", "out_proj"]
+    target_modules = [f"encoder.layers.{i}.attention.{proj}" for i in target_layers for proj in proj_names]
+    if target_mlp:
+        mlp_names = ["feed_forward.intermediate_dense", "feed_forward.output_dense"]
+        target_modules += [f"encoder.layers.{i}.{proj}" for i in target_layers for proj in mlp_names]
     lora_cfg = LoraConfig(r=lora_rank, lora_alpha=lora_alpha, target_modules=target_modules,
                            lora_dropout=0.05, bias="none")
     model.encoder = get_peft_model(model.encoder, lora_cfg)
@@ -79,7 +92,7 @@ def mixup_batch(wavs, labels, n_class, alpha=0.2):
 
 
 def finetune_lora(dataset_key, epochs=15, batch_size=4, lr=1e-4, device="cuda",
-                   lora_rank=8, lora_alpha=16, top_n_layers=8,
+                   lora_rank=8, lora_alpha=16, top_n_layers=8, target_mlp=True,
                    use_time_mask=True, use_mixup=True, out_dir=None):
     spec = DATASETS[dataset_key]
     n_class = len(spec["labels"])
@@ -87,7 +100,7 @@ def finetune_lora(dataset_key, epochs=15, batch_size=4, lr=1e-4, device="cuda",
     os.makedirs(out_dir, exist_ok=True)
 
     model = build_lora_model(n_class, lora_rank=lora_rank, lora_alpha=lora_alpha,
-                              top_n_layers=top_n_layers).to(device)
+                              top_n_layers=top_n_layers, target_mlp=target_mlp).to(device)
     train_ds = CropDataset(dataset_key, "train")
     val_ds = CropDataset(dataset_key, "validation")
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=0, drop_last=True)
@@ -150,9 +163,11 @@ if __name__ == "__main__":
     p.add_argument("--device", default="cuda")
     p.add_argument("--no-time-mask", action="store_true")
     p.add_argument("--no-mixup", action="store_true")
+    p.add_argument("--no-target-mlp", action="store_true")
     p.add_argument("--out-dir", default=None)
     args = p.parse_args()
     finetune_lora(args.dataset, epochs=args.epochs, batch_size=args.batch_size, lr=args.lr,
                   lora_rank=args.lora_rank, lora_alpha=args.lora_alpha, top_n_layers=args.top_n_layers,
+                  target_mlp=not args.no_target_mlp,
                   device=args.device, use_time_mask=not args.no_time_mask, use_mixup=not args.no_mixup,
                   out_dir=args.out_dir)
