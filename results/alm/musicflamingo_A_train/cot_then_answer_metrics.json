@@ -1,0 +1,120 @@
+{
+  "top1": 0.40350877192982454,
+  "top3": 0.7358674463937622,
+  "confusion_matrix": [
+    [
+      90,
+      76,
+      0,
+      1,
+      4,
+      0
+    ],
+    [
+      16,
+      138,
+      6,
+      3,
+      8,
+      0
+    ],
+    [
+      12,
+      64,
+      49,
+      30,
+      16,
+      0
+    ],
+    [
+      16,
+      50,
+      16,
+      50,
+      39,
+      0
+    ],
+    [
+      6,
+      50,
+      6,
+      25,
+      84,
+      0
+    ],
+    [
+      5,
+      49,
+      5,
+      11,
+      98,
+      3
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.5263157894736842,
+      0.4444444444444444,
+      0.0,
+      0.005847953216374269,
+      0.023391812865497075,
+      0.0
+    ],
+    [
+      0.0935672514619883,
+      0.8070175438596491,
+      0.03508771929824561,
+      0.017543859649122806,
+      0.04678362573099415,
+      0.0
+    ],
+    [
+      0.07017543859649122,
+      0.3742690058479532,
+      0.28654970760233917,
+      0.17543859649122806,
+      0.0935672514619883,
+      0.0
+    ],
+    [
+      0.0935672514619883,
+      0.29239766081871343,
+      0.0935672514619883,
+      0.29239766081871343,
+      0.22807017543859648,
+      0.0
+    ],
+    [
+      0.03508771929824561,
+      0.29239766081871343,
+      0.03508771929824561,
+      0.14619883040935672,
+      0.49122807017543857,
+      0.0
+    ],
+    [
+      0.029239766081871343,
+      0.28654970760233917,
+      0.029239766081871343,
+      0.06432748538011696,
+      0.5730994152046783,
+      0.017543859649122806
+    ]
+  ],
+  "labels": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s"
+  ],
+  "mean_abs_decade_error": 1.0399610136452242,
+  "acc_within_1_decade": 0.7641325536062378,
+  "adjacent_fraction_of_errors": 0.6045751633986928,
+  "quadratic_weighted_kappa": 0.5352523228274731,
+  "invalid_output_rate": 0.08382066276803118,
+  "prompt": "Listen to this 30-second music excerpt. Briefly consider its production style, instrumentation, and mastering, then decide which decade this track was released in it is most likely from: 1960s, 1970s, 1980s, 1990s, 2000s, 2010s. End your response with a final line in exactly this format: 'Answer: <label>' using exactly one of the given labels.",
+  "n_samples": 1026,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}

@@ -1,0 +1,120 @@
+{
+  "top1": 0.3888888888888889,
+  "top3": 0.6676413255360624,
+  "confusion_matrix": [
+    [
+      129,
+      40,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      32,
+      131,
+      7,
+      1,
+      0,
+      0
+    ],
+    [
+      20,
+      68,
+      71,
+      12,
+      0,
+      0
+    ],
+    [
+      23,
+      55,
+      30,
+      63,
+      0,
+      0
+    ],
+    [
+      13,
+      70,
+      22,
+      63,
+      3,
+      0
+    ],
+    [
+      8,
+      81,
+      16,
+      55,
+      9,
+      2
+    ]
+  ],
+  "confusion_matrix_row_normalized": [
+    [
+      0.7543859649122807,
+      0.23391812865497075,
+      0.011695906432748537,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.1871345029239766,
+      0.7660818713450293,
+      0.04093567251461988,
+      0.005847953216374269,
+      0.0,
+      0.0
+    ],
+    [
+      0.11695906432748537,
+      0.39766081871345027,
+      0.4152046783625731,
+      0.07017543859649122,
+      0.0,
+      0.0
+    ],
+    [
+      0.13450292397660818,
+      0.3216374269005848,
+      0.17543859649122806,
+      0.3684210526315789,
+      0.0,
+      0.0
+    ],
+    [
+      0.07602339181286549,
+      0.4093567251461988,
+      0.1286549707602339,
+      0.3684210526315789,
+      0.017543859649122806,
+      0.0
+    ],
+    [
+      0.04678362573099415,
+      0.47368421052631576,
+      0.0935672514619883,
+      0.3216374269005848,
+      0.05263157894736842,
+      0.011695906432748537
+    ]
+  ],
+  "labels": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s"
+  ],
+  "mean_abs_decade_error": 1.280701754385965,
+  "acc_within_1_decade": 0.6432748538011696,
+  "adjacent_fraction_of_errors": 0.41626794258373206,
+  "quadratic_weighted_kappa": 0.35457013574660623,
+  "invalid_output_rate": 0.0,
+  "prompt": "Listen to this 30-second music excerpt. Which decade this track was released in is it most likely from: 1960s, 1970s, 1980s, 1990s, 2000s, 2010s? Answer with exactly one of those labels and nothing else -- no punctuation, no explanation.",
+  "n_samples": 1026,
+  "note": "top1/top3/confusion computed from teacher-forced label log-prob scoring (genuine ranking); invalid_output_rate computed separately from free-form generation parsing."
+}
