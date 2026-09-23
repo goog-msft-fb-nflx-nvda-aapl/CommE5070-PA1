@@ -135,6 +135,19 @@ env PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python $PY -u -m src.af3_stack_oof --
 # saved to results/af3_stack_oof/B_muq_large_msd_af3cot_then_answer.json
 ```
 
+**4c. Round-4 best point estimate — MuQ+Whisper-language-ID concat probe, OOF-fitted fusion
+with AF3 — top1=0.5784, top3=0.8529** (not significantly different from 4a/AF3-alone, p=0.73):
+
+```bash
+# requires src/stems.py to have separated Task B's Demucs vocal stems first (1002 clips):
+$PY -u -m src.stems --dataset B --device cuda:1
+# then extract Whisper language-ID features on the vocal stems:
+$PY -u -m src.language_id --dataset B --stem vocals --device cuda:1
+# then the full probe (standalone langid, MuQ+langid concat, OOF fusion with AF3, all in one):
+$PY -u -m src.langid_probe --dataset B --stem vocals
+# best point: accuracy-optimal OOF fusion weight; saved to results/langid_probe/B_vocals.json
+```
+
 **4b. Validation-swept point estimate (original, NOT reproduced by 4a, kept only for the
 record) — top1=0.6569, top3=0.8824**:
 

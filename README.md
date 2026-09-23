@@ -31,7 +31,8 @@ Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO
 |---|---|---|---|---|
 | Task 1 (decade) | MuQ(layer1,SVM) probe + Audio Flamingo 3 (`direct` prompt), OOF-refit fusion weight (fit on 1026 training-set out-of-fold predictions, not validation) | 0.538 | 0.864 | significantly beats AF3-alone (p=0.0055); not significantly different from the probe alone (p=0.29) or the row below |
 | Task 1 (decade), statistically defensible alternative | 3-way ensemble: fine-tuned MERT-v1-330M (0.2) + Short-Chunk CNN (0.4) + frozen MERT-v1-330M+SVM (0.4) | 0.523 | 0.856 | confirmed-best if the simplest, most conservative single number is needed |
-| Task 2 (market) | Audio Flamingo 3 zero-shot alone (`direct` prompt) — OOF-refit fusion converges to essentially the same place | ≈0.588 | 0.765-0.872 | the earlier 0.657 (validation-swept fusion) did **not** reproduce under OOF refit; fusion is confirmed to beat our own trained probes (p<0.01) but not confirmed to beat AF3 alone |
+| Task 2 (market), best point estimate | MuQ(layer2,logreg) + Whisper-large-v3 sung-language-ID (6-dim, on Demucs vocal stem) concatenated probe, OOF-fitted fusion with AF3 (`cot_then_answer`, accuracy-optimal weight) | 0.578 | 0.853 | best point estimate found to date (round 4); not significantly different from AF3-alone (p=0.73) or from the row below |
+| Task 2 (market), statistically defensible alternative | Audio Flamingo 3 zero-shot alone (`direct` prompt) — every fusion attempt with a validation-swept weight converges to essentially the same place | ≈0.588 | 0.765-0.872 | the earlier 0.657 (validation-swept fusion) did **not** reproduce under OOF refit; fusion is confirmed to beat our own trained probes (p<0.01) but not confirmed to beat AF3 alone |
 
 ## Workflow
 

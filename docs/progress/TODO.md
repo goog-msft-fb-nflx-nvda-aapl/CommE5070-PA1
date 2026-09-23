@@ -71,3 +71,24 @@ Not yet done, optional: MusicFM 3rd encoder (superseded in priority by MuQ, coul
 Useful reusable fix from this session: `conda run -n ENV python ...` can cause a long-running single-process job to stall for real (not just hide log output) — prefer invoking the env's Python binary directly (`/home/jtan/miniconda3/envs/pa1_env/bin/python3 -u script.py ...`) for any multi-epoch training job on gsm-gpu2. See reference_gsmgpu_condarun_buffering.md memory.
 
 Note: gsm-gpu2's `uptime` load reading has periodically shown a suspicious frozen-looking value (stuck at exactly the same number across all three time windows) that didn't match actual system responsiveness (a real `time sleep 1` command still returned in ~1s) — if this recurs, don't trust the raw load figure alone, verify with a real timed command before concluding the system is unusable.
+
+## Improvement queue, round 4 (single-source deep research on research_prompt_round4.txt — see IMPROVEMENT_FINDINGS_ROUND4.md for full detail). Implementing in the source's own expected-value-ranked order.
+
+**Stage 1 — cheap, high-probability wins:**
+- [x] **Task 2: Whisper-large-v3 sung-language ID as a feature + Romance-vs-Anglo hierarchical classifier** — mechanistically new (linguistic, not acoustic/generative), directly targets our own confusion-diagnostic finding (Brazil/Spain/Italy near-deterministic language cues; US/UK/Germany confusion is shared-English). Highest-value item this round. **Done 2026-09-23** (`src/language_id.py`, `src/langid_probe.py`): language-ID alone beats MuQ alone (0.529 vs 0.500) using zero acoustic info. Best fused point estimate (MuQ+LangID+AF3, OOF-fit) reaches **top1=0.578, a new best point estimate for Task 2**, though not significant vs AF3-alone (p=0.73). Soft-routed hierarchical classifier gives the best top3 this project (0.863). Hard-routed hierarchical actually hurts top3 (cascading-error effect) — confirms soft routing was the right call. Anglo/Germanic sub-cluster (US/UK/Germany) confirmed still fundamentally hard even with language features (stage-2 cv=0.519). Full results in WORKLOG.md.
+- [ ] **Task 1: SORD distance-aware soft labels** on the best frozen features (keeps full 6-logit head, unlike CORAL) + zero-retrain ordinal-decoding post-hoc check on already-trained probabilities.
+- [ ] **Both: contextual calibration wrapper on AF3's label scores** (parameter-free prior correction, can't overfit the way the earlier validation-weight-sweep did).
+- [ ] **Task 1: production/loudness descriptors** (crest factor/dynamic range/spectral tilt; check first whether preprocessing already loudness-normalized the WAVs, which would confound absolute LUFS specifically).
+- [ ] **Stats protocol overhaul**: Brier as primary metric (already computed, promote it); artist-grouped repeated CV + Nadeau-Bengio corrected t-test; Bayesian correlated t-test with ROPE (`baycomp`); pre-register exactly one final test-set comparison.
+
+**Stage 2 — medium effort:**
+- [ ] Task 2: linear probe on AF-Whisper features (+ AF3 LLM hidden states) vs AF3 output scoring — verify empirically, source flags this may not win.
+- [ ] Both: MAEST (`mtg-upf/discogs-maest-30s-pw-129e`) / discogs-effnet (`mtg/effnet-discogs`) as fusion members — Discogs-*supervised* embeddings, same label universe as our task.
+- [ ] Task 1: EMD loss and unimodal Poisson head, specifically for top-3.
+- [ ] Task 2: CoT + self-consistency on a Thinking-capable ALM, constrained output format (avoid Music Flamingo's 38%-invalid-rate failure mode).
+
+**Stage 3 — higher effort, not prioritized unless earlier stages show promise:**
+- [ ] MiDashengLM/Dasheng as a diverse frozen extractor.
+- [ ] External-data/semi-supervised pretraining or kNN retrieval against a larger Discogs-tagged corpus.
+
+**Explicitly told not to re-attempt** (per this round's source): another SSL encoder as a plain frozen probe, CLAP-style contrastive zero-shot, plain ALM teacher-forced scoring on yet another model without a changed readout.
