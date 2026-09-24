@@ -315,6 +315,32 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.sweep_multicrop_muq --dataset B --devic
 # missed by the binarized test) but fusion-vs-AF3-alone still not significant on B
 $PY -u -m src.significance_continuous --dataset A --prompt direct
 $PY -u -m src.significance_continuous --dataset B --prompt cot_then_answer
+
+# Round-5 item 3: AF3 LoRA fine-tune, Task 2 (best epoch 2: top1=0.6078, underperforms
+# round-4's free contextual calibration 0.6275 and MERT-v2-alone 0.6471)
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.finetune_af3_lora --dataset B --prompt direct \
+    --epochs 3 --lr 1e-4 --grad-accum 8 --device cuda:1
+
+# Round-5 item 8: wide-and-deep hand-crafted features, Task 1 (standalone 0.4091, below
+# MERT-v2; fused with MERT-v2 ties top1 but improves top3 0.8712 -> 0.8864)
+$PY -m src.wide_deep_features --dataset A
+$PY -m src.wide_deep_analysis --dataset A
+
+# Round-5 item 10: label-aware augmentation ablation, from-scratch CNN, Task 1 --
+# does NOT confirm the predicted B>=A>C ordering (got A=0.3258, B=0.3333, C=0.3409)
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.train_scnn --dataset A --epochs 20 --no-mixup \
+    --waveform-augment none --device cuda:1 --out-dir results/scnn_aug_A_none
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.train_scnn --dataset A --epochs 20 --no-mixup \
+    --waveform-augment label_preserving --device cuda:1 --out-dir results/scnn_aug_A_labelpreserving
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.train_scnn --dataset A --epochs 20 --no-mixup \
+    --waveform-augment production_altering --device cuda:1 --out-dir results/scnn_aug_A_productionaltering
+
+# Round-5 item 9 (last queue item): caption-as-features, both tasks (Task B: real
+# moderate signal 0.5392; Task A: weak, 0.3182 -- below the wide-deep hand-crafted features)
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.caption_features --dataset B --model audioflamingo3 --device cuda:1
+$PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name caption_embed_audioflamingo3
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.caption_features --dataset A --model musicflamingo --device cuda:1
+$PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name caption_embed_musicflamingo
 ```
 
 ## Random seeds / determinism notes

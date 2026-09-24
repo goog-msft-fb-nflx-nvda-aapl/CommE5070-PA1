@@ -98,10 +98,10 @@ def _build_generate_and_score(model, processor, device, target_sr=16000):
                                    return_tensors="pt", padding=True).to(device)
         return prefix_inputs
 
-    def generate(audio, sr, prompt_text):
+    def generate(audio, sr, prompt_text, max_new_tokens=64):
         inputs = _prep(audio, sr, prompt_text)
         with torch.no_grad():
-            out_ids = model.generate(**inputs, max_new_tokens=64)
+            out_ids = model.generate(**inputs, max_new_tokens=max_new_tokens)
         gen = out_ids[:, inputs["input_ids"].shape[1]:]
         return processor.batch_decode(gen, skip_special_tokens=True)[0].strip()
 
