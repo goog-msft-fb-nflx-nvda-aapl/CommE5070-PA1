@@ -37,6 +37,17 @@ conda create -n clamp3_env python=3.10.16 -y
 # torchaudio is required by their MERT_utils.py but missing from requirements.txt -- the
 # line above installs it explicitly, matched to the cu121 torch build. Checkpoint weights
 # (MERT-v1-95M + CLaMP3's own) download automatically from Hugging Face on first run.
+
+# PupuM2D-Large (src/pupum2d_features.py, round-5 item 7 -- called "PupuJEPA-Large" in
+# TODO.md/the source research doc; verified the real repo is sizigi/PupuM2D, see
+# WORKLOG.md). Runs fine inside pa1_env -- just needs timm added:
+pip install timm
+git clone https://github.com/sizigi/PupuM2D.git external/PupuM2D
+# Upstream repo bug: model/__init__.py does `from .pupum2d import *`, a stale module name
+# (the actual file is model/pupujepa.py). One-line local patch, required before import works:
+echo 'from .pupujepa import *' > external/PupuM2D/model/__init__.py
+# Checkpoint (safetensors) + args.json download automatically from HF (spellbrush/PupuM2D)
+# on first run of src.pupum2d_features. No further setup needed.
 ```
 
 ## 1. Feature extraction (run once each, cached to `cache/` — gitignored, ~GBs)
@@ -81,6 +92,19 @@ $PY -m src.clamp3_features --dataset A --cuda-visible-devices 1
 $PY -m src.clamp3_features --dataset B --cuda-visible-devices 1
 $PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name clamp3  # top1=0.4924
 $PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name clamp3  # top1=0.5098
+
+# Round-5 item 7: PupuM2D-Large frozen probe -- standalone negative both tasks, but see
+# the OOF fusion below (WORKLOG.md). Single global embedding, no layer sweep needed.
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.pupum2d_features --dataset A --variant large --device cuda:1
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.pupum2d_features --dataset B --variant large --device cuda:1
+$PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name pupum2d_large  # top1=0.5152
+$PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name pupum2d_large  # top1=0.4804
+
+# OOF fusion of MERT-v2-30s (current best) x PupuM2D-Large -- new Task 1 best point
+# estimate (0.5606); Task 2's fusion weight correctly collapses to 100% MERT-v2.
+# Requires step 1's mertv2_features extraction to have been run first.
+$PY -m src.encoder_fusion_oof --dataset A  # fused top1=0.5606 (alpha=0.6 MERT-v2)
+$PY -m src.encoder_fusion_oof --dataset B  # fused top1=0.6471 == MERT-v2-alone (alpha=1.0)
 ```
 
 ## 2. Component models needed for the ensembles below
@@ -123,13 +147,16 @@ inside `ensemble.py`/`af3_stack.py`/`significance.py` below -- GridSearchCV is d
 
 ## 3. Best Task 1 (decade) config
 
-**Round-5 update, read this first**: `m-a-p/MERT-v2-30s` as a plain frozen probe now beats
-every config below (top1=0.5455, top3=0.8712) — not yet independently significance-tested
-against 3a/3c (see WORKLOG.md's round-5 section), but the best point estimate found to date.
+**Round-5 update, read this first**: `m-a-p/MERT-v2-30s` OOF-fused with PupuM2D-Large now
+beats every config below (top1=0.5606, α=0.6 MERT-v2 -- see step 1's `encoder_fusion_oof`
+command). MERT-v2-30s alone (top1=0.5455, top3=0.8712, higher top3 than the fusion) is the
+simpler, more defensible single-model number if fusion complexity isn't wanted. Neither is
+independently significance-tested against 3a/3c below (see WORKLOG.md's round-5 section).
 
 ```bash
 # requires step 1's src.mertv2_features extraction to have been run first
 $PY -c "from src.train_probe import run; run('A', layer=10, classifier='logreg', encoder_name='mertv2_30s')"
+# for the fusion (top1=0.5606), see step 1's `$PY -m src.encoder_fusion_oof --dataset A`
 ```
 
 **IMPORTANT, read this before citing a pre-round-5 Task 1 number**: the validation-swept fusion

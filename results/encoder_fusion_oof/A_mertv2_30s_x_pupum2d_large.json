@@ -1,0 +1,100 @@
+{
+  "dataset": "A",
+  "config_a": {
+    "encoder_name": "mertv2_30s",
+    "layer": 10,
+    "classifier": "logreg"
+  },
+  "config_b": {
+    "encoder_name": "pupum2d_large",
+    "layer": 0,
+    "classifier": "logreg",
+    "pca_dim": 128
+  },
+  "alpha_nll_optimal": 0.5614623214308194,
+  "alpha_accuracy_optimal": 0.6000000000000001,
+  "individual_ci": {
+    "mertv2_30s_alone": {
+      "top1": 0.5454545454545454,
+      "ci_lo": 0.4621212121212121,
+      "ci_hi": 0.6287878787878788,
+      "n": 132
+    },
+    "pupum2d_large_alone": {
+      "top1": 0.5151515151515151,
+      "ci_lo": 0.4318181818181818,
+      "ci_hi": 0.5984848484848485,
+      "n": 132
+    },
+    "oof_fused_nll_optimal": {
+      "top1": 0.5378787878787878,
+      "ci_lo": 0.45454545454545453,
+      "ci_hi": 0.6212121212121212,
+      "n": 132
+    },
+    "oof_fused_accuracy_optimal": {
+      "top1": 0.5606060606060606,
+      "ci_lo": 0.4772727272727273,
+      "ci_hi": 0.6439393939393939,
+      "n": 132
+    }
+  },
+  "paired_comparisons": {
+    "oof_fused_nll_optimal_vs_mertv2_30s_alone": {
+      "paired_bootstrap": {
+        "diff_mean": -0.007929545454545456,
+        "ci_lo": -0.053030303030303094,
+        "ci_hi": 0.037878787878787845,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.695
+      },
+      "mcnemar": {
+        "n01": 4,
+        "n10": 5,
+        "p_value": 1.0
+      }
+    },
+    "oof_fused_nll_optimal_vs_pupum2d_large_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.022069696969696972,
+        "ci_lo": -0.045454545454545414,
+        "ci_hi": 0.09090909090909094,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.3036
+      },
+      "mcnemar": {
+        "n01": 12,
+        "n10": 9,
+        "p_value": 0.6636238098144531
+      }
+    },
+    "oof_fused_accuracy_optimal_vs_mertv2_30s_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.015468181818181818,
+        "ci_lo": -0.022727272727272707,
+        "ci_hi": 0.053030303030303094,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.2681
+      },
+      "mcnemar": {
+        "n01": 4,
+        "n10": 2,
+        "p_value": 0.6875
+      }
+    },
+    "oof_fused_accuracy_optimal_vs_pupum2d_large_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.04551212121212122,
+        "ci_lo": -0.030303030303030276,
+        "ci_hi": 0.1136363636363637,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.1271
+      },
+      "mcnemar": {
+        "n01": 15,
+        "n10": 9,
+        "p_value": 0.30745625495910645
+      }
+    }
+  }
+}

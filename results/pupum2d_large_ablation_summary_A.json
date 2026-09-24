@@ -1,0 +1,98 @@
+{
+  "dataset": "A",
+  "encoder_name": "pupum2d_large",
+  "layer": "0",
+  "rows": [
+    {
+      "classifier": "logreg",
+      "pca_dim": null,
+      "top1": 0.49242424242424243,
+      "top3": 0.8636363636363636,
+      "cv_best_score": 0.478527113426474
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 64,
+      "top1": 0.5,
+      "top3": 0.8484848484848485,
+      "cv_best_score": 0.46781434998816007
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 128,
+      "top1": 0.5151515151515151,
+      "top3": 0.8484848484848485,
+      "cv_best_score": 0.4639071749940801
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 256,
+      "top1": 0.5,
+      "top3": 0.8712121212121212,
+      "cv_best_score": 0.4678001420790907
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": null,
+      "top1": 0.4393939393939394,
+      "top3": 0.8181818181818182,
+      "cv_best_score": 0.4414965664219749
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 64,
+      "top1": 0.36363636363636365,
+      "top3": 0.7727272727272727,
+      "cv_best_score": 0.4278664456547478
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 128,
+      "top1": 0.4621212121212121,
+      "top3": 0.8106060606060606,
+      "cv_best_score": 0.4181103480937722
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 256,
+      "top1": 0.4318181818181818,
+      "top3": 0.803030303030303,
+      "cv_best_score": 0.42590101823348336
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": null,
+      "top1": 0.49242424242424243,
+      "top3": 0.8257575757575758,
+      "cv_best_score": 0.46586313047596495
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 64,
+      "top1": 0.45454545454545453,
+      "top3": 0.8181818181818182,
+      "cv_best_score": 0.4570873786407767
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 128,
+      "top1": 0.4772727272727273,
+      "top3": 0.803030303030303,
+      "cv_best_score": 0.4619417475728155
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 256,
+      "top1": 0.5075757575757576,
+      "top3": 0.8257575757575758,
+      "cv_best_score": 0.470736443286763
+    }
+  ],
+  "best": {
+    "classifier": "logreg",
+    "pca_dim": 128,
+    "top1": 0.5151515151515151,
+    "top3": 0.8484848484848485,
+    "cv_best_score": 0.4639071749940801
+  }
+}
