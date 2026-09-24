@@ -25,6 +25,18 @@ wget -q https://huggingface.co/minzwon/MusicFM/resolve/main/pretrained_msd.pt -O
 # MuFun (src/mufun_infer.py, negative result, section 6 below) -- also needs ffmpeg,
 # not pip-installable:
 conda install -n pa1_env -c conda-forge ffmpeg -y
+
+# CLaMP 3 (src/clamp3_features.py, round-5 item 6, negative result -- see WORKLOG.md) --
+# their reference implementation pins transformers==4.40.0, which conflicts with pa1_env,
+# so it runs in its own dedicated env. Clone into external/ (gitignored, third-party code,
+# never committed):
+git clone https://github.com/sanderwood/clamp3.git external/clamp3
+conda create -n clamp3_env python=3.10.16 -y
+/path/to/miniconda3/envs/clamp3_env/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+/path/to/miniconda3/envs/clamp3_env/bin/pip install -r external/clamp3/requirements.txt
+# torchaudio is required by their MERT_utils.py but missing from requirements.txt -- the
+# line above installs it explicitly, matched to the cu121 torch build. Checkpoint weights
+# (MERT-v1-95M + CLaMP3's own) download automatically from Hugging Face on first run.
 ```
 
 ## 1. Feature extraction (run once each, cached to `cache/` — gitignored, ~GBs)
@@ -60,6 +72,15 @@ $PY -m src.ablate_mert_layers --dataset A --encoder-name whisper_encoder --n-lay
 $PY -m src.ablate_mert_layers --dataset B --encoder-name whisper_encoder --n-layers 33
 $PY -m src.ablate_classifier_pca --dataset A --layer 8 --encoder-name whisper_encoder   # top1=0.4318
 $PY -m src.ablate_classifier_pca --dataset B --layer 20 --encoder-name whisper_encoder  # top1=0.6275
+
+# Round-5 item 6: CLaMP 3 audio embedding -- clean negative result, both tasks (see
+# WORKLOG.md). extract() shells out to clamp3_env internally (subprocess), so it can be
+# invoked from pa1_env's own python. Single global embedding (no layer structure), so no
+# layer sweep -- straight to the classifier/PCA ablation.
+$PY -m src.clamp3_features --dataset A --cuda-visible-devices 1
+$PY -m src.clamp3_features --dataset B --cuda-visible-devices 1
+$PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name clamp3  # top1=0.4924
+$PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name clamp3  # top1=0.5098
 ```
 
 ## 2. Component models needed for the ensembles below

@@ -1,0 +1,98 @@
+{
+  "dataset": "B",
+  "encoder_name": "clamp3",
+  "layer": "0",
+  "rows": [
+    {
+      "classifier": "logreg",
+      "pca_dim": null,
+      "top1": 0.49019607843137253,
+      "top3": 0.8725490196078431,
+      "cv_best_score": 0.43485849056603776
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 64,
+      "top1": 0.4803921568627451,
+      "top3": 0.8627450980392157,
+      "cv_best_score": 0.42483490566037735
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 128,
+      "top1": 0.49019607843137253,
+      "top3": 0.8823529411764706,
+      "cv_best_score": 0.432374213836478
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 256,
+      "top1": 0.4803921568627451,
+      "top3": 0.8823529411764706,
+      "cv_best_score": 0.4386163522012579
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": null,
+      "top1": 0.4803921568627451,
+      "top3": 0.7941176470588235,
+      "cv_best_score": 0.43611635220125783
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 64,
+      "top1": 0.4019607843137255,
+      "top3": 0.8235294117647058,
+      "cv_best_score": 0.4235849056603773
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 128,
+      "top1": 0.4411764705882353,
+      "top3": 0.7745098039215687,
+      "cv_best_score": 0.417374213836478
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 256,
+      "top1": 0.45098039215686275,
+      "top3": 0.8235294117647058,
+      "cv_best_score": 0.43488993710691826
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": null,
+      "top1": 0.5,
+      "top3": 0.8627450980392157,
+      "cv_best_score": 0.45867924528301895
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 64,
+      "top1": 0.4803921568627451,
+      "top3": 0.8431372549019608,
+      "cv_best_score": 0.45990566037735847
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 128,
+      "top1": 0.5098039215686274,
+      "top3": 0.8627450980392157,
+      "cv_best_score": 0.4599213836477988
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 256,
+      "top1": 0.5,
+      "top3": 0.8627450980392157,
+      "cv_best_score": 0.4599292452830189
+    }
+  ],
+  "best": {
+    "classifier": "svm",
+    "pca_dim": 128,
+    "top1": 0.5098039215686274,
+    "top3": 0.8627450980392157,
+    "cv_best_score": 0.4599213836477988
+  }
+}

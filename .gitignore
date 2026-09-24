@@ -9,3 +9,4 @@ results/mert_finetune_*/
 *.pt
 *.pkl
 backups/
+external/
