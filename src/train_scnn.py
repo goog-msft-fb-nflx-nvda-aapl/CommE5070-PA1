@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.config import DATASETS, RESULTS_DIR, SAMPLE_RATE
 from src.data import ClipDataset, CropTrainDataset, collate_crops, multi_crop
 from src.scnn import ShortChunkCNN, spec_augment, mixup
+from src.scnn_augment import apply_augment_batch
 from src.metrics import summarize
 
 
@@ -33,7 +34,8 @@ def eval_multicrop(model, dataset_key, split, device, crop_seconds=3.7, n_crops=
 
 
 def train(dataset_key, epochs=40, batch_size=32, crop_seconds=3.7, lr=1e-3,
-          device="cuda", out_dir=None, use_mixup=True, use_specaug=True, seed=0):
+          device="cuda", out_dir=None, use_mixup=True, use_specaug=True, seed=0,
+          waveform_augment="none"):
     torch.manual_seed(seed)
     np.random.seed(seed)
     spec = DATASETS[dataset_key]
@@ -56,6 +58,9 @@ def train(dataset_key, epochs=40, batch_size=32, crop_seconds=3.7, lr=1e-3,
         model.train()
         losses = []
         for waves, labels in train_loader:
+            if waveform_augment != "none":
+                waves_np = apply_augment_batch(waves.numpy(), SAMPLE_RATE, waveform_augment)
+                waves = torch.from_numpy(waves_np)
             waves, labels = waves.to(device), labels.to(device)
             opt.zero_grad()
             if use_mixup:
@@ -97,7 +102,10 @@ if __name__ == "__main__":
     p.add_argument("--device", default="cuda")
     p.add_argument("--no-mixup", action="store_true")
     p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--waveform-augment", choices=["none", "label_preserving", "production_altering"], default="none")
+    p.add_argument("--out-dir", default=None)
     args = p.parse_args()
     train(args.dataset, epochs=args.epochs, batch_size=args.batch_size,
           crop_seconds=args.crop_seconds, lr=args.lr, device=args.device,
-          use_mixup=not args.no_mixup, seed=args.seed)
+          use_mixup=not args.no_mixup, seed=args.seed,
+          waveform_augment=args.waveform_augment, out_dir=args.out_dir)
