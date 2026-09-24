@@ -1,0 +1,35 @@
+# Deep Research Synthesis, Round 5 (2026-09-25)
+
+Single-source, lecture-grounded (Yi-Hsuan Yang's L02/L02b/L03, CommE5070 course lectures), `round5_lecture_grounded_research.md`. Cross-checked against the project's own round-4 "already tried" list by the source itself before making recommendations — explicitly flags overlap where it exists rather than re-proposing tried ideas.
+
+## Top recommendation: MERT-v2-30s (both tasks)
+`m-a-p/MERT-v2-30s` — 632M params, 24kHz mono, 24 Conformer layers, trained natively on 30s excerpts (exactly our clip length, no resampling/windowing needed, unlike MERT-v1's 5s training context). Mechanistically distinct from every encoder tried: its masked-prediction targets are RVQ codes distilled from a **concatenation of MuQ layer-7 features and Qwen2-Audio layer-32 features** — i.e. partly a distillation of an ALM's deep semantic layer into a music encoder, a property none of our encoders has. Model-card MARBLE numbers (GTZAN genre acc / MTG genre ROC): MERT-v2-30s 91.72/88.01 vs MuQ 83.8/85.4 vs MusicFM 84.1/85.3 vs PupuJEPA-Large 86.9/86.1 — our current-best encoder (MuQ) is "clearly second-tier" on this table. Caveat stated by the source itself: GTZAN has known artist leakage so the 8-point margin won't translate 1:1 to our artist-disjoint task; MTG-Jamendo's smaller (+2-3 ROC point) margin is the more trustworthy signal.
+
+## Key framing insight: we've only used 1 of 4 ways to use an ALM
+Zero-shot (used), zero-shot CoT (used), in-context learning (not used), fine-tuning (only tried on SSL encoders, never on AF3 itself). Since AF3 zero-shot is the Task 2 ceiling, the two unused modes that act **on AF3 itself** — retrieval-augmented ICL and LoRA fine-tuning of AF3 — are flagged as the most direct routes past 58.8%, explicitly distinguished from our closed MERT-LoRA line: "your LoRA adapted MERT (no task prior, plateaued 38-43%); AF3-LoRA starts at 58.8%, so the objective is correcting a strong but miscalibrated prior, not creating task knowledge from scratch."
+
+## Ranked queue (source's own table, adopted as-is)
+1. **MERT-v2-30s frozen probe** (+ as a fine-tuning backbone) — both tasks, low effort.
+2. **Learned softmax-weighted layer sum** as probe input (vs. our single-best-layer sweep) — both tasks, very low effort. Also flagged as reducing "winner's curse" from picking the best of 24 layers by validation score.
+3. **LoRA fine-tuning of AF3 itself** (LLM LoRA + full projector fine-tune, frozen AF-Whisper) — Task 2, medium-high effort. Recipe cites the lecture's own worked example (LLM2Fx-Tools, arXiv:2512.01559).
+4. **Retrieval-augmented ICL with AF3** (MuQ-kNN-selected exemplars prepended before the query) — Task 2, medium effort. Mechanistically distinct from our fusion work: "feeds the probe's neighborhood structure into AF3's reasoning... before the decision, rather than being averaged with it after."
+5. **"Whisper-lineage encoder" diagnostic** via MARBLE's Qwen2.5-Omni audio tower — Task 2, low effort, explicitly framed as **the single most useful test** since it explains our whole Task 2 picture (AF3/Qwen2-Audio both descend from Whisper-large-v3, trained for multilingual ASR, hence phonetic/language-identity-aware; music-SSL encoders aren't). Branches the rest of the plan: if the Omni encoder matches AF3 on Task 2 but not Task 1, the bottleneck is confirmed linguistic (→ prioritize our already-built language-ID work); if also weak, AF3's edge is the LLM's world knowledge (→ prioritize items 3/4 instead).
+6. **CLaMP 3 audio embedding as a frozen probe** — Task 2 (+1), low effort. Explicitly distinguished from our CLAP negative: CLaMP 3's training text is **music metadata** (M4-RAG, 2.31M pairs, 194 countries, 27 languages) vs. LAION-CLAP's general sound-event captions — recommends probing its embedding (our working mechanism), not repeating contrastive zero-shot (our failed mechanism).
+7. **PupuJEPA-Large** as a fusion member — both tasks, low-medium effort. A genuinely different pretraining family (2D-patch JEPA vs. our encoders' 1D masked-token prediction) — proposed specifically as a decorrelated-error source since "your fusions keep collapsing to one member because the members make correlated errors."
+8. **GTZAN-style hand-crafted features in a wide-and-deep probe** — Task 1, low effort. Extends our round-4 loudness-only descriptors to the full timbre/rhythm/pitch set (~120 dims: MFCCs, chroma, spectral contrast/flatness/flux, rhythm/beat features). Explicit caveat: our 24kHz audio truncates above 12kHz, so use rolloff@0.85 not @0.99 as the primary brightness feature; also re-flags the loudness-normalization confound already handled in round 4.
+9. **Caption-as-features** (AF3/Music Flamingo structured captions → sentence embedding → probe) — both tasks, medium effort. Distinguished from our ALM work: asks for verbalized intermediate evidence instead of a direct label, sidestepping both the label-prior miscalibration problem (round 4's motivation for calibration) and Music Flamingo's 38% invalid-output problem (any caption text is usable).
+10. **Label-aware augmentation ablation** for the from-scratch CNN — Task 1, low-medium effort. A/B/C test: no augmentation vs. label-preserving (crop/polarity/mild time-stretch/pitch-shift) vs. production-altering (filters/reverb/noise) — predicts B≥A>C for decade, framed as informative either way (if C hurts, that's direct evidence production cues carry decade information).
+
+## Explicitly told not to pursue
+Self-supervised contrastive pretraining from scratch on our own ~1,300 clips (needs corpora/batch sizes far beyond our data — "will not produce an encoder competitive with MERT-v2/MuQ, skip it"). Training an ALM from scratch or building an instruction dataset (out of scope for coursework). Dasheng-1.2B specifically deprioritized below MERT-v2/PupuJEPA per the lecture's own comparison table (81.4 GTZAN vs MuQ's 83.8).
+
+## Experimental design note (source's own, given the elevated multiple-comparison risk this round)
+With several new encoders being tried, recommends: selection stage via 5-fold *artist-grouped* CV (we lack artist IDs — same known limitation as round 4's stats work, will use stratified as before) on training split only, repeated 3 seeds, primary metric OOF log-loss; fit fusion weights OOF only (already our practice); one validation evaluation with paired bootstrap/McNemar (already our practice) plus the Nadeau-Bengio corrected t-test (round 4, already implemented); test set touched once at the end. Pre-register the candidate list before looking at validation.
+
+## Suggested order of work (source's own, adopted)
+1. MERT-v2-30s extraction + layer sweep + weighted-sum probe.
+2. Whisper-lineage diagnostic (Qwen2.5-Omni encoder probe on both tasks) — branches the rest of the plan.
+3. Branch: language-ID/hierarchical (round 4, already done) if diagnostic confirms linguistic bottleneck; else AF3 retrieval-ICL / AF3-LoRA.
+4. PupuJEPA + CLaMP 3 as probes and OOF fusion partners.
+5. Task 1 extras: wide-and-deep hand-crafted features, augmentation ablation.
+6. Optional: caption-as-features.

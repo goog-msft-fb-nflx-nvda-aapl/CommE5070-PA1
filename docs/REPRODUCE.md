@@ -40,6 +40,11 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.muq_features  --dataset B --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.culturemert_features --dataset B --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.musicfm_features --dataset A --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.musicfm_features --dataset B --device cuda:1
+
+# Round-5: MERT-v2-30s (m-a-p/MERT-v2-30s) -- new best standalone encoder, both tasks
+# (see WORKLOG.md's round-5 section). No known compatibility issues, no special setup.
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mertv2_features --dataset A --device cuda:1
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mertv2_features --dataset B --device cuda:1
 ```
 
 ## 2. Component models needed for the ensembles below
@@ -82,11 +87,20 @@ inside `ensemble.py`/`af3_stack.py`/`significance.py` below -- GridSearchCV is d
 
 ## 3. Best Task 1 (decade) config
 
-**IMPORTANT, read this before citing a Task 1 number**: the validation-swept fusion point
-estimate (3b below, top1=0.5530) was picked by sweeping the weight directly on the 132-sample
+**Round-5 update, read this first**: `m-a-p/MERT-v2-30s` as a plain frozen probe now beats
+every config below (top1=0.5455, top3=0.8712) — not yet independently significance-tested
+against 3a/3c (see WORKLOG.md's round-5 section), but the best point estimate found to date.
+
+```bash
+# requires step 1's src.mertv2_features extraction to have been run first
+$PY -c "from src.train_probe import run; run('A', layer=10, classifier='logreg', encoder_name='mertv2_30s')"
+```
+
+**IMPORTANT, read this before citing a pre-round-5 Task 1 number**: the validation-swept fusion
+point estimate (3b below, top1=0.5530) was picked by sweeping the weight directly on the 132-sample
 validation set. A leakage-free out-of-fold (OOF) refit — fitting the weight on 1026 training-set
 predictions instead — gives a very similar, more defensible number (top1=0.5379, 3a below).
-Prefer 3a when a single number is needed; 3b is kept only as the original point estimate.
+Prefer 3a when a single pre-round-5 number is needed; 3b is kept only as the original point estimate.
 
 **3a. OOF-refit fusion (defensible) — top1=0.5379, top3=0.8636**. Significantly beats AF3-alone
 (p=0.0055); not significantly different from the probe alone (p=0.29) or from 3c below.
@@ -117,13 +131,29 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.ensemble --dataset A --mode 3way --device 
 
 ## 4. Best Task 2 (market) config
 
-**IMPORTANT, read this before citing a Task 2 number**: the validation-swept fusion (4b below,
-top1=0.6569) does **not** reproduce under a leakage-free OOF refit (4a below gives ≈0.57-0.59,
-essentially AF3-alone's own score) — the 0.6569 figure was validation-set overfitting in the
+**Round-5 update, read this first**: `m-a-p/MERT-v2-30s` as a plain frozen probe (no AF3, no
+calibration) now beats every pre-round-5 config below on its own (top1=0.6471, top3=0.8922),
+and OOF-fused with contextually-calibrated AF3 reaches top1=0.6569/top3=0.8922 (best point
+estimate found to date; not yet independently significance-tested against 4c). **Coincidence
+warning**: this new 0.6569 is numerically identical to the round-3 debunked figure discussed
+below but is an entirely different, legitimately-derived config (MERT-v2+calibrated-AF3 via
+leakage-free OOF fitting, not a validation-set weight sweep) — do not conflate the two.
+
+```bash
+# requires step 1's src.mertv2_features extraction to have been run first
+$PY -c "from src.train_probe import run; run('B', layer='mean_all', classifier='logreg', pca_dim=128, encoder_name='mertv2_30s')"
+# for the fusion with calibrated AF3, see WORKLOG.md's round-5 section for the exact
+# OOF-fitting recipe (mirrors src/af3_stack_oof.py's pattern, applied to this encoder)
+```
+
+**IMPORTANT, read this before citing a pre-round-5 Task 2 number**: the validation-swept fusion
+(4b below, top1=0.6569 -- the OLD, round-3 figure, see the coincidence warning above) does
+**not** reproduce under a leakage-free OOF refit (4a below gives ≈0.57-0.59, essentially
+AF3-alone's own score) — that older 0.6569 figure was validation-set overfitting in the
 weight choice, confirmed by two independent pieces of evidence (the OOF refit itself, and the
-earlier bootstrap/McNemar test already showing p=0.21 vs. AF3-alone). **Do not report 0.6569 as
-the headline Task 2 number without this caveat; prefer citing ≈0.588 (AF3 zero-shot alone, or
-equivalently the OOF-refit fusion).**
+earlier bootstrap/McNemar test already showing p=0.21 vs. AF3-alone). **Do not report the
+pre-round-5 0.6569 as a headline number without this caveat; prefer citing ≈0.588 (AF3
+zero-shot alone) if citing a pre-round-5 result at all.**
 
 **4a. OOF-refit fusion (the honest number) — top1=0.5686 (NLL-optimal) or 0.5882
 (accuracy-optimal), both ≈ AF3-alone's own 0.5882**:
