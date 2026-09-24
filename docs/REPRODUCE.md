@@ -45,6 +45,21 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.musicfm_features --dataset B --device cuda
 # (see WORKLOG.md's round-5 section). No known compatibility issues, no special setup.
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mertv2_features --dataset A --device cuda:1
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -m src.mertv2_features --dataset B --device cuda:1
+
+# Round-5 item 5: openai/whisper-large-v3 encoder as a frozen probe (Whisper-lineage
+# diagnostic; resolved the linguistic-vs-world-knowledge branch -- see WORKLOG.md).
+# Standard HF WhisperModel, no custom code. extract() has no --splits flag, always
+# runs all three splits at once (1002/1290 clips depending on dataset).
+$PY -m src.whisper_encoder_features --dataset A --device cuda:1
+$PY -m src.whisper_encoder_features --dataset B --device cuda:1
+
+# Layer sweep (33 layers = embedding + 32 encoder blocks, + mean_all/concat_last4) +
+# classifier/PCA ablation on the winning layer. ablate_mert_layers.py/ablate_classifier_pca.py
+# are generic over encoder_name -- reused as-is for the Whisper encoder.
+$PY -m src.ablate_mert_layers --dataset A --encoder-name whisper_encoder --n-layers 33
+$PY -m src.ablate_mert_layers --dataset B --encoder-name whisper_encoder --n-layers 33
+$PY -m src.ablate_classifier_pca --dataset A --layer 8 --encoder-name whisper_encoder   # top1=0.4318
+$PY -m src.ablate_classifier_pca --dataset B --layer 20 --encoder-name whisper_encoder  # top1=0.6275
 ```
 
 ## 2. Component models needed for the ensembles below
