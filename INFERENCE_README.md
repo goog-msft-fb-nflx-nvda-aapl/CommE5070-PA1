@@ -5,7 +5,9 @@ path on your own machine. For the full development history (every experiment tri
 including negative results), see `docs/progress/WORKLOG.md` and `docs/REPRODUCE.md` in
 this same folder — this README covers only the two configs actually submitted.
 
-**Source code (full history, all experiments):** https://github.com/goog-msft-fb-nflx-nvda-aapl/CommE5070-PA1
+**Google Drive folder (primary — this folder):** https://drive.google.com/drive/folders/13_Ufj30hwtYVkmN2QFgmXyjuOBfn35iZ?usp=sharing
+
+**GitHub repo (full history, all experiments; secondary/mirror):** https://github.com/goog-msft-fb-nflx-nvda-aapl/CommE5070-PA1
 (private until the submission deadline per course policy on releasing predictions before
 grading; will be made public immediately after 2026-10-05. The URL will not change.)
 
