@@ -96,5 +96,31 @@
         "p_value": 0.30745625495910645
       }
     }
+  },
+  "ordinal_metrics": {
+    "mertv2_30s_alone": {
+      "mean_abs_decade_error": 0.7045454545454546,
+      "acc_within_1_decade": 0.8484848484848485,
+      "adjacent_fraction_of_errors": 0.6666666666666666,
+      "quadratic_weighted_kappa": 0.7610294117647058
+    },
+    "pupum2d_large_alone": {
+      "mean_abs_decade_error": 0.7803030303030303,
+      "acc_within_1_decade": 0.8257575757575758,
+      "adjacent_fraction_of_errors": 0.640625,
+      "quadratic_weighted_kappa": 0.7179802955665024
+    },
+    "oof_fused_nll_optimal": {
+      "mean_abs_decade_error": 0.7272727272727273,
+      "acc_within_1_decade": 0.8333333333333334,
+      "adjacent_fraction_of_errors": 0.639344262295082,
+      "quadratic_weighted_kappa": 0.7475247524752475
+    },
+    "oof_fused_accuracy_optimal": {
+      "mean_abs_decade_error": 0.6893939393939394,
+      "acc_within_1_decade": 0.8484848484848485,
+      "adjacent_fraction_of_errors": 0.6551724137931034,
+      "quadratic_weighted_kappa": 0.756857855361596
+    }
   }
 }

@@ -31,7 +31,7 @@ Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO
 
 | task | config | top1 | top3 | notes |
 |---|---|---|---|---|
-| Task 1 (decade), **best point estimate** | MERT-v2-30s (layer10, logreg) OOF-fitted fusion with PupuM2D-Large (global embedding, logreg, PCA128), α=0.6 MERT-v2 | **0.5606** | 0.8485 | not significant vs. MERT-v2-alone (p=0.69) or PupuM2D-alone (p=0.31, n=132) |
+| Task 1 (decade), **best point estimate** | MERT-v2-30s (layer10, logreg) OOF-fitted fusion with PupuM2D-Large (global embedding, logreg, PCA128), α=0.6 MERT-v2 | **0.5606** | 0.8485 | not significant vs. MERT-v2-alone (p=0.69) or PupuM2D-alone (p=0.31, n=132); ordinal metrics corroborate the gain (MAE=0.689 vs. 0.705 decades for MERT-v2-alone, within±1=0.8485 tied, QWK=0.7569 vs. 0.7610) |
 | Task 1 (decade), simpler/self-contained | MERT-v2-30s (layer10, logreg, no PCA) frozen probe alone — **no PupuM2D needed** | 0.5455 | 0.8712 | the more defensible single-model number; also has the higher top3 |
 | Task 1 (decade), earlier best | MuQ(layer1,SVM) probe + Audio Flamingo 3 (`direct` prompt), OOF-refit fusion weight | 0.538 | 0.864 | significantly beats AF3-alone (p=0.0055); not significantly different from the probe alone or MERT-v2 above |
 | Task 1 (decade), statistically defensible alternative | 3-way ensemble: fine-tuned MERT-v1-330M (0.2) + Short-Chunk CNN (0.4) + frozen MERT-v1-330M+SVM (0.4) | 0.523 | 0.856 | confirmed-best if the simplest, most conservative single number is needed |

@@ -26,7 +26,7 @@ from sklearn.svm import SVC
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.config import DATASETS, RESULTS_DIR, CACHE_DIR
 from src.train_probe import load_cached
-from src.metrics import summarize
+from src.metrics import summarize, ordinal_metrics
 from src.significance import bootstrap_ci_top1, compare
 
 CLASSIFIER_CV = {
@@ -139,6 +139,18 @@ def run(dataset_key, config_a, config_b, n_boot=10000):
     for name, ci in cis.items():
         print(f"  {name}: top1={ci['top1']:.4f} 95% CI=[{ci['ci_lo']:.4f}, {ci['ci_hi']:.4f}]")
 
+    ordinal = {}
+    if spec["ordinal"]:
+        # cheap analysis addition (backlog item): a fusion's top1 gain over its parts can
+        # hide a wash (or a loss) in ordinal quality -- report MAE-in-decades/QWK/within-1
+        # alongside top1 for every config, not just the headline number.
+        for name, p in configs.items():
+            preds = np.argmax(p, axis=1)
+            ordinal[name] = ordinal_metrics(y_val, preds, n_class)
+            print(f"  {name}: MAE={ordinal[name]['mean_abs_decade_error']:.3f} decades, "
+                  f"within_1={ordinal[name]['acc_within_1_decade']:.4f}, "
+                  f"QWK={ordinal[name]['quadratic_weighted_kappa']:.4f}")
+
     comps = {}
     for fused_name in ("oof_fused_nll_optimal", "oof_fused_accuracy_optimal"):
         for name in (f"{config_a['encoder_name']}_alone", f"{config_b['encoder_name']}_alone"):
@@ -146,7 +158,7 @@ def run(dataset_key, config_a, config_b, n_boot=10000):
 
     out = {"dataset": dataset_key, "config_a": config_a, "config_b": config_b,
            "alpha_nll_optimal": alpha_nll, "alpha_accuracy_optimal": alpha_acc,
-           "individual_ci": cis, "paired_comparisons": comps}
+           "individual_ci": cis, "paired_comparisons": comps, "ordinal_metrics": ordinal}
     out_dir = os.path.join(RESULTS_DIR, "encoder_fusion_oof")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, f"{dataset_key}_{config_a['encoder_name']}_x_{config_b['encoder_name']}.json")
