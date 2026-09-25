@@ -1,0 +1,100 @@
+{
+  "dataset": "B",
+  "config_a": {
+    "encoder_name": "mertv2_30s",
+    "layer": "mean_all",
+    "classifier": "logreg",
+    "pca_dim": 128
+  },
+  "config_b": {
+    "encoder_name": "maest",
+    "layer": "concat_last4",
+    "classifier": "logreg"
+  },
+  "alpha_nll_optimal": 0.8404662944561339,
+  "alpha_accuracy_optimal": 0.9500000000000001,
+  "individual_ci": {
+    "mertv2_30s_alone": {
+      "top1": 0.6470588235294118,
+      "ci_lo": 0.5490196078431373,
+      "ci_hi": 0.7352941176470589,
+      "n": 102
+    },
+    "maest_alone": {
+      "top1": 0.4803921568627451,
+      "ci_lo": 0.38235294117647056,
+      "ci_hi": 0.5784313725490197,
+      "n": 102
+    },
+    "oof_fused_nll_optimal": {
+      "top1": 0.5980392156862745,
+      "ci_lo": 0.5,
+      "ci_hi": 0.6862745098039216,
+      "n": 102
+    },
+    "oof_fused_accuracy_optimal": {
+      "top1": 0.6470588235294118,
+      "ci_lo": 0.5490196078431373,
+      "ci_hi": 0.7352941176470589,
+      "n": 102
+    }
+  },
+  "paired_comparisons": {
+    "oof_fused_nll_optimal_vs_mertv2_30s_alone": {
+      "paired_bootstrap": {
+        "diff_mean": -0.049069607843137256,
+        "ci_lo": -0.12745098039215697,
+        "ci_hi": 0.039215686274509776,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.8999
+      },
+      "mcnemar": {
+        "n01": 7,
+        "n10": 12,
+        "p_value": 0.359283447265625
+      }
+    },
+    "oof_fused_nll_optimal_vs_maest_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.11773235294117648,
+        "ci_lo": 0.03921568627450983,
+        "ci_hi": 0.19607843137254904,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0021
+      },
+      "mcnemar": {
+        "n01": 15,
+        "n10": 3,
+        "p_value": 0.007537841796875
+      }
+    },
+    "oof_fused_accuracy_optimal_vs_mertv2_30s_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.00022058823529411738,
+        "ci_lo": -0.05882352941176461,
+        "ci_hi": 0.05882352941176472,
+        "excludes_zero": false,
+        "frac_a_not_better": 0.5674
+      },
+      "mcnemar": {
+        "n01": 4,
+        "n10": 4,
+        "p_value": 1.0
+      }
+    },
+    "oof_fused_accuracy_optimal_vs_maest_alone": {
+      "paired_bootstrap": {
+        "diff_mean": 0.16701764705882352,
+        "ci_lo": 0.07843137254901955,
+        "ci_hi": 0.2647058823529411,
+        "excludes_zero": true,
+        "frac_a_not_better": 0.0003
+      },
+      "mcnemar": {
+        "n01": 22,
+        "n10": 5,
+        "p_value": 0.0015137195587158203
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "dataset": "A",
+  "encoder_name": "maest",
+  "layer": "mean_all",
+  "rows": [
+    {
+      "classifier": "logreg",
+      "pca_dim": null,
+      "top1": 0.49242424242424243,
+      "top3": 0.8484848484848485,
+      "cv_best_score": 0.4951456310679612
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 64,
+      "top1": 0.48484848484848486,
+      "top3": 0.8863636363636364,
+      "cv_best_score": 0.48734075301918073
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 128,
+      "top1": 0.49242424242424243,
+      "top3": 0.8333333333333334,
+      "cv_best_score": 0.4863793511721525
+    },
+    {
+      "classifier": "logreg",
+      "pca_dim": 256,
+      "top1": 0.5075757575757576,
+      "top3": 0.8560606060606061,
+      "cv_best_score": 0.4902817901965427
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": null,
+      "top1": 0.44696969696969696,
+      "top3": 0.803030303030303,
+      "cv_best_score": 0.48344304996448023
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 64,
+      "top1": 0.3939393939393939,
+      "top3": 0.7803030303030303,
+      "cv_best_score": 0.4425147999052806
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 128,
+      "top1": 0.4318181818181818,
+      "top3": 0.8106060606060606,
+      "cv_best_score": 0.4356713237035283
+    },
+    {
+      "classifier": "mlp",
+      "pca_dim": 256,
+      "top1": 0.4015151515151515,
+      "top3": 0.803030303030303,
+      "cv_best_score": 0.45713000236798484
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": null,
+      "top1": 0.5151515151515151,
+      "top3": 0.8636363636363636,
+      "cv_best_score": 0.49219038598152964
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 64,
+      "top1": 0.5075757575757576,
+      "top3": 0.8560606060606061,
+      "cv_best_score": 0.48438550793274915
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 128,
+      "top1": 0.49242424242424243,
+      "top3": 0.8560606060606061,
+      "cv_best_score": 0.4990196542742126
+    },
+    {
+      "classifier": "svm",
+      "pca_dim": 256,
+      "top1": 0.5,
+      "top3": 0.8409090909090909,
+      "cv_best_score": 0.4844044518115084
+    }
+  ],
+  "best": {
+    "classifier": "svm",
+    "pca_dim": null,
+    "top1": 0.5151515151515151,
+    "top3": 0.8636363636363636,
+    "cv_best_score": 0.49219038598152964
+  }
+}

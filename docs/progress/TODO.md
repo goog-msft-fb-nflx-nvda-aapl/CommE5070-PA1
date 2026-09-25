@@ -83,7 +83,7 @@ Note: gsm-gpu2's `uptime` load reading has periodically shown a suspicious froze
 
 **Stage 2 — medium effort:**
 - [ ] Task 2: linear probe on AF-Whisper features (+ AF3 LLM hidden states) vs AF3 output scoring — verify empirically, source flags this may not win.
-- [ ] Both: MAEST (`mtg-upf/discogs-maest-30s-pw-129e`) / discogs-effnet (`mtg/effnet-discogs`) as fusion members — Discogs-*supervised* embeddings, same label universe as our task.
+- [x] Both: MAEST (`mtg-upf/discogs-maest-30s-pw-129e`) / discogs-effnet (`mtg/effnet-discogs`) as fusion members — Discogs-*supervised* embeddings, same label universe as our task. **Done 2026-09-25** (`src/maest_features.py`; dedicated `maest_env`, 2 real ecosystem bugs fixed — missing pkg_resources on modern setuptools, device-mismatch in the library's mel-spectrogram module — CPU-only extraction, verified via cosine-similarity positive control). Standalone: A top1=0.5152, B top1=0.5098 — genuine mid-tier results, above wide-deep/caption-features, below MuQ/MERT-v2. **OOF fusion with MERT-v2 does not help either task** (A: fusion hurts, below MERT-v2-alone; B: fusion ties MERT-v2-alone exactly, weight correctly collapses) — unlike PupuM2D, MAEST's errors aren't decorrelated enough to help. discogs-effnet not pursued given this result. Full detail in WORKLOG.md.
 - [ ] Task 1: EMD loss and unimodal Poisson head, specifically for top-3.
 - [ ] Task 2: CoT + self-consistency on a Thinking-capable ALM, constrained output format (avoid Music Flamingo's 38%-invalid-rate failure mode).
 

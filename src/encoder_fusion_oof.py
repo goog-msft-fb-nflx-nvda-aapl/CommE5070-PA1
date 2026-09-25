@@ -156,18 +156,27 @@ def run(dataset_key, config_a, config_b, n_boot=10000):
     return out
 
 
+# MERT-v2-30s (current best) is always encoder "a" -- config per dataset.
+MERTV2_CFG = {
+    "A": {"encoder_name": "mertv2_30s", "layer": 10, "classifier": "logreg"},
+    "B": {"encoder_name": "mertv2_30s", "layer": "mean_all", "classifier": "logreg", "pca_dim": 128},
+}
+# Partner encoder ("b") configs, keyed by --partner. Add a new entry here to fusion-check
+# any future encoder against MERT-v2 without touching run()'s general logic.
+PARTNER_CFGS = {
+    "pupum2d_large": {
+        "A": {"encoder_name": "pupum2d_large", "layer": 0, "classifier": "logreg", "pca_dim": 128},
+        "B": {"encoder_name": "pupum2d_large", "layer": 0, "classifier": "logreg"},
+    },
+    "maest": {
+        "A": {"encoder_name": "maest", "layer": "mean_all", "classifier": "svm"},
+        "B": {"encoder_name": "maest", "layer": "concat_last4", "classifier": "logreg"},
+    },
+}
+
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--dataset", choices=["A", "B"], required=True)
+    p.add_argument("--partner", choices=list(PARTNER_CFGS.keys()), default="pupum2d_large")
     args = p.parse_args()
-
-    # MERT-v2-30s (current best) x PupuM2D-Large (round-5 item 7)
-    MERTV2_CFG = {
-        "A": {"encoder_name": "mertv2_30s", "layer": 10, "classifier": "logreg"},
-        "B": {"encoder_name": "mertv2_30s", "layer": "mean_all", "classifier": "logreg", "pca_dim": 128},
-    }
-    PUPUM2D_CFG = {
-        "A": {"encoder_name": "pupum2d_large", "layer": 0, "classifier": "logreg", "pca_dim": 128},
-        "B": {"encoder_name": "pupum2d_large", "layer": 0, "classifier": "logreg"},
-    }
-    run(args.dataset, MERTV2_CFG[args.dataset], PUPUM2D_CFG[args.dataset])
+    run(args.dataset, MERTV2_CFG[args.dataset], PARTNER_CFGS[args.partner][args.dataset])

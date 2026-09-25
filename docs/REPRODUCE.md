@@ -48,6 +48,20 @@ git clone https://github.com/sizigi/PupuM2D.git external/PupuM2D
 echo 'from .pupujepa import *' > external/PupuM2D/model/__init__.py
 # Checkpoint (safetensors) + args.json download automatically from HF (spellbrush/PupuM2D)
 # on first run of src.pupum2d_features. No further setup needed.
+
+# MAEST (src/maest_features.py, mid-tier standalone, fusion with MERT-v2 does not help --
+# see WORKLOG.md) -- pins timm~=0.9 (conflicts with PupuM2D's timm>=1.0), dedicated env:
+git clone https://github.com/palonso/MAEST.git external/MAEST
+conda create -n maest_env python=3.10 -y
+/path/to/miniconda3/envs/maest_env/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+cd external/MAEST && /path/to/miniconda3/envs/maest_env/bin/pip install -e . && cd ../..
+# pip install -e . pulls in a modern setuptools that dropped pkg_resources (a general
+# transformers-ecosystem issue, not MAEST-specific) -- restore it:
+/path/to/miniconda3/envs/maest_env/bin/pip install 'setuptools<81' --force-reinstall
+/path/to/miniconda3/envs/maest_env/bin/pip install librosa soundfile pyloudnorm
+# Checkpoint downloads automatically on first run. Runs CPU-only (model.to(device) doesn't
+# move the internal mel-spectrogram's STFT window buffer, causing a device-mismatch error
+# on any CUDA device -- verified fast enough on CPU, ~0.4s/clip, not worth patching).
 ```
 
 ## 1. Feature extraction (run once each, cached to `cache/` — gitignored, ~GBs)
@@ -103,8 +117,21 @@ $PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name pupum2d_la
 # OOF fusion of MERT-v2-30s (current best) x PupuM2D-Large -- new Task 1 best point
 # estimate (0.5606); Task 2's fusion weight correctly collapses to 100% MERT-v2.
 # Requires step 1's mertv2_features extraction to have been run first.
-$PY -m src.encoder_fusion_oof --dataset A  # fused top1=0.5606 (alpha=0.6 MERT-v2)
-$PY -m src.encoder_fusion_oof --dataset B  # fused top1=0.6471 == MERT-v2-alone (alpha=1.0)
+$PY -m src.encoder_fusion_oof --dataset A --partner pupum2d_large  # fused top1=0.5606 (alpha=0.6 MERT-v2)
+$PY -m src.encoder_fusion_oof --dataset B --partner pupum2d_large  # fused top1=0.6471 == MERT-v2-alone (alpha=1.0)
+
+# MAEST (mtg-upf/discogs-maest-30s-pw-129e) -- Discogs-style-supervised, mid-tier
+# standalone, does NOT help OOF fusion with MERT-v2 (see WORKLOG.md). Only 2 of 12
+# blocks extracted (6 and 11) -- MAEST's transformer_block=i argument early-exits, so a
+# full 12-block sweep would be ~40x more expensive than the 2 layers actually used.
+/home/jtan/miniconda3/envs/maest_env/bin/python3 -m src.maest_features --dataset A
+/home/jtan/miniconda3/envs/maest_env/bin/python3 -m src.maest_features --dataset B
+$PY -m src.ablate_mert_layers --dataset A --encoder-name maest --n-layers 2  # best=mean_all, top1=0.4924
+$PY -m src.ablate_mert_layers --dataset B --encoder-name maest --n-layers 2  # best=concat_last4, top1=0.5098
+$PY -m src.ablate_classifier_pca --dataset A --layer mean_all --encoder-name maest      # top1=0.5152 (svm)
+$PY -m src.ablate_classifier_pca --dataset B --layer concat_last4 --encoder-name maest  # top1=0.5098 (logreg)
+$PY -m src.encoder_fusion_oof --dataset A --partner maest  # fusion hurts, below MERT-v2-alone
+$PY -m src.encoder_fusion_oof --dataset B --partner maest  # fusion ties MERT-v2-alone exactly
 ```
 
 ## 2. Component models needed for the ensembles below
