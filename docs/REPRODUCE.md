@@ -322,6 +322,11 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.dasheng_features --dataset B --device c
 $PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name dasheng  # top1=0.4394
 $PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name dasheng  # top1=0.5392
 
+# Supervised contrastive loss (SupCon), Task 1, on MERT-v2 layer10 (top1=0.5227 vs
+# matched-CE 0.4848, but top3=0.7576 worse than matched-CE's 0.8182 -- opposite
+# tradeoff from SORD/EMD)
+$PY -u -m src.supcon_task1 --dataset A
+
 # CultureMERT-95M frozen probe, Task B (top1=0.353, well below MuQ's 0.500)
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.culturemert_features --dataset B --device cuda:1
 $PY -u -c "from src.train_probe import run; run('B', layer=5, classifier='logreg', encoder_name='culturemert_95m')"
