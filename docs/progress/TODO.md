@@ -89,7 +89,7 @@ Note: gsm-gpu2's `uptime` load reading has periodically shown a suspicious froze
 
 **Stage 3 — higher effort, not prioritized unless earlier stages show promise:**
 - [x] MiDashengLM/Dasheng as a diverse frozen extractor. **Done 2026-09-25** (`src/dasheng_features.py`; explicitly deprioritized twice before based on a lecture GTZAN table, actually run per standing "no assumed won't-work" practice). Standalone: A top1=0.4394 (modest, above wide-deep alone), B top1=0.5392 (real, ties caption-as-features, above MuQ-alone). Better on Task 2 than the static GTZAN comparison predicted. Not pursued as a fusion partner given the established pattern (only PupuM2D has helped Task 1 fusion so far). Full detail in WORKLOG.md.
-- [ ] External-data/semi-supervised pretraining or kNN retrieval against a larger Discogs-tagged corpus.
+- [x] External-data/semi-supervised pretraining or kNN retrieval against a larger Discogs-tagged corpus. **Done 2026-09-25** (`src/knn_retrieval.py`). No larger Discogs-tagged *audio* corpus found available (checked HF datasets — only metadata/scraper datasets exist); implemented the core retrieval mechanism against our own training set instead, explicitly flagged as a different scope than originally envisioned. kNN (MERT-v2 embeddings, k/weighting tuned via CV): A top1=0.3636, B top1=0.4706 — both well below the sklearn logreg reference on the same embeddings (0.5455/0.6471). Clean negative for kNN as a classification mechanism at this data scale. Full detail in WORKLOG.md. **This closes the backlog.**
 
 **Explicitly told not to re-attempt** (per this round's source): another SSL encoder as a plain frozen probe, CLAP-style contrastive zero-shot, plain ALM teacher-forced scoring on yet another model without a changed readout.
 

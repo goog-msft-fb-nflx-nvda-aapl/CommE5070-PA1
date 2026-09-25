@@ -327,6 +327,12 @@ $PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name dasheng  #
 # tradeoff from SORD/EMD)
 $PY -u -m src.supcon_task1 --dataset A
 
+# kNN retrieval-based classification, both tasks -- closes the backlog (clean negative,
+# A top1=0.3636 vs logreg's 0.5455; B top1=0.4706 vs logreg's 0.6471). No larger
+# Discogs-tagged audio corpus was found available; scoped to our own training set instead.
+$PY -u -m src.knn_retrieval --dataset A
+$PY -u -m src.knn_retrieval --dataset B
+
 # CultureMERT-95M frozen probe, Task B (top1=0.353, well below MuQ's 0.500)
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.culturemert_features --dataset B --device cuda:1
 $PY -u -c "from src.train_probe import run; run('B', layer=5, classifier='logreg', encoder_name='culturemert_95m')"
