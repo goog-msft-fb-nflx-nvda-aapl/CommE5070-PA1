@@ -222,12 +222,20 @@ def run(dataset_key, model_name="qwen2audio", split="validation", device="cuda",
             raw_log.append({"sample_id": row["sample_id"], "raw_output": raw_text, "parsed": pred_label,
                              "label_scores": {lab: float(s) for lab, s in zip(labels, scores)}})
             probs.append(np.exp(scores - scores.max()) / np.exp(scores - scores.max()).sum())
-            y_true.append(label_to_int[row["label"]])
+            # the real held-out test split has no labels (by design, for grading) --
+            # skip y_true for unlabeled rows rather than crashing, so raw scores/probs
+            # can still be generated and saved for submission-time inference.
+            y_true.append(label_to_int[row["label"]] if row["label"] else None)
             ids.append(row["sample_id"])
 
         probs = np.stack(probs)
-        y_true = np.array(y_true)
-        metrics = summarize(probs, y_true, n_class, ordinal=spec["ordinal"], label_names=labels)
+        has_labels = all(y is not None for y in y_true)
+        if has_labels:
+            y_true = np.array(y_true)
+            metrics = summarize(probs, y_true, n_class, ordinal=spec["ordinal"], label_names=labels)
+        else:
+            metrics = {"note_unlabeled": "no ground-truth labels available for this split (e.g. the "
+                                          "real held-out test set) -- metrics not computed, raw scores saved below"}
         metrics["invalid_output_rate"] = invalid / len(rows)
         metrics["prompt"] = prompt_text
         metrics["n_samples"] = len(rows)
@@ -239,7 +247,8 @@ def run(dataset_key, model_name="qwen2audio", split="validation", device="cuda",
             json.dump(metrics, f, indent=2)
         with open(os.path.join(out_dir, f"{prompt_name}_raw.json"), "w") as f:
             json.dump(raw_log, f, indent=2)
-        print(f"[{dataset_key}/{model_name}/{prompt_name}] top1={metrics['top1']:.4f} "
+        top1_str = f"{metrics['top1']:.4f}" if "top1" in metrics else "N/A (unlabeled)"
+        print(f"[{dataset_key}/{model_name}/{prompt_name}] top1={top1_str} "
               f"invalid_rate={metrics['invalid_output_rate']:.4f}")
 
 

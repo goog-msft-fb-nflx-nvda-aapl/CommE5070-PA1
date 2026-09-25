@@ -1,0 +1,12 @@
+numpy
+scipy
+torch
+torchaudio
+tqdm
+scikit-learn
+joblib
+soundfile
+librosa
+pyloudnorm
+transformers
+huggingface_hub
