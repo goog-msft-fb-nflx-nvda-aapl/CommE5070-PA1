@@ -310,6 +310,11 @@ CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.finetune_lora --dataset B --epochs 20 \
 # on the identical features -- confirmed not a training artifact via a 9-config hyperparam sweep)
 $PY -u -m src.coral_ordinal --dataset A
 
+# Squared-EMD loss (real gain, top1=0.5076, +4.6pt vs matched CE, not significant) and
+# unimodal Poisson head (significantly worse than matched CE, p=0.044) -- Task A, on
+# MERT-v2 layer10. Completes the ordinal-methods picture alongside SORD/CORAL above.
+$PY -u -m src.emd_poisson_ordinal --dataset A
+
 # CultureMERT-95M frozen probe, Task B (top1=0.353, well below MuQ's 0.500)
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.culturemert_features --dataset B --device cuda:1
 $PY -u -c "from src.train_probe import run; run('B', layer=5, classifier='logreg', encoder_name='culturemert_95m')"
