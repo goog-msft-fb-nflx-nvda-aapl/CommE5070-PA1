@@ -315,6 +315,13 @@ $PY -u -m src.coral_ordinal --dataset A
 # MERT-v2 layer10. Completes the ordinal-methods picture alongside SORD/CORAL above.
 $PY -u -m src.emd_poisson_ordinal --dataset A
 
+# Dasheng-1.2B frozen probe, both tasks (A: top1=0.4394, modest; B: top1=0.5392, real,
+# ties caption-as-features -- better on B than the lecture's GTZAN table predicted)
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.dasheng_features --dataset A --device cuda:1
+CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.dasheng_features --dataset B --device cuda:1
+$PY -m src.ablate_classifier_pca --dataset A --layer 0 --encoder-name dasheng  # top1=0.4394
+$PY -m src.ablate_classifier_pca --dataset B --layer 0 --encoder-name dasheng  # top1=0.5392
+
 # CultureMERT-95M frozen probe, Task B (top1=0.353, well below MuQ's 0.500)
 CUDA_VISIBLE_DEVICES=0,1,2 $PY -u -m src.culturemert_features --dataset B --device cuda:1
 $PY -u -c "from src.train_probe import run; run('B', layer=5, classifier='logreg', encoder_name='culturemert_95m')"
