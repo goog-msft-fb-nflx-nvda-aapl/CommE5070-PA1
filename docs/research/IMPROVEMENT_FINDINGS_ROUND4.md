@@ -1,6 +1,6 @@
 # Deep Research Synthesis, Round 4 (2026-09-23)
 
-Single-source this round (Claude web deep research, `survey_response_4/compass_artifact_wf-6adfbabb-1956-5139-8f3a-e0f2123684ad_text_markdown.md`, on `research_prompt_round4.txt`) — no reconciliation-across-sources step needed, but every claim in it was already flagged by the source itself with a citation-confidence level, which is preserved below rather than silently treated as uniform.
+Single-source this round (AI-assisted deep research, `survey_response_4/compass_artifact_wf-6adfbabb-1956-5139-8f3a-e0f2123684ad_text_markdown.md`, on `research_prompt_round4.txt`) — no reconciliation-across-sources step needed, but every claim in it was already flagged by the source itself with a citation-confidence level, which is preserved below rather than silently treated as uniform.
 
 ## Key diagnosis: CORAL's failure is expected and mechanistically explained, not mysterious
 CORAL (Cao et al. 2019) forces all K-1 binary thresholds to share **one** weight vector, differing only in bias — a severe capacity bottleneck on frozen features, since a plain 6-way logistic regression gets six independent weight vectors. This directly explains our measured 31.8% (CORAL) vs 50.0% (capacity-matched logreg) result. CORN (Shi/Cao/Raschka, arXiv:2111.08851) exists specifically to remove this constraint. **Implication: don't write off ordinal methods generally — the specific architecture we tried was capacity-starved, not "ordinality doesn't help here."**

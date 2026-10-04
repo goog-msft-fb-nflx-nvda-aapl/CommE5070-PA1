@@ -1,6 +1,6 @@
 # Materials for Drafting TA Questions (Round 2) — CommE5070 PA1 (Music Era & Release-Market Classification)
 
-## Task for you (Claude web)
+## Task
 
 Using the background below, draft a short, polite, **direction-focused** set of questions to send to the teaching assistant. This is a follow-up round after a large amount of additional experimentation — the core ask is: **our performance is still not where we'd like it, what should we try next?**
 

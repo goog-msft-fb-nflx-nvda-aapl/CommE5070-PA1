@@ -1,6 +1,6 @@
 # Materials for Drafting TA Questions — CommE5070 PA1 (Music Era & Release-Market Classification)
 
-## Task for you (Claude web)
+## Task
 
 Using the background below, draft a short, polite set of questions to send to the teaching assistant. Specifically:
 1. Ask whether there is an expected/target **Top-1 and Top-3 accuracy range on the validation set** for Task 1 (decade) and Task 2 (market) — we want to sanity-check whether our current numbers are in a reasonable ballpark for this assignment, or whether they suggest something is off in our implementation.

@@ -42,5 +42,5 @@ Start with `docs/progress/WORKLOG.md` for the full story, or `docs/progress/TODO
 
 ## Workflow
 
-- Mac: Claude Code session only — no local-only canonical copies of code/docs, everything durable lives here on GitHub.
+- Mac: working session only — no local-only canonical copies of code/docs, everything durable lives here on GitHub.
 - GPU server (gsm-gpu2): experiments only — code synced from this repo, results/logs written back up here.
