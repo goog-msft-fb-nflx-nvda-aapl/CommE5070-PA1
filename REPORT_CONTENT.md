@@ -127,6 +127,29 @@ recommendation.
   (0.588 vs 0.471) but not Task A (0.379 vs 0.470) — motivating why AF3 became part of
   the Task 2 fusion but was never central to Task 1.
 
+### 4.1 Embedding-space visualization (t-SNE / UMAP) — required experiment, must appear as its own figure/slide
+
+Run on the MERT winning-layer embeddings (train+validation), both tasks, across multiple
+perplexity/neighbor settings for robustness. **Use `assets/A_tsne_perp30.png` and
+`assets/A_umap_nn15.png` for Task A, and `assets/B_tsne_perp30.png` and
+`assets/B_umap_nn15.png` for Task B** (one t-SNE + one UMAP per task is enough; the other
+perplexity variants in assets/ — `A_tsne_perp15.png`, `A_tsne_perp50.png` — exist only to
+show the finding was checked for robustness, mention that it was checked across 3
+perplexities without needing to display all 3).
+
+**Finding (state this plainly, it is a real, expected, and non-negative result — do not
+omit this figure because the finding sounds unflattering)**: **no clean visual class
+separation appears in either projection, for either task** — points form a single
+intermixed blob with no visible per-class clusters. This was checked and confirmed
+consistent across 3 perplexities (15/30/50) and multiple neighbor-count settings for
+UMAP, not a one-off artifact. **This does not contradict the classifiers' real
+above-chance performance** (0.46-0.56 top1 vs. 0.167 random, both tasks): 2D projection
+of a high-dimensional embedding space can easily destroy linear separability that a
+1024-dimensional logistic regression can still exploit — this is a well-known and
+expected limitation of t-SNE/UMAP as a *diagnostic* tool, not a sign the classifiers
+aren't working. State this explicitly next to the figure so a reader doesn't
+misinterpret "blob" as "the models don't work."
+
 ---
 
 ## 5. What else was tried (breadth, for "goes beyond basic requirements")
@@ -367,16 +390,23 @@ every public codebase, pretrained model, and paper used"):**
 
 ## 13. Assets manifest (files to hand to the report generator)
 
+**Required in the output — every file in this first group must appear as an embedded
+figure somewhere in the final report, not just be available as a reference:**
+
 ```
-results/report_assets/confusion_A_submitted.png    <- Task 1 confusion matrix (required)
-results/report_assets/confusion_B_submitted.png    <- Task 2 confusion matrix (required)
-results/report_assets/method_comparison_A.png      <- Task 1 all-methods bar chart
-results/report_assets/method_comparison_B.png      <- Task 2 all-methods bar chart
-results/report_assets/submitted_config_metrics.json <- raw numbers behind the confusion matrices
-results/embeddings_preview/A_tsne_perp30.png       <- Task 1 t-SNE (no separation, discuss honestly)
-results/embeddings_preview/A_tsne_perp15.png
-results/embeddings_preview/A_tsne_perp50.png
-results/embeddings_preview/A_umap_nn15.png
-results/embeddings_preview/B_tsne_perp30.png       <- Task 2 t-SNE
-results/embeddings_preview/B_umap_nn15.png
+assets/confusion_A_submitted.png     <- Task 1 confusion matrix (required by the assignment)
+assets/confusion_B_submitted.png     <- Task 2 confusion matrix (required by the assignment)
+assets/method_comparison_A.png       <- Task 1 all-methods bar chart
+assets/method_comparison_B.png       <- Task 2 all-methods bar chart
+assets/A_tsne_perp30.png             <- Task 1 t-SNE (required experiment, see section 4.1)
+assets/A_umap_nn15.png               <- Task 1 UMAP (required experiment, see section 4.1)
+assets/B_tsne_perp30.png             <- Task 2 t-SNE (required experiment, see section 4.1)
+assets/B_umap_nn15.png               <- Task 2 UMAP (required experiment, see section 4.1)
+```
+
+**Reference only (not required as figures, available if useful):**
+```
+assets/A_tsne_perp15.png
+assets/A_tsne_perp50.png             <- extra perplexity variants, confirm the finding's robustness
+assets/submitted_config_metrics.json <- raw numbers behind the confusion matrices
 ```
